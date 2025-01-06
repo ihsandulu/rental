@@ -1,0 +1,32 @@
+ERROR - 2025-01-04 23:33:23 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php:1881
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'C:\\xampp\\htdocs...', 1881)
+#1 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php(1881): stream_socket_enable_crypto(Resource id #156, true, 57)
+#2 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\rental\app\Models\login_m.php(18): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\rental\app\Models\login_m.php(96): App\Models\login_m->sendEmail('Ihsan')
+#7 C:\xampp\htdocs\rental\app\Controllers\utama.php(32): App\Models\login_m->index()
+#8 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\utama->login()
+#9 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+#10 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2025-01-04 23:33:23 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-01-04 23:33:23 --> 220 qithy.my.id ESMTP Postfix
+
+hello: 250-qithy.my.id
+250-PIPELINING
+250-SIZE 30720000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250-SMTPUTF8
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+

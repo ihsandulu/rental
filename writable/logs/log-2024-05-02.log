@@ -1,0 +1,25 @@
+ERROR - 2024-05-02 15:45:25 --> mysqli_sql_exception: Column 'store_id' cannot be null in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `se...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mproduct_m.php(225): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-02 15:45:25 --> Column 'store_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sell` (`positionm_id`, `product_id`, `sell_price`, `sell_percent`, `store_id`) VALUES (\'2\', \'231\', 70500, 23.239436619718, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sell` (`positionm_id`, `product_id`, `sell_price`, `sell_percent`, `store_id`) VALUES (\'2\', \'231\', 70500, 23.239436619718, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sell` (`positionm_id`, `product_id`, `sell_price`, `sell_percent`, `store_id`) VALUES (\'2\', \'231\', 70500, 23.239436619718, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sell` (`positionm_id`, `product_id`, `sell_price`, `sell_percent`, `store_id`) VALUES (:positionm_id:, :product_id:, :sell_price:, :sell_percent:, :store_id:)', [...], false)
+ 5 APPPATH\Models\master\mproduct_m.php(225): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

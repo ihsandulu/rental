@@ -1,0 +1,816 @@
+ERROR - 2023-05-03 00:33:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `positionm`.`store_id` = '0'
+ORDER BY `positionm_name` ASC' at line 4 in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mproduct_v.php(157): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mproduct...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(23): view('master/mproduct...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-03 00:33:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `positionm`.`store_id` = '0'
+ORDER BY `positionm_name` ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=
+WHERE `positionm`.`store_id` = :positionm.store_id:
+ORDER BY `positionm_name` ASC', [...], false)
+ 5 APPPATH\Views\master\mproduct_v.php(157): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mproduct_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+ 9 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-03 00:36:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `positionm`.`store_id` = '0'
+ORDER BY `positionm_name` ASC' at line 4 in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mproduct_v.php(157): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mproduct...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(23): view('master/mproduct...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-03 00:36:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `positionm`.`store_id` = '0'
+ORDER BY `positionm_name` ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=
+WHERE `positionm`.`store_id` = :positionm.store_id:
+ORDER BY `positionm_name` ASC', [...], false)
+ 5 APPPATH\Views\master\mproduct_v.php(157): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mproduct_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+ 9 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-03 00:40:32 --> mysqli_sql_exception: Unknown column 'sell_percent||0' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mproduct_m.php(123): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-03 00:40:32 --> Unknown column 'sell_percent||0' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`category_id`, `unit_id`, `product_name`, `product_description`, `product_countlimit`, `product_stock`, `product_buy`, `sell_percent||0`, `product_ube`, `store_id`) VALUES (\'6\', \'6\', \'aa\', \'aa\', \'3\', \'4\', \'500\', \'30\', \'UBE230503004005\', \'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`category_id`, `unit_id`, `product_name`, `product_description`, `product_countlimit`, `product_stock`, `product_buy`, `sell_percent||0`, `product_ube`, `store_id`) VALUES (\'6\', \'6\', \'aa\', \'aa\', \'3\', \'4\', \'500\', \'30\', \'UBE230503004005\', \'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`category_id`, `unit_id`, `product_name`, `product_description`, `product_countlimit`, `product_stock`, `product_buy`, `sell_percent||0`, `product_ube`, `store_id`) VALUES (\'6\', \'6\', \'aa\', \'aa\', \'3\', \'4\', \'500\', \'30\', \'UBE230503004005\', \'0\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`category_id`, `unit_id`, `product_name`, `product_description`, `product_countlimit`, `product_stock`, `product_buy`, `sell_percent||0`, `product_ube`, `store_id`) VALUES (:category_id:, :unit_id:, :product_name:, :product_description:, :product_countlimit:, :product_stock:, :product_buy:, :sell_percent||0:, :product_ube:, :store_id:)', [...], false)
+ 5 APPPATH\Models\master\mproduct_m.php(123): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-03 00:42:26 --> mysqli_sql_exception: Unknown column 'sell_percent||0' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mproduct_m.php(123): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-03 00:42:26 --> Unknown column 'sell_percent||0' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`category_id`, `unit_id`, `product_name`, `product_description`, `product_countlimit`, `product_stock`, `product_buy`, `sell_percent||0`, `product_ube`, `store_id`) VALUES (\'6\', \'6\', \'aa\', \'aa\', \'3\', \'4\', \'500\', \'30\', \'UBE230503004005\', \'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`category_id`, `unit_id`, `product_name`, `product_description`, `product_countlimit`, `product_stock`, `product_buy`, `sell_percent||0`, `product_ube`, `store_id`) VALUES (\'6\', \'6\', \'aa\', \'aa\', \'3\', \'4\', \'500\', \'30\', \'UBE230503004005\', \'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`category_id`, `unit_id`, `product_name`, `product_description`, `product_countlimit`, `product_stock`, `product_buy`, `sell_percent||0`, `product_ube`, `store_id`) VALUES (\'6\', \'6\', \'aa\', \'aa\', \'3\', \'4\', \'500\', \'30\', \'UBE230503004005\', \'0\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`category_id`, `unit_id`, `product_name`, `product_description`, `product_countlimit`, `product_stock`, `product_buy`, `sell_percent||0`, `product_ube`, `store_id`) VALUES (:category_id:, :unit_id:, :product_name:, :product_description:, :product_countlimit:, :product_stock:, :product_buy:, :sell_percent||0:, :product_ube:, :store_id:)', [...], false)
+ 5 APPPATH\Models\master\mproduct_m.php(123): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-03 00:42:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`pos...' at line 1 in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `positio...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `positio...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `positio...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `positio...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mproduct_v.php(158): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mproduct...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(23): view('master/mproduct...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-03 00:42:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`pos...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `positionm_id` AS `positionm_id`, *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=0
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `positionm_id` AS `positionm_id`, *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=0
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `positionm_id` AS `positionm_id`, *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=0
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `positionm_id` AS `positionm_id`, *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=0
+WHERE `positionm`.`store_id` = :positionm.store_id:
+ORDER BY `positionm_name` ASC', [...], false)
+ 5 APPPATH\Views\master\mproduct_v.php(158): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mproduct_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+ 9 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-03 00:42:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`pos...' at line 1 in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `positio...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `positio...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `positio...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `positio...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mproduct_v.php(158): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mproduct...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(23): view('master/mproduct...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-03 00:42:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`pos...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `positionm`.`positionm_id` AS `positionm_id`, *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=0
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `positionm`.`positionm_id` AS `positionm_id`, *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=0
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `positionm`.`positionm_id` AS `positionm_id`, *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=0
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `positionm`.`positionm_id` AS `positionm_id`, *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=0
+WHERE `positionm`.`store_id` = :positionm.store_id:
+ORDER BY `positionm_name` ASC', [...], false)
+ 5 APPPATH\Views\master\mproduct_v.php(158): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mproduct_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+ 9 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-03 00:43:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `positionm`
+WHERE `positionm`.`store_id` = '0'
+ORDER BY `positionm_nam...' at line 1 in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `positio...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `positio...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `positio...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `positio...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mproduct_v.php(158): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mproduct...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(23): view('master/mproduct...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-03 00:43:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `positionm`
+WHERE `positionm`.`store_id` = '0'
+ORDER BY `positionm_nam...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `positionm`.`positionm_id` AS `positionm_id`, *
+FROM `positionm`
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `positionm`.`positionm_id` AS `positionm_id`, *
+FROM `positionm`
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `positionm`.`positionm_id` AS `positionm_id`, *
+FROM `positionm`
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `positionm`.`positionm_id` AS `positionm_id`, *
+FROM `positionm`
+WHERE `positionm`.`store_id` = :positionm.store_id:
+ORDER BY `positionm_name` ASC', [...], false)
+ 5 APPPATH\Views\master\mproduct_v.php(158): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mproduct_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+ 9 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-03 00:44:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`pos...' at line 1 in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `positio...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `positio...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `positio...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `positio...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mproduct_v.php(158): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mproduct...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(23): view('master/mproduct...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-03 00:44:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`pos...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `positionm`.`positionm_id` AS `positionm_id`, *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=0
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `positionm`.`positionm_id` AS `positionm_id`, *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=0
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `positionm`.`positionm_id` AS `positionm_id`, *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=0
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `positionm`.`positionm_id` AS `positionm_id`, *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=0
+WHERE `positionm`.`store_id` = :positionm.store_id:
+ORDER BY `positionm_name` ASC', [...], false)
+ 5 APPPATH\Views\master\mproduct_v.php(158): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mproduct_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+ 9 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-03 00:44:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`pos...' at line 1 in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `positio...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `positio...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `positio...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `positio...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mproduct_v.php(158): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mproduct...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(23): view('master/mproduct...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-03 00:44:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`pos...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `positionm`.`positionm_id` AS `positionm_id`, *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=0
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `positionm`.`positionm_id` AS `positionm_id`, *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=0
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `positionm`.`positionm_id` AS `positionm_id`, *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=0
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `positionm`.`positionm_id` AS `positionm_id`, *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=0
+WHERE `positionm`.`store_id` = :positionm.store_id:
+ORDER BY `positionm_name` ASC', [...], false)
+ 5 APPPATH\Views\master\mproduct_v.php(158): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mproduct_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+ 9 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 00:44:58 --> Undefined property: stdClass::$positionm_name
+in APPPATH\Views\master\mproduct_v.php on line 162.
+ 1 APPPATH\Views\master\mproduct_v.php(162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$positionm_name', 'APPPATH\\Views\\master\\mproduct_v.php', 162)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mproduct_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+ 5 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-03 00:45:50 --> mysqli_sql_exception: Unknown column 'sell_percent|5|0' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mproduct_m.php(123): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-03 00:45:50 --> Unknown column 'sell_percent|5|0' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`category_id`, `unit_id`, `product_name`, `product_description`, `product_countlimit`, `product_stock`, `product_buy`, `sell_percent|5|0`, `sell_percent|4|0`, `product_ube`, `store_id`) VALUES (\'6\', \'6\', \'aa\', \'aa\', \'4\', \'4\', \'500\', \'10\', \'30\', \'UBE230503004523\', \'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`category_id`, `unit_id`, `product_name`, `product_description`, `product_countlimit`, `product_stock`, `product_buy`, `sell_percent|5|0`, `sell_percent|4|0`, `product_ube`, `store_id`) VALUES (\'6\', \'6\', \'aa\', \'aa\', \'4\', \'4\', \'500\', \'10\', \'30\', \'UBE230503004523\', \'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`category_id`, `unit_id`, `product_name`, `product_description`, `product_countlimit`, `product_stock`, `product_buy`, `sell_percent|5|0`, `sell_percent|4|0`, `product_ube`, `store_id`) VALUES (\'6\', \'6\', \'aa\', \'aa\', \'4\', \'4\', \'500\', \'10\', \'30\', \'UBE230503004523\', \'0\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`category_id`, `unit_id`, `product_name`, `product_description`, `product_countlimit`, `product_stock`, `product_buy`, `sell_percent|5|0`, `sell_percent|4|0`, `product_ube`, `store_id`) VALUES (:category_id:, :unit_id:, :product_name:, :product_description:, :product_countlimit:, :product_stock:, :product_buy:, :sell_percent|5|0:, :sell_percent|4|0:, :product_ube:, :store_id:)', [...], false)
+ 5 APPPATH\Models\master\mproduct_m.php(123): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 00:50:41 --> Call to undefined function App\Models\master\ubstr()
+in APPPATH\Models\master\mproduct_m.php on line 119.
+ 1 APPPATH\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-03 04:20:09 --> mysqli_sql_exception: Unknown column 'sell_percent|5|955' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `product...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mproduct_m.php(155): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-03 04:20:09 --> Unknown column 'sell_percent|5|955' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `product` SET `category_id` = \'6\', `unit_id` = \'6\', `product_name` = \'aa\', `product_description` = \'aa\', `product_countlimit` = \'4\', `product_stock` = \'4\', `product_buy` = \'500\', `sell_percent|5|955` = \'11\', `sell_percent|4|955` = \'31\', `product_ube` = \'UBE230503004523\', `product_id` = \'955\', `store_id` = NULL
+WHERE `product_id` = \'955\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product` SET `category_id` = \'6\', `unit_id` = \'6\', `product_name` = \'aa\', `product_description` = \'aa\', `product_countlimit` = \'4\', `product_stock` = \'4\', `product_buy` = \'500\', `sell_percent|5|955` = \'11\', `sell_percent|4|955` = \'31\', `product_ube` = \'UBE230503004523\', `product_id` = \'955\', `store_id` = NULL
+WHERE `product_id` = \'955\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product` SET `category_id` = \'6\', `unit_id` = \'6\', `product_name` = \'aa\', `product_description` = \'aa\', `product_countlimit` = \'4\', `product_stock` = \'4\', `product_buy` = \'500\', `sell_percent|5|955` = \'11\', `sell_percent|4|955` = \'31\', `product_ube` = \'UBE230503004523\', `product_id` = \'955\', `store_id` = NULL
+WHERE `product_id` = \'955\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `product` SET `category_id` = :category_id:, `unit_id` = :unit_id:, `product_name` = :product_name:, `product_description` = :product_description:, `product_countlimit` = :product_countlimit:, `product_stock` = :product_stock:, `product_buy` = :product_buy:, `sell_percent|5|955` = :sell_percent|5|955:, `sell_percent|4|955` = :sell_percent|4|955:, `product_ube` = :product_ube:, `product_id` = :product_id:, `store_id` = :store_id:
+WHERE `product_id` = :product_id.1:', [...], false)
+ 5 APPPATH\Models\master\mproduct_m.php(155): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 6 APPPATH\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-03 04:20:41 --> mysqli_sql_exception: Unknown column 'product_id' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mproduct_m.php(166): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-03 04:20:41 --> Unknown column 'product_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `positionm`
+WHERE `store_id` IS NULL
+AND `product_id` = \'955\'
+AND `positionm_id` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `positionm`
+WHERE `store_id` IS NULL
+AND `product_id` = \'955\'
+AND `positionm_id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `positionm`
+WHERE `store_id` IS NULL
+AND `product_id` = \'955\'
+AND `positionm_id` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `positionm`
+WHERE `store_id` IS NULL
+AND `product_id` = :product_id:
+AND `positionm_id` = :positionm_id:', [...], false)
+ 5 APPPATH\Models\master\mproduct_m.php(166): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-03 04:22:44 --> mysqli_sql_exception: Column 'store_id' cannot be null in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `se...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mproduct_m.php(180): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-03 04:22:44 --> Column 'store_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sell` (`positionm_id`, `product_id`, `sell_percent`, `sell_price`, `store_id`) VALUES (\'5\', \'955\', \'11\', 555, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sell` (`positionm_id`, `product_id`, `sell_percent`, `sell_price`, `store_id`) VALUES (\'5\', \'955\', \'11\', 555, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sell` (`positionm_id`, `product_id`, `sell_percent`, `sell_price`, `store_id`) VALUES (\'5\', \'955\', \'11\', 555, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sell` (`positionm_id`, `product_id`, `sell_percent`, `sell_price`, `store_id`) VALUES (:positionm_id:, :product_id:, :sell_percent:, :sell_price:, :store_id:)', [...], false)
+ 5 APPPATH\Models\master\mproduct_m.php(180): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 04:50:31 --> Unsupported operand types: string * string
+in APPPATH\Models\master\mproduct_m.php on line 135.
+ 1 APPPATH\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 20:27:33 --> Undefined variable $positionm_profit
+in APPPATH\Controllers\transaction\transaction.php on line 872.
+ 1 APPPATH\Controllers\transaction\transaction.php(872): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $positionm_profit', 'APPPATH\\Controllers\\transaction\\transaction.php', 872)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductgambar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 20:28:40 --> Undefined variable $positionm_profit
+in APPPATH\Controllers\transaction\transaction.php on line 872.
+ 1 APPPATH\Controllers\transaction\transaction.php(872): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $positionm_profit', 'APPPATH\\Controllers\\transaction\\transaction.php', 872)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductgambar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 20:29:06 --> Undefined variable $positionm_profit
+in APPPATH\Controllers\transaction\transaction.php on line 872.
+ 1 APPPATH\Controllers\transaction\transaction.php(872): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $positionm_profit', 'APPPATH\\Controllers\\transaction\\transaction.php', 872)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductgambar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 20:29:16 --> Undefined variable $positionm_profit
+in APPPATH\Controllers\transaction\transaction.php on line 872.
+ 1 APPPATH\Controllers\transaction\transaction.php(872): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $positionm_profit', 'APPPATH\\Controllers\\transaction\\transaction.php', 872)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductgambar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 20:29:25 --> Undefined variable $positionm_profit
+in APPPATH\Controllers\transaction\transaction.php on line 872.
+ 1 APPPATH\Controllers\transaction\transaction.php(872): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $positionm_profit', 'APPPATH\\Controllers\\transaction\\transaction.php', 872)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductgambar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 20:29:42 --> Undefined variable $positionm_profit
+in APPPATH\Controllers\transaction\transaction.php on line 872.
+ 1 APPPATH\Controllers\transaction\transaction.php(872): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $positionm_profit', 'APPPATH\\Controllers\\transaction\\transaction.php', 872)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductgambar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 20:30:16 --> Undefined variable $positionm_profit
+in APPPATH\Controllers\transaction\transaction.php on line 872.
+ 1 APPPATH\Controllers\transaction\transaction.php(872): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $positionm_profit', 'APPPATH\\Controllers\\transaction\\transaction.php', 872)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductgambar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 20:30:25 --> Undefined variable $positionm_profit
+in APPPATH\Controllers\transaction\transaction.php on line 872.
+ 1 APPPATH\Controllers\transaction\transaction.php(872): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $positionm_profit', 'APPPATH\\Controllers\\transaction\\transaction.php', 872)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductgambar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-03 20:38:38 --> mysqli_sql_exception: Unknown column 'sell.positionm_id' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductgambar()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-03 20:38:38 --> Unknown column 'sell.positionm_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `product`
+LEFT JOIN (SELECT sell_percent, sell_price, product_id AS prodid FROM sell)sell ON `sell`.`prodid`=`product`.`product_id` AND `sell`.`positionm_id`=4
+WHERE `product`.`store_id` = \'0\'
+ORDER BY `product_name`
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product`
+LEFT JOIN (SELECT sell_percent, sell_price, product_id AS prodid FROM sell)sell ON `sell`.`prodid`=`product`.`product_id` AND `sell`.`positionm_id`=4
+WHERE `product`.`store_id` = \'0\'
+ORDER BY `product_name`
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product`
+LEFT JOIN (SELECT sell_percent, sell_price, product_id AS prodid FROM sell)sell ON `sell`.`prodid`=`product`.`product_id` AND `sell`.`positionm_id`=4
+WHERE `product`.`store_id` = \'0\'
+ORDER BY `product_name`
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product`
+LEFT JOIN (SELECT sell_percent, sell_price, product_id AS prodid FROM sell)sell ON `sell`.`prodid`=`product`.`product_id` AND `sell`.`positionm_id`=4
+WHERE `product`.`store_id` = :product.store_id:
+ORDER BY `product_name`
+ LIMIT 20', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductgambar()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 20:38:40 --> Undefined variable $positionm_id
+in APPPATH\Controllers\transaction\transaction.php on line 664.
+ 1 APPPATH\Controllers\transaction\transaction.php(664): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $positionm_id', 'APPPATH\\Controllers\\transaction\\transaction.php', 664)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 20:38:41 --> Undefined variable $positionm_id
+in APPPATH\Controllers\transaction\transaction.php on line 664.
+ 1 APPPATH\Controllers\transaction\transaction.php(664): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $positionm_id', 'APPPATH\\Controllers\\transaction\\transaction.php', 664)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-03 20:39:19 --> mysqli_sql_exception: Unknown column 'sell.positionm_id' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductgambar()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-03 20:39:19 --> Unknown column 'sell.positionm_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `product`
+LEFT JOIN (SELECT sell_percent, sell_price, product_id AS prodid FROM sell)sell ON `sell`.`prodid`=`product`.`product_id` AND `sell`.`positionm_id`=4
+WHERE `product`.`store_id` = \'0\'
+ORDER BY `product_name`
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product`
+LEFT JOIN (SELECT sell_percent, sell_price, product_id AS prodid FROM sell)sell ON `sell`.`prodid`=`product`.`product_id` AND `sell`.`positionm_id`=4
+WHERE `product`.`store_id` = \'0\'
+ORDER BY `product_name`
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product`
+LEFT JOIN (SELECT sell_percent, sell_price, product_id AS prodid FROM sell)sell ON `sell`.`prodid`=`product`.`product_id` AND `sell`.`positionm_id`=4
+WHERE `product`.`store_id` = \'0\'
+ORDER BY `product_name`
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product`
+LEFT JOIN (SELECT sell_percent, sell_price, product_id AS prodid FROM sell)sell ON `sell`.`prodid`=`product`.`product_id` AND `sell`.`positionm_id`=4
+WHERE `product`.`store_id` = :product.store_id:
+ORDER BY `product_name`
+ LIMIT 20', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductgambar()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-03 20:39:25 --> mysqli_sql_exception: Unknown column 'sell.positionm_id' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductgambar()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-03 20:39:25 --> Unknown column 'sell.positionm_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `product`
+LEFT JOIN (SELECT sell_percent, sell_price, product_id AS prodid FROM sell)sell ON `sell`.`prodid`=`product`.`product_id` AND `sell`.`positionm_id`=4
+WHERE `product`.`store_id` = \'0\'
+ORDER BY `product_name`
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product`
+LEFT JOIN (SELECT sell_percent, sell_price, product_id AS prodid FROM sell)sell ON `sell`.`prodid`=`product`.`product_id` AND `sell`.`positionm_id`=4
+WHERE `product`.`store_id` = \'0\'
+ORDER BY `product_name`
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product`
+LEFT JOIN (SELECT sell_percent, sell_price, product_id AS prodid FROM sell)sell ON `sell`.`prodid`=`product`.`product_id` AND `sell`.`positionm_id`=4
+WHERE `product`.`store_id` = \'0\'
+ORDER BY `product_name`
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product`
+LEFT JOIN (SELECT sell_percent, sell_price, product_id AS prodid FROM sell)sell ON `sell`.`prodid`=`product`.`product_id` AND `sell`.`positionm_id`=4
+WHERE `product`.`store_id` = :product.store_id:
+ORDER BY `product_name`
+ LIMIT 20', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductgambar()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 20:40:17 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 880.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 880)
+ 2 APPPATH\Controllers\transaction\transaction.php(880): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductgambar()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 20:42:28 --> Undefined variable $positionm_id
+in APPPATH\Controllers\transaction\transaction.php on line 664.
+ 1 APPPATH\Controllers\transaction\transaction.php(664): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $positionm_id', 'APPPATH\\Controllers\\transaction\\transaction.php', 664)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 20:42:30 --> Undefined variable $positionm_id
+in APPPATH\Controllers\transaction\transaction.php on line 664.
+ 1 APPPATH\Controllers\transaction\transaction.php(664): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $positionm_id', 'APPPATH\\Controllers\\transaction\\transaction.php', 664)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 20:43:46 --> Undefined variable $positionm_id
+in APPPATH\Controllers\transaction\transaction.php on line 664.
+ 1 APPPATH\Controllers\transaction\transaction.php(664): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $positionm_id', 'APPPATH\\Controllers\\transaction\\transaction.php', 664)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 20:45:57 --> Undefined property: stdClass::$dpositionm_id
+in APPPATH\Controllers\transaction\transaction.php on line 657.
+ 1 APPPATH\Controllers\transaction\transaction.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$dpositionm_id', 'APPPATH\\Controllers\\transaction\\transaction.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 20:59:55 --> Undefined variable $product
+in APPPATH\Controllers\transaction\transaction.php on line 963.
+ 1 APPPATH\Controllers\transaction\transaction.php(963): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Controllers\\transaction\\transaction.php', 963)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 20:59:59 --> Undefined variable $product
+in APPPATH\Controllers\transaction\transaction.php on line 963.
+ 1 APPPATH\Controllers\transaction\transaction.php(963): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Controllers\\transaction\\transaction.php', 963)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 21:00:01 --> Undefined variable $product
+in APPPATH\Controllers\transaction\transaction.php on line 963.
+ 1 APPPATH\Controllers\transaction\transaction.php(963): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Controllers\\transaction\\transaction.php', 963)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 21:00:24 --> Undefined variable $product
+in APPPATH\Controllers\transaction\transaction.php on line 963.
+ 1 APPPATH\Controllers\transaction\transaction.php(963): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Controllers\\transaction\\transaction.php', 963)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 21:00:26 --> Undefined variable $product
+in APPPATH\Controllers\transaction\transaction.php on line 963.
+ 1 APPPATH\Controllers\transaction\transaction.php(963): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Controllers\\transaction\\transaction.php', 963)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

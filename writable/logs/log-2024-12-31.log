@@ -1,0 +1,518 @@
+ERROR - 2024-12-31 07:34:32 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php:1881
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'C:\\xampp\\htdocs...', 1881)
+#1 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php(1881): stream_socket_enable_crypto(Resource id #156, true, 57)
+#2 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\rental\app\Models\login_m.php(18): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\rental\app\Models\login_m.php(95): App\Models\login_m->sendEmail('Ihsan')
+#7 C:\xampp\htdocs\rental\app\Controllers\utama.php(32): App\Models\login_m->index()
+#8 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\utama->login()
+#9 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+#10 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2024-12-31 07:34:32 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-12-31 07:34:32 --> 220 qithy.my.id ESMTP Postfix
+
+hello: 250-qithy.my.id
+250-PIPELINING
+250-SIZE 30720000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250-SMTPUTF8
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2024-12-31 07:56:27 --> mysqli_sql_exception: Unknown column 'lat' in 'field list' in C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\rental\app\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+#6 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+#7 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-31 07:56:27 --> Unknown column 'lat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'57.02159724475452\', \'42.230202771033284\', \'57.02159724475452\', \'42.230202771033284\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'57.02159724475452\', \'42.230202771033284\', \'57.02159724475452\', \'42.230202771033284\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'57.02159724475452\', \'42.230202771033284\', \'57.02159724475452\', \'42.230202771033284\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (:lat:, :lng:, :marker_latitude:, :marker_longitude:)', [...], false)
+ 5 APPPATH\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-31 07:56:28 --> mysqli_sql_exception: Unknown column 'lat' in 'field list' in C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\rental\app\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+#6 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+#7 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-31 07:56:28 --> Unknown column 'lat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'63.61112239297882\', \'83.01878046547097\', \'63.61112239297882\', \'83.01878046547097\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'63.61112239297882\', \'83.01878046547097\', \'63.61112239297882\', \'83.01878046547097\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'63.61112239297882\', \'83.01878046547097\', \'63.61112239297882\', \'83.01878046547097\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (:lat:, :lng:, :marker_latitude:, :marker_longitude:)', [...], false)
+ 5 APPPATH\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-31 07:56:29 --> mysqli_sql_exception: Unknown column 'lat' in 'field list' in C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\rental\app\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+#6 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+#7 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-31 07:56:29 --> Unknown column 'lat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'50.37909993611199\', \'82.66715479569133\', \'50.37909993611199\', \'82.66715479569133\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'50.37909993611199\', \'82.66715479569133\', \'50.37909993611199\', \'82.66715479569133\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'50.37909993611199\', \'82.66715479569133\', \'50.37909993611199\', \'82.66715479569133\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (:lat:, :lng:, :marker_latitude:, :marker_longitude:)', [...], false)
+ 5 APPPATH\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-31 07:56:30 --> mysqli_sql_exception: Unknown column 'lat' in 'field list' in C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\rental\app\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+#6 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+#7 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-31 07:56:30 --> Unknown column 'lat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'47.84855479783958\', \'57.70173224133724\', \'47.84855479783958\', \'57.70173224133724\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'47.84855479783958\', \'57.70173224133724\', \'47.84855479783958\', \'57.70173224133724\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'47.84855479783958\', \'57.70173224133724\', \'47.84855479783958\', \'57.70173224133724\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (:lat:, :lng:, :marker_latitude:, :marker_longitude:)', [...], false)
+ 5 APPPATH\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-31 07:57:06 --> mysqli_sql_exception: Unknown column 'lat' in 'field list' in C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\rental\app\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+#6 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+#7 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-31 07:57:06 --> Unknown column 'lat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'58.15215545223317\', \'49.96596750618525\', \'58.15215545223317\', \'49.96596750618525\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'58.15215545223317\', \'49.96596750618525\', \'58.15215545223317\', \'49.96596750618525\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'58.15215545223317\', \'49.96596750618525\', \'58.15215545223317\', \'49.96596750618525\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (:lat:, :lng:, :marker_latitude:, :marker_longitude:)', [...], false)
+ 5 APPPATH\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-31 07:57:07 --> mysqli_sql_exception: Unknown column 'lat' in 'field list' in C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\rental\app\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+#6 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+#7 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-31 07:57:07 --> Unknown column 'lat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'61.67319404349196\', \'90.05129386106367\', \'61.67319404349196\', \'90.05129386106367\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'61.67319404349196\', \'90.05129386106367\', \'61.67319404349196\', \'90.05129386106367\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'61.67319404349196\', \'90.05129386106367\', \'61.67319404349196\', \'90.05129386106367\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (:lat:, :lng:, :marker_latitude:, :marker_longitude:)', [...], false)
+ 5 APPPATH\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-31 07:57:46 --> mysqli_sql_exception: Unknown column 'lat' in 'field list' in C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\rental\app\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+#6 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+#7 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-31 07:57:46 --> Unknown column 'lat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'59.42719710979364\', \'54.888726883100155\', \'59.42719710979364\', \'54.888726883100155\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'59.42719710979364\', \'54.888726883100155\', \'59.42719710979364\', \'54.888726883100155\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'59.42719710979364\', \'54.888726883100155\', \'59.42719710979364\', \'54.888726883100155\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (:lat:, :lng:, :marker_latitude:, :marker_longitude:)', [...], false)
+ 5 APPPATH\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-31 07:58:20 --> mysqli_sql_exception: Unknown column 'lat' in 'field list' in C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\rental\app\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+#6 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+#7 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-31 07:58:20 --> Unknown column 'lat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'65.57118389416983\', \'80.20577510723386\', \'65.57118389416983\', \'80.20577510723386\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'65.57118389416983\', \'80.20577510723386\', \'65.57118389416983\', \'80.20577510723386\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'65.57118389416983\', \'80.20577510723386\', \'65.57118389416983\', \'80.20577510723386\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (:lat:, :lng:, :marker_latitude:, :marker_longitude:)', [...], false)
+ 5 APPPATH\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-31 07:58:23 --> mysqli_sql_exception: Unknown column 'lat' in 'field list' in C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\rental\app\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+#6 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+#7 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-31 07:58:23 --> Unknown column 'lat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'66.98510177856528\', \'116.77484476431594\', \'66.98510177856528\', \'116.77484476431594\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'66.98510177856528\', \'116.77484476431594\', \'66.98510177856528\', \'116.77484476431594\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'66.98510177856528\', \'116.77484476431594\', \'66.98510177856528\', \'116.77484476431594\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (:lat:, :lng:, :marker_latitude:, :marker_longitude:)', [...], false)
+ 5 APPPATH\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-31 08:01:35 --> mysqli_sql_exception: Unknown column 'lat' in 'field list' in C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\rental\app\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+#6 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+#7 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-31 08:01:35 --> Unknown column 'lat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'59.42719710979364\', \'95.67730457753783\', \'59.42719710979364\', \'95.67730457753783\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'59.42719710979364\', \'95.67730457753783\', \'59.42719710979364\', \'95.67730457753783\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'59.42719710979364\', \'95.67730457753783\', \'59.42719710979364\', \'95.67730457753783\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `marker` (`lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (:lat:, :lng:, :marker_latitude:, :marker_longitude:)', [...], false)
+ 5 APPPATH\Controllers\api.php(47): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-31 08:06:50 --> mysqli_sql_exception: Unknown column 'lat' in 'field list' in C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\rental\app\Controllers\api.php(59): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+#6 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+#7 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-31 08:06:50 --> Unknown column 'lat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `marker` (`sewa_id`, `lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'241231080635\', \'60.65595370602387\', \'58.4049835808965\', \'60.65595370602387\', \'58.4049835808965\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `marker` (`sewa_id`, `lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'241231080635\', \'60.65595370602387\', \'58.4049835808965\', \'60.65595370602387\', \'58.4049835808965\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `marker` (`sewa_id`, `lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'241231080635\', \'60.65595370602387\', \'58.4049835808965\', \'60.65595370602387\', \'58.4049835808965\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `marker` (`sewa_id`, `lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (:sewa_id:, :lat:, :lng:, :marker_latitude:, :marker_longitude:)', [...], false)
+ 5 APPPATH\Controllers\api.php(59): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-31 08:07:02 --> mysqli_sql_exception: Unknown column 'lat' in 'field list' in C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\rental\app\Controllers\api.php(59): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+#6 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+#7 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-31 08:07:02 --> Unknown column 'lat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `marker` (`sewa_id`, `lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'241231080635\', \'60.65595370602387\', \'58.4049835808965\', \'60.65595370602387\', \'58.4049835808965\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `marker` (`sewa_id`, `lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'241231080635\', \'60.65595370602387\', \'58.4049835808965\', \'60.65595370602387\', \'58.4049835808965\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `marker` (`sewa_id`, `lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (\'241231080635\', \'60.65595370602387\', \'58.4049835808965\', \'60.65595370602387\', \'58.4049835808965\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `marker` (`sewa_id`, `lat`, `lng`, `marker_latitude`, `marker_longitude`) VALUES (:sewa_id:, :lat:, :lng:, :marker_latitude:, :marker_longitude:)', [...], false)
+ 5 APPPATH\Controllers\api.php(59): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->masukmarker()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-31 08:08:50 --> Undefined property: stdClass::$product_name
+in APPPATH\Views\transaction\sewa_v.php on line 482.
+ 1 APPPATH\Views\transaction\sewa_v.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$product_name', 'APPPATH\\Views\\transaction\\sewa_v.php', 482)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-31 12:05:35 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php:1881
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'C:\\xampp\\htdocs...', 1881)
+#1 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php(1881): stream_socket_enable_crypto(Resource id #156, true, 57)
+#2 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\rental\app\Models\login_m.php(18): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\rental\app\Models\login_m.php(95): App\Models\login_m->sendEmail('Ihsan')
+#7 C:\xampp\htdocs\rental\app\Controllers\utama.php(32): App\Models\login_m->index()
+#8 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\utama->login()
+#9 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+#10 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2024-12-31 12:05:35 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-12-31 12:05:35 --> 220 qithy.my.id ESMTP Postfix
+
+hello: 250-qithy.my.id
+250-PIPELINING
+250-SIZE 30720000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250-SMTPUTF8
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+CRITICAL - 2024-12-31 12:21:28 --> Undefined variable $marker
+in APPPATH\Views\transaction\sewa_v.php on line 170.
+ 1 APPPATH\Views\transaction\sewa_v.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $marker', 'APPPATH\\Views\\transaction\\sewa_v.php', 170)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-31 12:22:05 --> Undefined variable $marker
+in APPPATH\Views\transaction\sewa_v.php on line 170.
+ 1 APPPATH\Views\transaction\sewa_v.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $marker', 'APPPATH\\Views\\transaction\\sewa_v.php', 170)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-31 12:26:19 --> Undefined array key "lng"
+in APPPATH\Views\transaction\sewa_v.php on line 246.
+ 1 APPPATH\Views\transaction\sewa_v.php(246): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lng"', 'APPPATH\\Views\\transaction\\sewa_v.php', 246)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-31 12:28:31 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$marker_latitude
+in APPPATH\Views\transaction\sewa_v.php on line 172.
+ 1 APPPATH\Views\transaction\sewa_v.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$marker_latitude', 'APPPATH\\Views\\transaction\\sewa_v.php', 172)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-31 12:33:39 --> Division by zero
+in APPPATH\Views\transaction\sewa_v.php on line 188.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 4 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-31 12:34:59 --> Undefined variable $latlon
+in APPPATH\Views\transaction\sewa_v.php on line 260.
+ 1 APPPATH\Views\transaction\sewa_v.php(260): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $latlon', 'APPPATH\\Views\\transaction\\sewa_v.php', 260)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-31 12:36:21 --> Division by zero
+in APPPATH\Views\transaction\sewa_v.php on line 189.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 4 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-31 13:32:20 --> Division by zero
+in APPPATH\Views\transaction\sewa_v.php on line 203.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 4 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-31 01:40:57 --> Unclosed '{' on line 8
+in APPPATH\Controllers\api.php on line 321.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\api.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\api')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\api')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\api', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-31 14:47:01 --> mysqli_sql_exception: Unknown column 'sewa_driver' in 'field list' in C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\rental\app\Controllers\api.php(294): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\api->terimadata()
+#6 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+#7 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-31 14:47:01 --> Unknown column 'sewa_driver' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tracking` (`tracking_latitude`, `tracking_longitude`, `tracking_kota`, `tracking_datetime`, `customer_code`, `product_ube`, `sewa_driver`, `sewa_id`, `customer_name`) VALUES (\'-6.200000\', \'106.816666\', \'Daerah Khusus ibukota Jakarta\', \'2024-12-31 14:47:01\', \'IHS241230523\', \'UB00022\', \'ga\', \'9\', \'Ihsan\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tracking` (`tracking_latitude`, `tracking_longitude`, `tracking_kota`, `tracking_datetime`, `customer_code`, `product_ube`, `sewa_driver`, `sewa_id`, `customer_name`) VALUES (\'-6.200000\', \'106.816666\', \'Daerah Khusus ibukota Jakarta\', \'2024-12-31 14:47:01\', \'IHS241230523\', \'UB00022\', \'ga\', \'9\', \'Ihsan\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tracking` (`tracking_latitude`, `tracking_longitude`, `tracking_kota`, `tracking_datetime`, `customer_code`, `product_ube`, `sewa_driver`, `sewa_id`, `customer_name`) VALUES (\'-6.200000\', \'106.816666\', \'Daerah Khusus ibukota Jakarta\', \'2024-12-31 14:47:01\', \'IHS241230523\', \'UB00022\', \'ga\', \'9\', \'Ihsan\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tracking` (`tracking_latitude`, `tracking_longitude`, `tracking_kota`, `tracking_datetime`, `customer_code`, `product_ube`, `sewa_driver`, `sewa_id`, `customer_name`) VALUES (:tracking_latitude:, :tracking_longitude:, :tracking_kota:, :tracking_datetime:, :customer_code:, :product_ube:, :sewa_driver:, :sewa_id:, :customer_name:)', [...], false)
+ 5 APPPATH\Controllers\api.php(294): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->terimadata()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-31 15:40:42 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php:1881
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'C:\\xampp\\htdocs...', 1881)
+#1 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php(1881): stream_socket_enable_crypto(Resource id #156, true, 57)
+#2 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\rental\app\Models\login_m.php(18): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\rental\app\Models\login_m.php(96): App\Models\login_m->sendEmail('Ihsan')
+#7 C:\xampp\htdocs\rental\app\Controllers\utama.php(32): App\Models\login_m->index()
+#8 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\utama->login()
+#9 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+#10 C:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2024-12-31 15:40:42 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-12-31 15:40:42 --> 220 qithy.my.id ESMTP Postfix
+
+hello: 250-qithy.my.id
+250-PIPELINING
+250-SIZE 30720000
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250-SMTPUTF8
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+CRITICAL - 2024-12-31 16:16:57 --> Undefined variable $sewa
+in APPPATH\Controllers\api.php on line 235.
+ 1 APPPATH\Controllers\api.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sewa', 'APPPATH\\Controllers\\api.php', 235)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->terimadata()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-31 16:33:14 --> Undefined variable $usr
+in APPPATH\Views\report\rhistorystock_v.php on line 97.
+ 1 APPPATH\Views\report\rhistorystock_v.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usr', 'APPPATH\\Views\\report\\rhistorystock_v.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 5 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

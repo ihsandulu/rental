@@ -1,0 +1,182 @@
+CRITICAL - 2024-11-12 12:36:09 --> Undefined variable $session
+in APPPATH\Views\report\rhistorytransaction_v.php on line 125.
+ 1 APPPATH\Views\report\rhistorytransaction_v.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Views\\report\\rhistorytransaction_v.php', 125)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorytransaction_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorytransaction_v', [], true)
+ 5 APPPATH\Controllers\report\rhistorytransaction.php(22): view('report/rhistorytransaction_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorytransaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorytransaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-12 13:59:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::group_by()
+in APPPATH\Views\utama_v.php on line 39.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+ 4 APPPATH\Controllers\utama.php(19): view('utama_v')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-12 14:00:08 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+in APPPATH\Views\utama_v.php on line 255.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+ 4 APPPATH\Controllers\utama.php(19): view('utama_v')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-12 14:07:21 --> Call to undefined method stdClass::getResult()
+in APPPATH\Views\utama_v.php on line 252.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+ 4 APPPATH\Controllers\utama.php(19): view('utama_v')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-12 14:11:53 --> mysqli_sql_exception: Unknown column 'ctransaction_date' in 'field list' in D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(tr...', 0)
+#1 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(tr...')
+#2 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(tr...')
+#3 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(tr...', Array, false)
+#4 D:\xampp\htdocs\gudang\app\Views\utama_v.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('utama_v', Array, true)
+#8 D:\xampp\htdocs\gudang\app\Controllers\utama.php(19): view('utama_v')
+#9 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\utama->index()
+#10 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+#11 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\gudang\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-11-12 14:11:53 --> Unknown column 'ctransaction_date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(transaction_id)AS jumlah, `ctransaction_date` AS `tanggal`
+FROM `transaction`
+WHERE `transaction`.`transaction_date` >= \'2024-11-01\'
+AND `transaction`.`transaction_date` <= \'2024-11-30\'
+GROUP BY `transaction_date`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(transaction_id)AS jumlah, `ctransaction_date` AS `tanggal`
+FROM `transaction`
+WHERE `transaction`.`transaction_date` >= \'2024-11-01\'
+AND `transaction`.`transaction_date` <= \'2024-11-30\'
+GROUP BY `transaction_date`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(transaction_id)AS jumlah, `ctransaction_date` AS `tanggal`
+FROM `transaction`
+WHERE `transaction`.`transaction_date` >= \'2024-11-01\'
+AND `transaction`.`transaction_date` <= \'2024-11-30\'
+GROUP BY `transaction_date`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(transaction_id)AS jumlah, `ctransaction_date` AS `tanggal`
+FROM `transaction`
+WHERE `transaction`.`transaction_date` >= :transaction.transaction_date:
+AND `transaction`.`transaction_date` <= :transaction.transaction_date.1:
+GROUP BY `transaction_date`', [...], false)
+ 5 APPPATH\Views\utama_v.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\utama_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+ 9 APPPATH\Controllers\utama.php(19): view('utama_v')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-12 14:12:09 --> mysqli_sql_exception: Unknown column 'ctransaction_date' in 'field list' in D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(tr...', 0)
+#1 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(tr...')
+#2 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(tr...')
+#3 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(tr...', Array, false)
+#4 D:\xampp\htdocs\gudang\app\Views\utama_v.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('utama_v', Array, true)
+#8 D:\xampp\htdocs\gudang\app\Controllers\utama.php(19): view('utama_v')
+#9 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\utama->index()
+#10 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+#11 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\gudang\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-11-12 14:12:09 --> Unknown column 'ctransaction_date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(transaction_id)AS jumlah, `ctransaction_date` AS `tanggal`
+FROM `transaction`
+WHERE `transaction`.`transaction_date` >= \'2024-11-01\'
+AND `transaction`.`transaction_date` <= \'2024-11-30\'
+GROUP BY `transaction_date`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(transaction_id)AS jumlah, `ctransaction_date` AS `tanggal`
+FROM `transaction`
+WHERE `transaction`.`transaction_date` >= \'2024-11-01\'
+AND `transaction`.`transaction_date` <= \'2024-11-30\'
+GROUP BY `transaction_date`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(transaction_id)AS jumlah, `ctransaction_date` AS `tanggal`
+FROM `transaction`
+WHERE `transaction`.`transaction_date` >= \'2024-11-01\'
+AND `transaction`.`transaction_date` <= \'2024-11-30\'
+GROUP BY `transaction_date`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(transaction_id)AS jumlah, `ctransaction_date` AS `tanggal`
+FROM `transaction`
+WHERE `transaction`.`transaction_date` >= :transaction.transaction_date:
+AND `transaction`.`transaction_date` <= :transaction.transaction_date.1:
+GROUP BY `transaction_date`', [...], false)
+ 5 APPPATH\Views\utama_v.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\utama_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+ 9 APPPATH\Controllers\utama.php(19): view('utama_v')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-12 14:12:11 --> mysqli_sql_exception: Unknown column 'ctransaction_date' in 'field list' in D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(tr...', 0)
+#1 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(tr...')
+#2 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(tr...')
+#3 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(tr...', Array, false)
+#4 D:\xampp\htdocs\gudang\app\Views\utama_v.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('utama_v', Array, true)
+#8 D:\xampp\htdocs\gudang\app\Controllers\utama.php(19): view('utama_v')
+#9 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\utama->index()
+#10 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+#11 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\gudang\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-11-12 14:12:11 --> Unknown column 'ctransaction_date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(transaction_id)AS jumlah, `ctransaction_date` AS `tanggal`
+FROM `transaction`
+WHERE `transaction`.`transaction_date` >= \'2024-11-01\'
+AND `transaction`.`transaction_date` <= \'2024-11-30\'
+GROUP BY `transaction_date`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(transaction_id)AS jumlah, `ctransaction_date` AS `tanggal`
+FROM `transaction`
+WHERE `transaction`.`transaction_date` >= \'2024-11-01\'
+AND `transaction`.`transaction_date` <= \'2024-11-30\'
+GROUP BY `transaction_date`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(transaction_id)AS jumlah, `ctransaction_date` AS `tanggal`
+FROM `transaction`
+WHERE `transaction`.`transaction_date` >= \'2024-11-01\'
+AND `transaction`.`transaction_date` <= \'2024-11-30\'
+GROUP BY `transaction_date`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(transaction_id)AS jumlah, `ctransaction_date` AS `tanggal`
+FROM `transaction`
+WHERE `transaction`.`transaction_date` >= :transaction.transaction_date:
+AND `transaction`.`transaction_date` <= :transaction.transaction_date.1:
+GROUP BY `transaction_date`', [...], false)
+ 5 APPPATH\Views\utama_v.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\utama_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+ 9 APPPATH\Controllers\utama.php(19): view('utama_v')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

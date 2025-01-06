@@ -1,0 +1,273 @@
+ERROR - 2021-12-06 08:16:23 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;&quot;in&quot;&quot;
+LINE 3: WHERE &quot;branch_id&quot; &quot;in&quot; = 'select branch_id from v_branch whe...
+                          ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #151, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\master\mcost_v.php(83): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('master/mcost_v', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\master\mcost.php(23): view('master/mcost_v', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\master\mcost->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcost))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2021-12-06 08:17:07 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;&quot;in&quot;&quot;
+LINE 3: WHERE &quot;branch_id&quot; &quot;in&quot; = 'select branch_id from v_branch whe...
+                          ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #150, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\master\mcost_v.php(83): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('master/mcost_v', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\master\mcost.php(23): view('master/mcost_v', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\master\mcost->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcost))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2021-12-06 08:17:34 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;&quot;in&quot;&quot;
+LINE 3: WHERE &quot;branch_id&quot; &quot;in&quot; = 'select branch_id from v_branch whe...
+                          ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #150, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\master\mcost_v.php(81): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('master/mcost_v', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\master\mcost.php(23): view('master/mcost_v', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\master\mcost->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcost))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2021-12-06 08:24:14 --> whereIn() expects $values to be of type array or closure
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(859): CodeIgniter\Database\BaseBuilder->_whereIn('branch_id', 'select branch_i...', false, 'AND ', NULL)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\master\mcost_v.php(80): CodeIgniter\Database\BaseBuilder->whereIn('branch_id', 'select branch_i...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('master/mcost_v', Array, true)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\master\mcost.php(23): view('master/mcost_v', Array)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\master\mcost->index()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcost))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-06 08:31:43 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;&quot;v_branch&quot;&quot;
+LINE 3: LEFT JOIN &quot;v_branch&quot; ON &quot;branch&quot;.&quot;branch_id&quot;&quot;IN&quot; &quot;v_branch&quot;....
+                                                         ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #151, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\master\mcost_v.php(82): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('master/mcost_v', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\master\mcost.php(23): view('master/mcost_v', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\master\mcost->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcost))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2021-12-06 08:36:35 --> whereIn() expects $values to be of type array or closure
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(859): CodeIgniter\Database\BaseBuilder->_whereIn('branch.branch_i...', 'select branch_i...', false, 'AND ', NULL)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\master\mcost_v.php(83): CodeIgniter\Database\BaseBuilder->whereIn('branch.branch_i...', 'select branch_i...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('master/mcost_v', Array, true)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\master\mcost.php(23): view('master/mcost_v', Array)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\master\mcost->index()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcost))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-06 08:37:08 --> whereIn() expects $values to be of type array or closure
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(859): CodeIgniter\Database\BaseBuilder->_whereIn('branch.branch_i...', '(select branch_...', false, 'AND ', NULL)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\master\mcost_v.php(83): CodeIgniter\Database\BaseBuilder->whereIn('branch.branch_i...', '(select branch_...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('master/mcost_v', Array, true)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\master\mcost.php(23): view('master/mcost_v', Array)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\master\mcost->index()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcost))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-06 08:37:54 --> whereIn() expects $values to be of type array or closure
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(859): CodeIgniter\Database\BaseBuilder->_whereIn('branch.branch_i...', 'select branch_i...', false, 'AND ', true)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\master\mcost_v.php(83): CodeIgniter\Database\BaseBuilder->whereIn('branch.branch_i...', 'select branch_i...', true)
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('master/mcost_v', Array, true)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\master\mcost.php(23): view('master/mcost_v', Array)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\master\mcost->index()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcost))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-06 08:43:38 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;any(path_info)&quot;
+LINE 3: WHERE 99 = 'any(path_info)'
+                   ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #151, 'SELECT "branch_...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "branch_...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "branch_...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "branch_...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\master\mcost_v.php(83): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('master/mcost_v', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\master\mcost.php(23): view('master/mcost_v', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\master\mcost->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcost))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2021-12-06 08:43:38 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 3: WHERE &quot;branch&quot;.&quot;branch_id&quot; IN ()
+                                       ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #151, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\master\mcost_v.php(89): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('master/mcost_v', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\master\mcost.php(23): view('master/mcost_v', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\master\mcost->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcost))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2021-12-06 08:44:18 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;any(path_info)&quot;
+LINE 3: WHERE 99 = 'any(path_info)'
+                   ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #150, 'SELECT "branch_...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "branch_...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "branch_...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "branch_...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\master\mcost_v.php(83): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('master/mcost_v', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\master\mcost.php(23): view('master/mcost_v', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\master\mcost->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcost))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2021-12-06 08:44:38 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;any(path_info)&quot;
+LINE 3: WHERE 99 = 'any(path_info)'
+                   ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #150, 'SELECT "branch_...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "branch_...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "branch_...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "branch_...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\master\mcost_v.php(83): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('master/mcost_v', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\master\mcost.php(23): view('master/mcost_v', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\master\mcost->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcost))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2021-12-06 08:45:33 --> Call to undefined method CodeIgniter\Database\Postgre\Builder::whereAny()
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include()
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('master/mcost_v', Array, true)
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\master\mcost.php(23): view('master/mcost_v', Array)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\master\mcost->index()
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcost))
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-06 08:47:10 --> Call to undefined method CodeIgniter\Database\Postgre\Builder::anyWhere()
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include()
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('master/mcost_v', Array, true)
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\master\mcost.php(23): view('master/mcost_v', Array)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\master\mcost->index()
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcost))
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-06 08:57:23 --> Undefined variable: branchrule
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\master\mcost_v.php(80): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp1\\htdoc...', 80, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('master/mcost_v', Array, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\master\mcost.php(23): view('master/mcost_v', Array)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\master\mcost->index()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcost))
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-06 08:59:12 --> CodeIgniter\View\View::main(): Failed opening required 'template/headertop_v' (include_path='D:\xampp1\php\PEAR')
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-06 08:59:34 --> CodeIgniter\View\View::main(): Failed opening required 'template/headertop_v' (include_path='D:\xampp1\php\PEAR')
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-06 09:00:00 --> CodeIgniter\View\View::main(): Failed opening required 'template/header_v' (include_path='D:\xampp1\php\PEAR')
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-06 09:03:16 --> Undefined variable: session
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\master\mcost_v.php(80): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp1\\htdoc...', 80, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('master/mcost_v', Array, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\master\mcost.php(23): view('master/mcost_v', Array)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\master\mcost->index()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcost))
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-06 09:03:37 --> Undefined variable: session
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\master\mcost_v.php(80): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp1\\htdoc...', 80, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('master/mcost_v', Array, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\master\mcost.php(23): view('master/mcost_v', Array)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\master\mcost->index()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcost))
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-06 09:04:31 --> Undefined variable: session
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\master\mcost_v.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp1\\htdoc...', 79, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('master/mcost_v', Array, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\master\mcost.php(23): view('master/mcost_v', Array)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\master\mcost->index()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcost))
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

@@ -1,0 +1,103 @@
+ERROR - 2023-05-02 15:16:23 --> mysqli_sql_exception: Column 'store_id' in where clause is ambiguous in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mproduct_v.php(157): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mproduct...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(23): view('master/mproduct...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-02 15:16:23 --> Column 'store_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=`product`.`product_id`
+WHERE `store_id` = \'0\'
+ORDER BY `positionm_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=`product`.`product_id`
+WHERE `store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=`product`.`product_id`
+WHERE `store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=`product`.`product_id`
+WHERE `store_id` = :store_id:
+ORDER BY `positionm_name` ASC', [...], false)
+ 5 APPPATH\Views\master\mproduct_v.php(157): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mproduct_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+ 9 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 15:16:51 --> mysqli_sql_exception: Unknown column 'product.product_id' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mproduct_v.php(157): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mproduct...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(23): view('master/mproduct...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-02 15:16:51 --> Unknown column 'product.product_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=`product`.`product_id`
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=`product`.`product_id`
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=`product`.`product_id`
+WHERE `positionm`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `positionm`
+LEFT JOIN `sell` ON `sell`.`positionm_id`=`positionm`.`positionm_id` AND `sell`.`product_id`=`product`.`product_id`
+WHERE `positionm`.`store_id` = :positionm.store_id:
+ORDER BY `positionm_name` ASC', [...], false)
+ 5 APPPATH\Views\master\mproduct_v.php(157): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mproduct_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+ 9 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 23:32:40 --> syntax error, unexpected variable "$data", expecting "("
+in APPPATH\Models\master\mproduct_m.php on line 129.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\master\\mproduct_m.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\master\\mproduct_m')
+ 3 APPPATH\Controllers\master\mproduct.php(21): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\master\\mproduct_m')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

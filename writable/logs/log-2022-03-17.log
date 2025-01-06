@@ -1,0 +1,294 @@
+ERROR - 2022-03-17 13:28:59 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request0_id&quot; does not exist
+LINE 3: LEFT JOIN (SELECT request0_id,SUM(cost_approver_proposed_nom...
+                          ^
+HINT:  There is a column named &quot;request0_id&quot; in table &quot;request0&quot;, but it cannot be referenced from this part of the query. in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #147, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\requesta_v.php(165): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/req...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\requesta.php(37): view('transaction/req...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\requesta->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\requesta))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-03-17 13:28:59 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request0_id&quot; does not exist
+LINE 3: WHERE &quot;request0_id&quot; = '8'
+              ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #147, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\requesta_v.php(212): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/req...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\requesta.php(37): view('transaction/req...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\requesta->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\requesta))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-03-17 13:32:06 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request0_id&quot; does not exist
+LINE 3: LEFT JOIN (SELECT request0_id,SUM(cost_approver_proposed_nom...
+                          ^
+HINT:  There is a column named &quot;request0_id&quot; in table &quot;request0&quot;, but it cannot be referenced from this part of the query. in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #146, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\requesta_v.php(165): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/req...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\requesta.php(37): view('transaction/req...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\requesta->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\requesta))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-03-17 13:32:06 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request0_id&quot; does not exist
+LINE 3: WHERE &quot;request0_id&quot; = '8'
+              ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #146, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\requesta_v.php(212): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/req...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\requesta.php(37): view('transaction/req...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\requesta->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\requesta))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-03-17 15:19:02 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request0_id&quot; does not exist
+LINE 3: LEFT JOIN (SELECT request0_id,SUM(cost_approver_proposed_nom...
+                          ^
+HINT:  There is a column named &quot;request0_id&quot; in table &quot;request0&quot;, but it cannot be referenced from this part of the query. in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #146, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\requesta_v.php(165): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/req...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\requesta.php(37): view('transaction/req...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\requesta->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\requesta))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-03-17 15:19:02 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request0_id&quot; does not exist
+LINE 3: WHERE &quot;request0_id&quot; = '8'
+              ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #146, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\requesta_v.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/req...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\requesta.php(37): view('transaction/req...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\requesta->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\requesta))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-03-17 15:19:27 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request0_id&quot; does not exist
+LINE 3: WHERE &quot;request0_id&quot; = '8'
+              ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #146, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\requesta_v.php(160): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/req...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\requesta.php(37): view('transaction/req...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\requesta->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\requesta))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-03-17 15:28:42 --> Undefined variable: cost_id
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\requesta_v.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp1\\htdoc...', 75, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/req...', Array, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\requesta.php(37): view('transaction/req...', Array)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\requesta->index()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\requesta))
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-17 15:56:15 --> Call to undefined method CodeIgniter\Database\Postgre\Builder::getNumRows()
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\api->cekcost_approver()
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-17 15:56:15 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(42): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\API\ResponseTrait.php(407): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\API\ResponseTrait.php(114): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-17 15:58:41 --> Call to undefined method CodeIgniter\Database\Postgre\Builder::getNumRows()
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\api->cekcost_approver()
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-17 15:58:41 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(42): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\API\ResponseTrait.php(407): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\API\ResponseTrait.php(114): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-17 15:58:51 --> Call to undefined method CodeIgniter\Database\Postgre\Builder::getNumRows()
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\api->cekcost_approver()
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-17 15:58:51 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(42): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\API\ResponseTrait.php(407): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\API\ResponseTrait.php(114): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-17 15:58:57 --> Call to undefined method CodeIgniter\Database\Postgre\Builder::getNumRows()
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\api->cekcost_approver()
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-17 16:07:55 --> Call to undefined method CodeIgniter\Database\Postgre\Connection::getInsertID()
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\request.php(25): App\Models\transaction\request_m->data()
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\request->index()
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\request))
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-03-17 16:31:09 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;request0_id&quot; of relation &quot;request0_approver&quot; violates not-null constraint
+DETAIL:  Failing row contains (2022-03-17 16:31:09, 2022-03-17 16:31:09, 1, null, null, null, null, null). in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #146, 'INSERT INTO "re...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "re...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "re...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2265): CodeIgniter\Database\BaseConnection->query('INSERT INTO "re...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Models\transaction\request_m.php(205): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\request.php(25): App\Models\transaction\request_m->data()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\request->index()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\request))
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-03-17 16:31:09 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;request0_id&quot; of relation &quot;request0_approver&quot; violates not-null constraint
+DETAIL:  Failing row contains (2022-03-17 16:31:09, 2022-03-17 16:31:09, 2, null, null, null, null, null). in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #146, 'INSERT INTO "re...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "re...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "re...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2265): CodeIgniter\Database\BaseConnection->query('INSERT INTO "re...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Models\transaction\request_m.php(205): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\request.php(25): App\Models\transaction\request_m->data()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\request->index()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\request))
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-03-17 16:32:52 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;request0_id&quot; of relation &quot;request0_approver&quot; violates not-null constraint
+DETAIL:  Failing row contains (2022-03-17 16:32:52, 2022-03-17 16:32:52, 3, null, null, null, null, null). in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #146, 'INSERT INTO "re...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "re...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "re...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2265): CodeIgniter\Database\BaseConnection->query('INSERT INTO "re...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Models\transaction\request_m.php(205): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\request.php(25): App\Models\transaction\request_m->data()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\request->index()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\request))
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-03-17 16:32:52 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;request0_id&quot; of relation &quot;request0_approver&quot; violates not-null constraint
+DETAIL:  Failing row contains (2022-03-17 16:32:52, 2022-03-17 16:32:52, 4, null, null, null, null, null). in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #146, 'INSERT INTO "re...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "re...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "re...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2265): CodeIgniter\Database\BaseConnection->query('INSERT INTO "re...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Models\transaction\request_m.php(205): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\request.php(25): App\Models\transaction\request_m->data()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\request->index()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\request))
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-03-17 16:39:12 --> Undefined variable: insertid
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Models\transaction\request_m.php(233): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp1\\htdoc...', 233, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\request.php(25): App\Models\transaction\request_m->data()
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\request->index()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\request))
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-03-17 16:44:21 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request0_id&quot; does not exist
+LINE 3: WHERE &quot;request0_id&quot; = '8'
+              ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #192, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\requesta.php(132): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\requesta->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\requesta))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}

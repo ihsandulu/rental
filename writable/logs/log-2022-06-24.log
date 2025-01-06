@@ -1,0 +1,33 @@
+CRITICAL - 2022-06-24 00:06:06 --> Undefined property: stdClass::$advance0_status
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\utama_v.php(219): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp1\\htdoc...', 219, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('utama_v', Array, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\utama.php(19): view('utama_v')
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\utama->index()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-24 00:32:54 --> Undefined property: CodeIgniter\Database\Postgre\Result::$lpj0_status
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\lpj_v.php(321): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp1\\htdoc...', 321, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/lpj...', Array, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\lpj.php(36): view('transaction/lpj...', Array)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\lpj->app()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\lpj))
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-24 00:34:59 --> Undefined variable: lpj0status
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\lpj_v.php(322): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp1\\htdoc...', 322, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/lpj...', Array, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\lpj.php(36): view('transaction/lpj...', Array)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\lpj->app()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\lpj))
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

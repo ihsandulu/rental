@@ -1,0 +1,33 @@
+CRITICAL - 2023-07-25 00:05:41 --> Attempt to read property "kas_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 601.
+ 1 APPPATH\Controllers\transaction\transaction.php(601): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kas_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 601)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->pelunasan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 00:05:45 --> Attempt to read property "kas_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 601.
+ 1 APPPATH\Controllers\transaction\transaction.php(601): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kas_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 601)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->pelunasan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 00:06:14 --> Attempt to read property "kas_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 601.
+ 1 APPPATH\Controllers\transaction\transaction.php(601): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kas_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 601)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->pelunasan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 00:06:37 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getRows()
+in APPPATH\Controllers\transaction\transaction.php on line 601.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->pelunasan()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 00:14:45 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+in APPPATH\Controllers\transaction\transaction.php on line 601.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->pelunasan()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

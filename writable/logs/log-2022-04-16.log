@@ -1,0 +1,240 @@
+CRITICAL - 2022-04-16 04:02:46 --> unlink(D:\xampp1\htdocs\ag-accounting-pembiayaan\writable\debugbar/debugbar_1649933236.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(D:\\xampp...', 'D:\\xampp1\\htdoc...', 78, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Debug\Toolbar\Collectors\History.php(78): unlink('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Debug\Toolbar.php(441): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1650099750, 20)
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Debug\Toolbar.php(413): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Config\Events.php(52): CodeIgniter\Debug\Toolbar->respond()
+#5 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Events\Events.php(166): call_user_func(Object(Closure))
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(313): CodeIgniter\Events\Events::trigger('pre_system')
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-16 16:57:35 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;cost_id&quot; of relation &quot;lpj1&quot; violates not-null constraint
+DETAIL:  Failing row contains (7, 10, null, 1000000.0000, , Draft, 16247, 16247, 2022-04-16 16:57:35+00, 2022-04-16 16:57:35, null). in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #146, 'INSERT INTO "lp...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "lp...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "lp...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2265): CodeIgniter\Database\BaseConnection->query('INSERT INTO "lp...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Models\transaction\lpjd_m.php(101): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\lpjd.php(31): App\Models\transaction\lpjd_m->data()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\lpjd->index()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\lpjd))
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-16 17:07:39 --> ErrorException: pg_query(): Query failed: ERROR:  insert or update on table &quot;lpj1&quot; violates foreign key constraint &quot;lpj1_cost_id_fkey&quot;
+DETAIL:  Key (cost_id)=(0) is not present in table &quot;cost&quot;. in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #146, 'INSERT INTO "lp...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "lp...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "lp...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2265): CodeIgniter\Database\BaseConnection->query('INSERT INTO "lp...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Models\transaction\lpjd_m.php(101): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\lpjd.php(31): App\Models\transaction\lpjd_m->data()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\lpjd->index()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\lpjd))
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-16 17:11:32 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 1: ...ted&quot;, &quot;lpj1_status&quot;) VALUES ('1000000', '', '10', '', '16247...
+                                                             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #146, 'INSERT INTO "lp...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "lp...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "lp...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2265): CodeIgniter\Database\BaseConnection->query('INSERT INTO "lp...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Models\transaction\lpjd_m.php(101): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\lpjd.php(31): App\Models\transaction\lpjd_m->data()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\lpjd->index()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\lpjd))
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-16 17:14:17 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 1: ...ated&quot;, &quot;lpj1_status&quot;) VALUES ('210000', '', '10', '', '16247...
+                                                             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #146, 'INSERT INTO "lp...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "lp...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "lp...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2265): CodeIgniter\Database\BaseConnection->query('INSERT INTO "lp...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Models\transaction\lpjd_m.php(101): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\lpjd.php(31): App\Models\transaction\lpjd_m->data()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\lpjd->index()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\lpjd))
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-16 17:23:27 --> ErrorException: pg_query(): Query failed: ERROR:  table name &quot;lpj1&quot; specified more than once in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #147, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\lpj_v.php(242): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/lpj...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\lpj.php(26): view('transaction/lpj...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\lpj->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\lpj))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-04-16 17:32:08 --> ErrorException: pg_query(): Query failed: ERROR:  table name &quot;lpj1&quot; specified more than once in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #146, 'SELECT "lpj0".*...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "lpj0".*...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "lpj0".*...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "lpj0".*...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\lpj_v.php(242): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/lpj...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\lpj.php(26): view('transaction/lpj...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\lpj->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\lpj))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-04-16 17:36:28 --> ErrorException: pg_query(): Query failed: ERROR:  column lpj1.lpj0_id does not exist
+LINE 4: ...JOIN &quot;lpj0_approver&quot; ON &quot;lpj0_approver&quot;.&quot;lpj0_id&quot;=&quot;lpj1&quot;.&quot;lp...
+                                                             ^
+HINT:  Perhaps you meant to reference the column &quot;lpj0.lpj0_id&quot; or the column &quot;lpj1.lpj0d_id&quot;. in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #147, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\lpj_v.php(242): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/lpj...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\lpj.php(26): view('transaction/lpj...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\lpj->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\lpj))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-04-16 17:36:34 --> ErrorException: pg_query(): Query failed: ERROR:  column lpj1.lpj0_id does not exist
+LINE 4: ...JOIN &quot;lpj0_approver&quot; ON &quot;lpj0_approver&quot;.&quot;lpj0_id&quot;=&quot;lpj1&quot;.&quot;lp...
+                                                             ^
+HINT:  Perhaps you meant to reference the column &quot;lpj0.lpj0_id&quot; or the column &quot;lpj1.lpj0d_id&quot;. in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #146, 'SELECT "lpj0".*...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "lpj0".*...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "lpj0".*...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "lpj0".*...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\lpj_v.php(242): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/lpj...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\lpj.php(26): view('transaction/lpj...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\lpj->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\lpj))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-04-16 17:37:25 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;lpj0_approver.created&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT *
+               ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #146, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\lpj_v.php(242): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/lpj...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\lpj.php(26): view('transaction/lpj...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\lpj->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\lpj))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-04-16 17:41:17 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;advance0.advance0_no&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: ...&quot;.*, &quot;lpj0&quot;.&quot;lpj0_id&quot; AS &quot;lpj0_id&quot;, &quot;proposenom&quot;, &quot;advance0&quot;...
+                                                             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #146, 'SELECT "lpj0".*...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "lpj0".*...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "lpj0".*...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "lpj0".*...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\lpj_v.php(242): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/lpj...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\lpj.php(26): view('transaction/lpj...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\lpj->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\lpj))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-04-16 20:45:09 --> ErrorException: pg_query(): Query failed: ERROR:  column reference &quot;lpj0_status&quot; is ambiguous
+LINE 6: WHERE &quot;lpj0_status&quot; = 'Approved'
+              ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #146, 'SELECT "lpj0".*...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "lpj0".*...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "lpj0".*...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "lpj0".*...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\lpj_v.php(242): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/lpj...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\lpj.php(46): view('transaction/lpj...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\lpj->val()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\lpj))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-04-16 21:20:19 --> Undefined variable: tp
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\lpj_v.php(333): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp1\\htdoc...', 333, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/lpj...', Array, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\lpj.php(36): view('transaction/lpj...', Array)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\lpj->app()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\lpj))
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-16 21:20:56 --> Undefined variable: tp
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\lpj_v.php(333): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp1\\htdoc...', 333, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/lpj...', Array, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\lpj.php(36): view('transaction/lpj...', Array)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\lpj->app()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\lpj))
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-16 21:20:58 --> Undefined variable: tp
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\lpj_v.php(333): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp1\\htdoc...', 333, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/lpj...', Array, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\lpj.php(36): view('transaction/lpj...', Array)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\lpj->app()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\lpj))
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-16 16:21:53 --> Maximum execution time of 30 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

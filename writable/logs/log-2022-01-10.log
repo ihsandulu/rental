@@ -1,0 +1,632 @@
+CRITICAL - 2022-01-10 02:30:14 --> Undefined offset: 122
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\template\headerside_v.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp1\\htdoc...', 57, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(468): CodeIgniter\View\View->render('template/header...', NULL, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\template\header_v.php(159): CodeIgniter\View\View->include('template/header...')
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(468): CodeIgniter\View\View->render('template/header...', NULL, true)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\utama_v.php(6): CodeIgniter\View\View->include('template/header...')
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('utama_v', Array, true)
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\utama.php(19): view('utama_v')
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\utama->index()
+#14 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+#15 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2022-01-10 02:32:01 --> Undefined offset: 122
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\template\headerside_v.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp1\\htdoc...', 57, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(468): CodeIgniter\View\View->render('template/header...', NULL, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\template\header_v.php(159): CodeIgniter\View\View->include('template/header...')
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(468): CodeIgniter\View\View->render('template/header...', NULL, true)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\utama_v.php(6): CodeIgniter\View\View->include('template/header...')
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('utama_v', Array, true)
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\utama.php(19): view('utama_v')
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\utama->index()
+#14 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+#15 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#17 {main}
+ERROR - 2022-01-10 03:57:45 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;advance&quot; does not exist
+LINE 4: LEFT JOIN &quot;advance&quot; ON &quot;advance&quot;.&quot;request0_id&quot;=&quot;request0&quot;.&quot;r...
+                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repsummary_v.php(121): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(26): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-10 04:33:00 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;advance&quot; does not exist
+LINE 4: LEFT JOIN &quot;advance&quot; ON &quot;advance&quot;.&quot;request0_id&quot;=&quot;request0&quot;.&quot;r...
+                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repsummary_v.php(124): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(26): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-10 04:33:10 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;advance&quot; does not exist
+LINE 4: LEFT JOIN &quot;advance&quot; ON &quot;advance&quot;.&quot;request0_id&quot;=&quot;request0&quot;.&quot;r...
+                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repsummary_v.php(121): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(26): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-10 04:36:08 --> ErrorException: pg_query(): Query failed: ERROR:  column lpj0.request0_id does not exist
+LINE 6: LEFT JOIN &quot;lpj0&quot; ON &quot;lpj0&quot;.&quot;request0_id&quot;=&quot;request0&quot;.&quot;request...
+                            ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repsummary_v.php(123): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(26): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-10 04:36:53 --> ErrorException: pg_query(): Query failed: ERROR:  column lpj0.request0_id does not exist
+LINE 6: LEFT JOIN &quot;lpj0&quot; ON &quot;lpj0&quot;.&quot;request0_id&quot;=&quot;advance0&quot;.&quot;advance...
+                            ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repsummary_v.php(123): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(26): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-10 09:37:04 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;branch_id&quot; = ''
+                            ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #152, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repsummary_v.php(19): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(26): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-10 09:37:04 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 10: WHERE &quot;request0_date&quot; &gt;= ''
+                                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repsummary_v.php(129): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(26): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-10 09:39:32 --> Class 'App\Controllers\transaction\Spreadsheet' not found
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-01-10 09:40:31 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 10: WHERE &quot;request0_date&quot; &gt;= ''
+                                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #184, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(110): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 10:39:52 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 10: WHERE &quot;request0_date&quot; &gt;= ''
+                                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #180, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(80): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 10:42:57 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 10: WHERE &quot;request0_date&quot; &gt;= ''
+                                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #179, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(240): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 10:43:24 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 10: WHERE &quot;request0_date&quot; &gt;= ''
+                                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #179, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(240): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 10:51:46 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 10: WHERE &quot;request0_date&quot; &gt;= ''
+                                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #179, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(241): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 10:53:54 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;branch_id&quot; = ''
+                            ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #174, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(216): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 10:53:54 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 10: WHERE &quot;request0_date&quot; &gt;= ''
+                                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #190, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(255): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 10:54:26 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;branch_id&quot; = ''
+                            ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #174, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(216): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 10:54:26 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 10: WHERE &quot;request0_date&quot; &gt;= ''
+                                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #190, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(250): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 10:54:42 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;branch_id&quot; = ''
+                            ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #174, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(216): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 10:54:42 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 10: WHERE &quot;request0_date&quot; &gt;= ''
+                                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #190, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(255): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 10:55:04 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;branch_id&quot; = ''
+                            ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #174, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(216): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 10:55:04 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 10: WHERE &quot;request0_date&quot; &gt;= ''
+                                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #190, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(255): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 10:55:24 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;branch_id&quot; = ''
+                            ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #174, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(216): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 10:55:24 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 10: WHERE &quot;request0_date&quot; &gt;= ''
+                                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #190, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(255): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 10:56:30 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;branch_id&quot; = ''
+                            ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #174, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(217): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 10:56:30 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 10: WHERE &quot;request0_date&quot; &gt;= ''
+                                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #190, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(256): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 10:57:14 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;branch_id&quot; = ''
+                            ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #175, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(217): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 10:57:51 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;branch_id&quot; = ''
+                            ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #174, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(217): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 10:57:51 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 10: WHERE &quot;request0_date&quot; &gt;= ''
+                                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #190, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(251): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 11:00:35 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;branch_id&quot; = ''
+                            ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #174, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(217): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 11:00:35 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 10: WHERE &quot;request0_date&quot; &gt;= ''
+                                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #190, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(251): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 11:01:23 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;branch_id&quot; = ''
+                            ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #174, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(217): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 11:07:47 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 10: WHERE &quot;request0_date&quot; &gt;= ''
+                                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #184, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(126): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 11:10:07 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;branch_id&quot; = ''
+                            ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #175, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(57): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 11:10:07 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 10: WHERE &quot;request0_date&quot; &gt;= ''
+                                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #196, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(142): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 11:10:50 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;branch_id&quot; = ''
+                            ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #174, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(57): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-10 11:10:50 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 10: WHERE &quot;request0_date&quot; &gt;= ''
+                                  ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #195, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(142): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-10 11:19:12 --> Undefined variable: branchname
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp1\\htdoc...', 63, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:20:39 --> Undefined variable: branchname
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp1\\htdoc...', 63, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:20:47 --> Undefined variable: branchname
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp1\\htdoc...', 63, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:21:35 --> Undefined variable: branchid
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp1\\htdoc...', 119, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:23:17 --> Undefined index: branchid
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp1\\htdoc...', 54, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}

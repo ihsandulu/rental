@@ -1,0 +1,591 @@
+CRITICAL - 2024-12-09 06:31:02 --> Undefined variable $sewa_bensin
+in APPPATH\Views\transaction\sewa_v.php on line 259.
+ 1 APPPATH\Views\transaction\sewa_v.php(259): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sewa_bensin', 'APPPATH\\Views\\transaction\\sewa_v.php', 259)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 06:34:00 --> Undefined property: stdClass::$tmuka
+in APPPATH\Views\transaction\sewa_v.php on line 408.
+ 1 APPPATH\Views\transaction\sewa_v.php(408): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tmuka', 'APPPATH\\Views\\transaction\\sewa_v.php', 408)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 06:35:13 --> Undefined array key 100
+in APPPATH\Views\transaction\sewa_v.php on line 412.
+ 1 APPPATH\Views\transaction\sewa_v.php(412): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 100', 'APPPATH\\Views\\transaction\\sewa_v.php', 412)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 07:11:37 --> Undefined variable $pengeluran_date
+in APPPATH\Views\transaction\pengeluaran_v.php on line 90.
+ 1 APPPATH\Views\transaction\pengeluaran_v.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengeluran_date', 'APPPATH\\Views\\transaction\\pengeluaran_v.php', 90)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\pengeluaran_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/pengeluaran_v', [], true)
+ 5 APPPATH\Controllers\transaction\pengeluaran.php(23): view('transaction/pengeluaran_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\pengeluaran->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pengeluaran))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-09 09:34:04 --> mysqli_sql_exception: Unknown column 'sewa.cashier_id' in 'on clause' in D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\rental\app\Views\report\rhistorystock_v.php(144): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('report/rhistory...', Array, true)
+#8 D:\xampp\htdocs\rental\app\Controllers\report\rhistorystock.php(22): view('report/rhistory...', Array)
+#9 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+#10 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+#11 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-12-09 09:34:04 --> Unknown column 'sewa.cashier_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `sewad`
+LEFT JOIN `sewa` ON `sewa`.`sewa_id`=`sewad`.`sewa_id`
+LEFT JOIN `product` ON `product`.`product_id`=`sewad`.`product_id`
+LEFT JOIN `user` ON `user`.`user_id`=`sewa`.`cashier_id`
+WHERE `sewa`.`sewa_date` = \'2024-12-09\'
+AND `sewa`.`sewa_date` = \'2024-12-09\'
+ORDER BY `sewa_date` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `sewad`
+LEFT JOIN `sewa` ON `sewa`.`sewa_id`=`sewad`.`sewa_id`
+LEFT JOIN `product` ON `product`.`product_id`=`sewad`.`product_id`
+LEFT JOIN `user` ON `user`.`user_id`=`sewa`.`cashier_id`
+WHERE `sewa`.`sewa_date` = \'2024-12-09\'
+AND `sewa`.`sewa_date` = \'2024-12-09\'
+ORDER BY `sewa_date` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `sewad`
+LEFT JOIN `sewa` ON `sewa`.`sewa_id`=`sewad`.`sewa_id`
+LEFT JOIN `product` ON `product`.`product_id`=`sewad`.`product_id`
+LEFT JOIN `user` ON `user`.`user_id`=`sewa`.`cashier_id`
+WHERE `sewa`.`sewa_date` = \'2024-12-09\'
+AND `sewa`.`sewa_date` = \'2024-12-09\'
+ORDER BY `sewa_date` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `sewad`
+LEFT JOIN `sewa` ON `sewa`.`sewa_id`=`sewad`.`sewa_id`
+LEFT JOIN `product` ON `product`.`product_id`=`sewad`.`product_id`
+LEFT JOIN `user` ON `user`.`user_id`=`sewa`.`cashier_id`
+WHERE `sewa`.`sewa_date` = :sewa.sewa_date:
+AND `sewa`.`sewa_date` = :sewa.sewa_date.1:
+ORDER BY `sewa_date` ASC', [...], false)
+ 5 APPPATH\Views\report\rhistorystock_v.php(144): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 9 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 09:54:54 --> Undefined property: stdClass::$sewa_date
+in APPPATH\Views\report\rhistorystock_v.php on line 90.
+ 1 APPPATH\Views\report\rhistorystock_v.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$sewa_date', 'APPPATH\\Views\\report\\rhistorystock_v.php', 90)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 5 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 09:58:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::orderBy()
+in APPPATH\Views\report\rhistorystock_v.php on line 81.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 4 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 09:58:46 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::orderBy()
+in APPPATH\Views\report\rhistorystock_v.php on line 81.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 4 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 09:59:03 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::orderBy()
+in APPPATH\Views\report\rhistorystock_v.php on line 81.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 4 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 09:59:22 --> Undefined property: mysqli::$product_name
+in APPPATH\Views\report\rhistorystock_v.php on line 88.
+ 1 APPPATH\Views\report\rhistorystock_v.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$product_name', 'APPPATH\\Views\\report\\rhistorystock_v.php', 88)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 5 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 10:27:13 --> Undefined variable $sewad_diambil
+in APPPATH\Views\transaction\sewa_v.php on line 129.
+ 1 APPPATH\Views\transaction\sewa_v.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sewad_diambil', 'APPPATH\\Views\\transaction\\sewa_v.php', 129)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 12:14:42 --> Undefined property: CodeIgniter\View\View::$input
+in APPPATH\Views\transaction\sewa_v.php on line 279.
+ 1 APPPATH\Views\transaction\sewa_v.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$input', 'APPPATH\\Views\\transaction\\sewa_v.php', 279)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 12:15:47 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Views\transaction\sewa_v.php on line 279.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 4 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 12:51:22 --> Undefined array key 7
+in APPPATH\Views\transaction\sewa_v.php on line 496.
+ 1 APPPATH\Views\transaction\sewa_v.php(496): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'APPPATH\\Views\\transaction\\sewa_v.php', 496)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 12:51:50 --> Array to string conversion
+in APPPATH\Views\transaction\sewa_v.php on line 496.
+ 1 APPPATH\Views\transaction\sewa_v.php(496): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\transaction\\sewa_v.php', 496)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 12:52:19 --> Array to string conversion
+in APPPATH\Views\transaction\sewa_v.php on line 497.
+ 1 APPPATH\Views\transaction\sewa_v.php(497): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\transaction\\sewa_v.php', 497)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 12:56:42 --> Undefined variable $rcard
+in APPPATH\Views\transaction\sewa_v.php on line 496.
+ 1 APPPATH\Views\transaction\sewa_v.php(496): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rcard', 'APPPATH\\Views\\transaction\\sewa_v.php', 496)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 13:01:34 --> Undefined array key 7
+in APPPATH\Views\transaction\sewa_v.php on line 497.
+ 1 APPPATH\Views\transaction\sewa_v.php(497): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'APPPATH\\Views\\transaction\\sewa_v.php', 497)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 13:02:27 --> Illegal offset type
+in APPPATH\Views\transaction\sewa_v.php on line 497.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 4 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 13:03:21 --> Illegal offset type
+in APPPATH\Views\transaction\sewa_v.php on line 500.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 4 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 13:04:12 --> Array to string conversion
+in APPPATH\Views\transaction\sewa_v.php on line 499.
+ 1 APPPATH\Views\transaction\sewa_v.php(499): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\transaction\\sewa_v.php', 499)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 13:09:14 --> Undefined array key "product_name"
+in APPPATH\Views\transaction\sewa_v.php on line 498.
+ 1 APPPATH\Views\transaction\sewa_v.php(498): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_name"', 'APPPATH\\Views\\transaction\\sewa_v.php', 498)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 13:09:37 --> Undefined array key "product_name"
+in APPPATH\Views\transaction\sewa_v.php on line 498.
+ 1 APPPATH\Views\transaction\sewa_v.php(498): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_name"', 'APPPATH\\Views\\transaction\\sewa_v.php', 498)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 13:10:13 --> Undefined array key "product_ube"
+in APPPATH\Views\transaction\sewa_v.php on line 498.
+ 1 APPPATH\Views\transaction\sewa_v.php(498): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_ube"', 'APPPATH\\Views\\transaction\\sewa_v.php', 498)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 13:13:32 --> Undefined array key 7
+in APPPATH\Views\transaction\sewa_v.php on line 498.
+ 1 APPPATH\Views\transaction\sewa_v.php(498): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'APPPATH\\Views\\transaction\\sewa_v.php', 498)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 13:19:36 --> Cannot access offset of type string on string
+in APPPATH\Views\transaction\sewa_v.php on line 499.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 4 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 13:20:02 --> Cannot access offset of type string on string
+in APPPATH\Views\transaction\sewa_v.php on line 499.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 4 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 13:32:01 --> Undefined constant "product_name"
+in APPPATH\Views\transaction\sewa_v.php on line 499.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 4 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 13:32:14 --> Attempt to read property "product_name" on array
+in APPPATH\Views\transaction\sewa_v.php on line 499.
+ 1 APPPATH\Views\transaction\sewa_v.php(499): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_name" on array', 'APPPATH\\Views\\transaction\\sewa_v.php', 499)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 13:41:34 --> Cannot access offset of type string on string
+in APPPATH\Views\transaction\sewa_v.php on line 499.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 4 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 13:44:01 --> Undefined array key 0
+in APPPATH\Views\transaction\sewa_v.php on line 498.
+ 1 APPPATH\Views\transaction\sewa_v.php(498): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\transaction\\sewa_v.php', 498)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 13:44:14 --> Cannot use [] for reading
+in APPPATH\Views\transaction\sewa_v.php on line 498.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-09 13:44:35 --> Array to string conversion
+in APPPATH\Views\transaction\sewa_v.php on line 498.
+ 1 APPPATH\Views\transaction\sewa_v.php(498): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\transaction\\sewa_v.php', 498)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 13:45:19 --> Undefined array key 0
+in APPPATH\Views\transaction\sewa_v.php on line 498.
+ 1 APPPATH\Views\transaction\sewa_v.php(498): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\transaction\\sewa_v.php', 498)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 13:45:24 --> Undefined array key 1
+in APPPATH\Views\transaction\sewa_v.php on line 498.
+ 1 APPPATH\Views\transaction\sewa_v.php(498): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Views\\transaction\\sewa_v.php', 498)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\sewa_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/sewa_v', [], true)
+ 5 APPPATH\Controllers\transaction\sewa.php(23): view('transaction/sewa_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-09 14:14:33 --> mysqli_sql_exception: Column 'sewa_id' in order clause is ambiguous in D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\rental\app\Views\report\lr_v.php(97): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('report/lr_v', Array, true)
+#8 D:\xampp\htdocs\rental\app\Controllers\report\lr.php(23): view('report/lr_v', Array)
+#9 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\report\lr->index()
+#10 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\lr))
+#11 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-12-09 14:14:33 --> Column 'sewa_id' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `sewa`
+LEFT JOIN `customer` ON `customer`.`customer_id`=`sewa`.`customer_id`
+LEFT JOIN (SELECT SUM(sewad_nominal)as nominal, sewa_id FROM sewad)as sewad ON `sewad`.`sewa_id`=`sewa`.`sewa_id`
+WHERE `sewa_date` >= \'2024-12-09\'
+AND `sewa_date` <= \'2024-12-09\'
+ORDER BY `sewa_id` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `sewa`
+LEFT JOIN `customer` ON `customer`.`customer_id`=`sewa`.`customer_id`
+LEFT JOIN (SELECT SUM(sewad_nominal)as nominal, sewa_id FROM sewad)as sewad ON `sewad`.`sewa_id`=`sewa`.`sewa_id`
+WHERE `sewa_date` >= \'2024-12-09\'
+AND `sewa_date` <= \'2024-12-09\'
+ORDER BY `sewa_id` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `sewa`
+LEFT JOIN `customer` ON `customer`.`customer_id`=`sewa`.`customer_id`
+LEFT JOIN (SELECT SUM(sewad_nominal)as nominal, sewa_id FROM sewad)as sewad ON `sewad`.`sewa_id`=`sewa`.`sewa_id`
+WHERE `sewa_date` >= \'2024-12-09\'
+AND `sewa_date` <= \'2024-12-09\'
+ORDER BY `sewa_id` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `sewa`
+LEFT JOIN `customer` ON `customer`.`customer_id`=`sewa`.`customer_id`
+LEFT JOIN (SELECT SUM(sewad_nominal)as nominal, sewa_id FROM sewad)as sewad ON `sewad`.`sewa_id`=`sewa`.`sewa_id`
+WHERE `sewa_date` >= :sewa_date:
+AND `sewa_date` <= :sewa_date.1:
+ORDER BY `sewa_id` ASC', [...], false)
+ 5 APPPATH\Views\report\lr_v.php(97): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\lr_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/lr_v', [], true)
+ 9 APPPATH\Controllers\report\lr.php(23): view('report/lr_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\lr->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\lr))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-09 14:15:31 --> mysqli_sql_exception: Column 'sewa_id' in order clause is ambiguous in D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\rental\app\Views\report\lr_v.php(97): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('report/lr_v', Array, true)
+#8 D:\xampp\htdocs\rental\app\Controllers\report\lr.php(23): view('report/lr_v', Array)
+#9 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\report\lr->index()
+#10 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\lr))
+#11 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-12-09 14:15:31 --> Column 'sewa_id' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `sewa`
+LEFT JOIN `customer` ON `customer`.`customer_id`=`sewa`.`customer_id`
+LEFT JOIN (SELECT SUM(sewad_nominal)as nominal, sewa_id FROM sewad GROUP BY sewa_id)as sewad ON `sewad`.`sewa_id`=`sewa`.`sewa_id`
+WHERE `sewa_date` >= \'2024-12-09\'
+AND `sewa_date` <= \'2024-12-09\'
+ORDER BY `sewa_id` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `sewa`
+LEFT JOIN `customer` ON `customer`.`customer_id`=`sewa`.`customer_id`
+LEFT JOIN (SELECT SUM(sewad_nominal)as nominal, sewa_id FROM sewad GROUP BY sewa_id)as sewad ON `sewad`.`sewa_id`=`sewa`.`sewa_id`
+WHERE `sewa_date` >= \'2024-12-09\'
+AND `sewa_date` <= \'2024-12-09\'
+ORDER BY `sewa_id` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `sewa`
+LEFT JOIN `customer` ON `customer`.`customer_id`=`sewa`.`customer_id`
+LEFT JOIN (SELECT SUM(sewad_nominal)as nominal, sewa_id FROM sewad GROUP BY sewa_id)as sewad ON `sewad`.`sewa_id`=`sewa`.`sewa_id`
+WHERE `sewa_date` >= \'2024-12-09\'
+AND `sewa_date` <= \'2024-12-09\'
+ORDER BY `sewa_id` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `sewa`
+LEFT JOIN `customer` ON `customer`.`customer_id`=`sewa`.`customer_id`
+LEFT JOIN (SELECT SUM(sewad_nominal)as nominal, sewa_id FROM sewad GROUP BY sewa_id)as sewad ON `sewad`.`sewa_id`=`sewa`.`sewa_id`
+WHERE `sewa_date` >= :sewa_date:
+AND `sewa_date` <= :sewa_date.1:
+ORDER BY `sewa_id` ASC', [...], false)
+ 5 APPPATH\Views\report\lr_v.php(97): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\lr_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/lr_v', [], true)
+ 9 APPPATH\Controllers\report\lr.php(23): view('report/lr_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\lr->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\lr))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-09 14:16:04 --> mysqli_sql_exception: Column 'sewa_id' in order clause is ambiguous in D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\rental\app\Views\report\lr_v.php(99): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('report/lr_v', Array, true)
+#8 D:\xampp\htdocs\rental\app\Controllers\report\lr.php(23): view('report/lr_v', Array)
+#9 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\report\lr->index()
+#10 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\lr))
+#11 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-12-09 14:16:04 --> Column 'sewa_id' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `sewa`
+LEFT JOIN `customer` ON `customer`.`customer_id` = `sewa`.`customer_id`
+LEFT JOIN (SELECT SUM(sewad_nominal) as nominal, sewa_id FROM sewad GROUP BY sewa_id) as sewad_total ON `sewad_total`.`sewa_id` = `sewa`.`sewa_id`
+WHERE `sewa_date` >= \'2024-12-09\'
+AND `sewa_date` <= \'2024-12-09\'
+ORDER BY `sewa_id` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `sewa`
+LEFT JOIN `customer` ON `customer`.`customer_id` = `sewa`.`customer_id`
+LEFT JOIN (SELECT SUM(sewad_nominal) as nominal, sewa_id FROM sewad GROUP BY sewa_id) as sewad_total ON `sewad_total`.`sewa_id` = `sewa`.`sewa_id`
+WHERE `sewa_date` >= \'2024-12-09\'
+AND `sewa_date` <= \'2024-12-09\'
+ORDER BY `sewa_id` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `sewa`
+LEFT JOIN `customer` ON `customer`.`customer_id` = `sewa`.`customer_id`
+LEFT JOIN (SELECT SUM(sewad_nominal) as nominal, sewa_id FROM sewad GROUP BY sewa_id) as sewad_total ON `sewad_total`.`sewa_id` = `sewa`.`sewa_id`
+WHERE `sewa_date` >= \'2024-12-09\'
+AND `sewa_date` <= \'2024-12-09\'
+ORDER BY `sewa_id` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `sewa`
+LEFT JOIN `customer` ON `customer`.`customer_id` = `sewa`.`customer_id`
+LEFT JOIN (SELECT SUM(sewad_nominal) as nominal, sewa_id FROM sewad GROUP BY sewa_id) as sewad_total ON `sewad_total`.`sewa_id` = `sewa`.`sewa_id`
+WHERE `sewa_date` >= :sewa_date:
+AND `sewa_date` <= :sewa_date.1:
+ORDER BY `sewa_id` ASC', [...], false)
+ 5 APPPATH\Views\report\lr_v.php(99): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\lr_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/lr_v', [], true)
+ 9 APPPATH\Controllers\report\lr.php(23): view('report/lr_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\lr->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\lr))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 14:18:30 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$nominal
+in APPPATH\Views\report\lr_v.php on line 110.
+ 1 APPPATH\Views\report\lr_v.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$nominal', 'APPPATH\\Views\\report\\lr_v.php', 110)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\lr_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/lr_v', [], true)
+ 5 APPPATH\Controllers\report\lr.php(23): view('report/lr_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\lr->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\lr))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

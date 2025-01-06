@@ -1,0 +1,108 @@
+CRITICAL - 2023-04-30 04:10:35 --> Unmatched '}'
+in APPPATH\Views\master\mproduct_v.php on line 316.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+ 3 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 04:12:32 --> Undefined array key 5
+in APPPATH\Views\master\mproduct_v.php on line 307.
+ 1 APPPATH\Views\master\mproduct_v.php(307): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 5', 'APPPATH\\Views\\master\\mproduct_v.php', 307)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mproduct_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+ 5 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 04:14:50 --> Undefined array key 5
+in APPPATH\Views\master\mproduct_v.php on line 307.
+ 1 APPPATH\Views\master\mproduct_v.php(307): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 5', 'APPPATH\\Views\\master\\mproduct_v.php', 307)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mproduct_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+ 5 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 04:15:20 --> Undefined array key 5
+in APPPATH\Views\master\mproduct_v.php on line 307.
+ 1 APPPATH\Views\master\mproduct_v.php(307): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 5', 'APPPATH\\Views\\master\\mproduct_v.php', 307)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mproduct_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+ 5 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 04:15:40 --> Undefined array key 5
+in APPPATH\Views\master\mproduct_v.php on line 307.
+ 1 APPPATH\Views\master\mproduct_v.php(307): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 5', 'APPPATH\\Views\\master\\mproduct_v.php', 307)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mproduct_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+ 5 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-30 04:44:07 --> mysqli_sql_exception: Unknown column 'product.store_id' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mproduct_v.php(224): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mproduct...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(23): view('master/mproduct...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-04-30 04:44:07 --> Unknown column 'product.store_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `positionm`
+WHERE `product`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `positionm`
+WHERE `product`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `positionm`
+WHERE `product`.`store_id` = \'0\'
+ORDER BY `positionm_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `positionm`
+WHERE `product`.`store_id` = :product.store_id:
+ORDER BY `positionm_name` ASC', [...], false)
+ 5 APPPATH\Views\master\mproduct_v.php(224): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mproduct_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+ 9 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 17:42:50 --> Unsupported operand types: string * string
+in APPPATH\Controllers\transaction\transaction.php on line 367.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 17:42:56 --> Unsupported operand types: string * string
+in APPPATH\Controllers\transaction\transaction.php on line 367.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

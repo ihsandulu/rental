@@ -1,0 +1,12 @@
+CRITICAL - 2022-12-14 18:53:24 --> Cannot declare class App\Controllers\master\mproduct, because the name is already in use
+in APPPATH\Controllers\transaction\transaction.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-14 18:54:27 --> Cannot declare class App\Controllers\master\mproduct, because the name is already in use
+in APPPATH\Controllers\transaction\transaction.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-14 18:54:59 --> Cannot declare class App\Controllers\master\mtransaction, because the name is already in use
+in APPPATH\Controllers\transaction\transaction.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-14 18:55:27 --> Cannot declare class App\Controllers\master\transaction, because the name is already in use
+in APPPATH\Controllers\transaction\transaction.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

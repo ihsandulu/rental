@@ -1,0 +1,449 @@
+CRITICAL - 2022-12-18 00:31:06 --> syntax error, unexpected token "else", expecting end of file
+in APPPATH\Views\transaction\transactionprint_v.php on line 149.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/transactionprint_v', [], true)
+ 3 APPPATH\Controllers\transaction\transaction.php(29): view('transaction/transactionprint_v')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->print()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 00:32:30 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+in APPPATH\Views\transaction\transactionprint_v.php on line 50.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/transactionprint_v', [], true)
+ 4 APPPATH\Controllers\transaction\transaction.php(29): view('transaction/transactionprint_v')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->print()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 00:33:13 --> require_once(kop.php): Failed to open stream: No such file or directory
+in APPPATH\Views\transaction\transactionprint_v.php on line 56.
+ 1 APPPATH\Views\transaction\transactionprint_v.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(kop.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\transaction\\transactionprint_v.php', 56)
+ 2 APPPATH\Views\transaction\transactionprint_v.php(56): require_once()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\transactionprint_v.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/transactionprint_v', [], true)
+ 6 APPPATH\Controllers\transaction\transaction.php(29): view('transaction/transactionprint_v')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->print()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 00:33:49 --> require_once(../kop.php): Failed to open stream: No such file or directory
+in APPPATH\Views\transaction\transactionprint_v.php on line 56.
+ 1 APPPATH\Views\transaction\transactionprint_v.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(../kop.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\transaction\\transactionprint_v.php', 56)
+ 2 APPPATH\Views\transaction\transactionprint_v.php(56): require_once()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\transactionprint_v.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/transactionprint_v', [], true)
+ 6 APPPATH\Controllers\transaction\transaction.php(29): view('transaction/transactionprint_v')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->print()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:12:56 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-18 01:12:57 --> mysqli_sql_exception: Column 'transaction_id' cannot be null in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(93): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-18 01:12:57 --> Column 'transaction_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'6\', \'0\', 1, \'8000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'6\', \'0\', 1, \'8000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'6\', \'0\', 1, \'8000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (:transaction_id:, :product_id:, :store_id:, :transactiond_qty:, :transactiond_price:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(93): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-18 01:12:58 --> mysqli_sql_exception: Column 'transaction_id' cannot be null in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(93): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-18 01:12:58 --> Column 'transaction_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'10\', \'0\', 1, \'54000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'10\', \'0\', 1, \'54000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'10\', \'0\', 1, \'54000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (:transaction_id:, :product_id:, :store_id:, :transactiond_qty:, :transactiond_price:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(93): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:12:59 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:13:02 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:13:02 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:13:06 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:13:26 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:14:08 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:14:09 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:14:11 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:14:12 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:15:10 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:15:11 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:15:11 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:15:25 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:15:35 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:15:43 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:15:43 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:15:57 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:15:58 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:16:07 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:16:08 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:16:08 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:17:00 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:17:08 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:17:09 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:17:20 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 01:17:20 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Controllers\transaction\transaction.php on line 290.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Controllers\\transaction\\transaction.php', 290)
+ 2 APPPATH\Controllers\transaction\transaction.php(290): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-18 06:43:27 --> mysqli_sql_exception: Column 'transaction_id' cannot be null in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(93): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-18 06:43:27 --> Column 'transaction_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'5\', \'0\', 1, \'8000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'5\', \'0\', 1, \'8000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'5\', \'0\', 1, \'8000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (:transaction_id:, :product_id:, :store_id:, :transactiond_qty:, :transactiond_price:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(93): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-18 06:43:27 --> mysqli_sql_exception: Column 'transaction_id' cannot be null in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(93): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-18 06:43:27 --> Column 'transaction_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'9\', \'0\', 1, \'16000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'9\', \'0\', 1, \'16000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'9\', \'0\', 1, \'16000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (:transaction_id:, :product_id:, :store_id:, :transactiond_qty:, :transactiond_price:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(93): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-18 06:43:28 --> mysqli_sql_exception: Column 'transaction_id' cannot be null in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(93): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-18 06:43:28 --> Column 'transaction_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'10\', \'0\', 1, \'54000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'10\', \'0\', 1, \'54000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'10\', \'0\', 1, \'54000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (:transaction_id:, :product_id:, :store_id:, :transactiond_qty:, :transactiond_price:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(93): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:19:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\transaction\transaction.php on line 366.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:19:28 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\transaction\transaction.php on line 366.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:19:29 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\transaction\transaction.php on line 366.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:19:29 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\transaction\transaction.php on line 366.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:20:42 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\transaction\transaction.php on line 366.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:20:43 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\transaction\transaction.php on line 366.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:21:33 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\transaction\transaction.php on line 366.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:22:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\transaction\transaction.php on line 366.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:23:57 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\transaction\transaction.php on line 366.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:32:09 --> Attempt to read property "product_sell" on null
+in APPPATH\Controllers\transaction\transaction.php on line 71.
+ 1 APPPATH\Controllers\transaction\transaction.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_sell" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:32:35 --> Attempt to read property "product_sell" on null
+in APPPATH\Controllers\transaction\transaction.php on line 71.
+ 1 APPPATH\Controllers\transaction\transaction.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_sell" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:35:34 --> Attempt to read property "product_sell" on null
+in APPPATH\Controllers\transaction\transaction.php on line 71.
+ 1 APPPATH\Controllers\transaction\transaction.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_sell" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

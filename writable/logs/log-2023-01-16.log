@@ -1,0 +1,252 @@
+ERROR - 2023-01-16 14:20:39 --> mysqli_sql_exception: Unknown column 'purchased.purchased_date' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\report\rprodukmasuk_v.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('report/rprodukm...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\report\rprodukmasuk.php(23): view('report/rprodukm...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\report\rprodukmasuk->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rprodukmasuk))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-16 14:20:39 --> Unknown column 'purchased.purchased_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchased_date` >= \'2023-01-16\'
+AND `purchased`.`purchased_date` <= \'2023-01-16\'
+ORDER BY `purchased_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchased_date` >= \'2023-01-16\'
+AND `purchased`.`purchased_date` <= \'2023-01-16\'
+ORDER BY `purchased_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchased_date` >= \'2023-01-16\'
+AND `purchased`.`purchased_date` <= \'2023-01-16\'
+ORDER BY `purchased_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = :purchased.store_id:
+AND `purchased`.`purchased_date` >= :purchased.purchased_date:
+AND `purchased`.`purchased_date` <= :purchased.purchased_date.1:
+ORDER BY `purchased_id` DESC', [...], false)
+ 5 APPPATH\Views\report\rprodukmasuk_v.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rprodukmasuk_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rprodukmasuk_v', [], true)
+ 9 APPPATH\Controllers\report\rprodukmasuk.php(23): view('report/rprodukmasuk_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rprodukmasuk->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rprodukmasuk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-16 14:21:30 --> mysqli_sql_exception: Unknown column 'purchased.purchase_date' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\report\rprodukmasuk_v.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('report/rprodukm...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\report\rprodukmasuk.php(23): view('report/rprodukm...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\report\rprodukmasuk->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rprodukmasuk))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-16 14:21:30 --> Unknown column 'purchased.purchase_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchase_date` >= \'2023-01-16\'
+AND `purchased`.`purchase_date` <= \'2023-01-16\'
+ORDER BY `purchased_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchase_date` >= \'2023-01-16\'
+AND `purchased`.`purchase_date` <= \'2023-01-16\'
+ORDER BY `purchased_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchase_date` >= \'2023-01-16\'
+AND `purchased`.`purchase_date` <= \'2023-01-16\'
+ORDER BY `purchased_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = :purchased.store_id:
+AND `purchased`.`purchase_date` >= :purchased.purchase_date:
+AND `purchased`.`purchase_date` <= :purchased.purchase_date.1:
+ORDER BY `purchased_id` DESC', [...], false)
+ 5 APPPATH\Views\report\rprodukmasuk_v.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rprodukmasuk_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rprodukmasuk_v', [], true)
+ 9 APPPATH\Controllers\report\rprodukmasuk.php(23): view('report/rprodukmasuk_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rprodukmasuk->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rprodukmasuk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-16 14:21:31 --> mysqli_sql_exception: Unknown column 'purchased.purchase_date' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\report\rprodukmasuk_v.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('report/rprodukm...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\report\rprodukmasuk.php(23): view('report/rprodukm...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\report\rprodukmasuk->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rprodukmasuk))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-16 14:21:31 --> Unknown column 'purchased.purchase_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchase_date` >= \'2023-01-16\'
+AND `purchased`.`purchase_date` <= \'2023-01-16\'
+ORDER BY `purchased_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchase_date` >= \'2023-01-16\'
+AND `purchased`.`purchase_date` <= \'2023-01-16\'
+ORDER BY `purchased_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchase_date` >= \'2023-01-16\'
+AND `purchased`.`purchase_date` <= \'2023-01-16\'
+ORDER BY `purchased_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = :purchased.store_id:
+AND `purchased`.`purchase_date` >= :purchased.purchase_date:
+AND `purchased`.`purchase_date` <= :purchased.purchase_date.1:
+ORDER BY `purchased_id` DESC', [...], false)
+ 5 APPPATH\Views\report\rprodukmasuk_v.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rprodukmasuk_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rprodukmasuk_v', [], true)
+ 9 APPPATH\Controllers\report\rprodukmasuk.php(23): view('report/rprodukmasuk_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rprodukmasuk->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rprodukmasuk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-16 14:21:38 --> mysqli_sql_exception: Unknown column 'purchased.purchase_date' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\report\rprodukmasuk_v.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('report/rprodukm...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\report\rprodukmasuk.php(23): view('report/rprodukm...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\report\rprodukmasuk->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rprodukmasuk))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-16 14:21:38 --> Unknown column 'purchased.purchase_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchase_date` >= \'2023-01-16\'
+AND `purchased`.`purchase_date` <= \'2023-01-16\'
+ORDER BY `purchased_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchase_date` >= \'2023-01-16\'
+AND `purchased`.`purchase_date` <= \'2023-01-16\'
+ORDER BY `purchased_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchase_date` >= \'2023-01-16\'
+AND `purchased`.`purchase_date` <= \'2023-01-16\'
+ORDER BY `purchased_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = :purchased.store_id:
+AND `purchased`.`purchase_date` >= :purchased.purchase_date:
+AND `purchased`.`purchase_date` <= :purchased.purchase_date.1:
+ORDER BY `purchased_id` DESC', [...], false)
+ 5 APPPATH\Views\report\rprodukmasuk_v.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rprodukmasuk_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rprodukmasuk_v', [], true)
+ 9 APPPATH\Controllers\report\rprodukmasuk.php(23): view('report/rprodukmasuk_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rprodukmasuk->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rprodukmasuk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

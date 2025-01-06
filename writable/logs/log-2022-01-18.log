@@ -1,0 +1,1151 @@
+CRITICAL - 2022-01-18 03:16:05 --> Maximum execution time of 30 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-18 03:16:05 --> Maximum execution time of 30 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-18 04:08:21 --> Undefined property: stdClass::$cost_name
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(125): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp1\\htdoc...', 125, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-18 04:08:57 --> ErrorException: pg_query(): Query failed: ERROR:  column request0.cost_id does not exist
+LINE 3: LEFT JOIN &quot;cost&quot; ON &quot;cost&quot;.&quot;cost_id&quot;=&quot;request0&quot;.&quot;cost_id&quot;
+                                             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(118): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 04:09:20 --> ErrorException: pg_query(): Query failed: ERROR:  column request0.cost_id does not exist
+LINE 3: LEFT JOIN &quot;cost&quot; ON &quot;cost&quot;.&quot;cost_id&quot;=&quot;request0&quot;.&quot;cost_id&quot;
+                                             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(118): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 04:11:20 --> ErrorException: pg_query(): Query failed: ERROR:  column request1.cost_id does not exist
+LINE 4: LEFT JOIN &quot;cost&quot; ON &quot;cost&quot;.&quot;cost_id&quot;=&quot;request1&quot;.&quot;cost_id&quot;
+                                             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(118): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 05:12:36 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;JOIN&quot;
+LINE 4: LEFT JOIN &quot;request0&quot; ON &quot;request0&quot;.&quot;request0_id&quot;=&quot;request1&quot;....
+             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #140, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(127): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 05:14:47 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;JOIN&quot;
+LINE 4: LEFT JOIN &quot;request0&quot; ON &quot;request0&quot;.&quot;request0_id&quot;=&quot;request1&quot;....
+             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(127): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 05:17:34 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;JOIN&quot;
+LINE 5: LEFT JOIN &quot;request0&quot; ON &quot;request0&quot;.&quot;request0_id&quot;=&quot;request1&quot;....
+             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(127): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 05:18:55 --> ErrorException: pg_query(): Query failed: ERROR:  column request1.cost_id does not exist
+LINE 4: ...om FROM request1 GROUP BY request0_id)request1 ON &quot;request1&quot;...
+                                                             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #140, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(127): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 05:19:37 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request1.cost_id&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 4: LEFT JOIN (SELECT cost_id, request0_id ,SUM(request1_propose...
+                          ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(127): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 05:20:43 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request1.request0_id&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 4: LEFT JOIN (SELECT cost_id, request0_id ,SUM(request1_propose...
+                                   ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(127): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 05:22:25 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request1.request0_id&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 4: LEFT JOIN (SELECT cost_id, request0_id ,SUM(request1_propose...
+                                   ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(127): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-18 05:46:06 --> Undefined property: stdClass::$advancenom
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp1\\htdoc...', 131, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-18 06:21:57 --> ErrorException: pg_query(): Query failed: ERROR:  argument of AND must be type boolean, not type bigint
+LINE 4: ...approved_nom)AS approvenom FROM request1 GROUP BY request0_i...
+                                                             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #140, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(127): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 06:29:34 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request1.cost_id&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 4: LEFT JOIN (SELECT cost_id, request0_id ,SUM(request1_propose...
+                          ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #140, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(127): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 06:35:08 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request1.cost_id&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 4: LEFT JOIN (SELECT cost_id, request0_id ,SUM(request1_propose...
+                          ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #140, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(127): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 06:50:54 --> ErrorException: pg_query(): Query failed: ERROR:  column reference &quot;request0_id&quot; is ambiguous
+LINE 5: ...                                  SELECT cost_id, request0_i...
+                                                             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #140, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(132): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 06:52:45 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request1.cost_id&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 5:                                         SELECT cost_id, requ...
+                                                       ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(132): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 06:54:07 --> ErrorException: pg_query(): Query failed: ERROR:  argument of AND must be type boolean, not type bigint
+LINE 8: ...equest0.request0_id=request1.request0_id GROUP BY request0.r...
+                                                             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT *\nFROM "...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(132): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 07:02:14 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;request1&quot; does not exist
+LINE 2: FROM &quot;request1&quot;
+             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #152, 'SELECT "SELECT"...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "SELECT"...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "SELECT"...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "SELECT"...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(137): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-18 07:02:14 --> Undefined property: CodeIgniter\Database\Postgre\Result::$proposenom
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp1\\htdoc...', 142, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-18 07:03:53 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;request1&quot; does not exist
+LINE 2: FROM &quot;request1&quot;
+             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #152, 'SELECT "SELECT"...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "SELECT"...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "SELECT"...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "SELECT"...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(137): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-18 07:03:53 --> pg_num_rows() expects parameter 1 to be resource, boolean given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_num_rows() e...', 'D:\\xampp1\\htdoc...', 153, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Result.php(153): pg_num_rows(false)
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(140): CodeIgniter\Database\Postgre\Result->getNumRows()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-01-18 07:05:59 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;request1&quot; does not exist
+LINE 2: FROM &quot;request1&quot;
+             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #152, 'SELECT "SELECT"...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "SELECT"...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "SELECT"...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "SELECT"...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(137): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-18 07:05:59 --> pg_num_rows() expects parameter 1 to be resource, boolean given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_num_rows() e...', 'D:\\xampp1\\htdoc...', 153, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Result.php(153): pg_num_rows(false)
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(140): CodeIgniter\Database\Postgre\Result->getNumRows()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-01-18 07:07:09 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;request1&quot; does not exist
+LINE 2: FROM &quot;request1&quot;
+             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #153, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-18 07:07:09 --> pg_num_rows() expects parameter 1 to be resource, boolean given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_num_rows() e...', 'D:\\xampp1\\htdoc...', 153, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Result.php(153): pg_num_rows(false)
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(138): CodeIgniter\Database\Postgre\Result->getNumRows()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-01-18 07:08:42 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;request1&quot; does not exist
+LINE 2: FROM &quot;request1&quot;
+             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #152, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-18 07:08:42 --> pg_num_rows() expects parameter 1 to be resource, boolean given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_num_rows() e...', 'D:\\xampp1\\htdoc...', 153, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Result.php(153): pg_num_rows(false)
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(138): CodeIgniter\Database\Postgre\Result->getNumRows()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-01-18 07:09:33 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;request1&quot; does not exist
+LINE 2: FROM &quot;request1&quot;
+             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #152, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2035): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(132): CodeIgniter\Database\BaseBuilder->getWhere('cost_id', 9)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-18 07:09:33 --> Call to undefined method CodeIgniter\Database\Postgre\Result::getWhere()
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include()
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-01-18 07:09:59 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;request1&quot; does not exist
+LINE 2: FROM &quot;request1&quot;
+             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #152, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-18 07:09:59 --> pg_num_rows() expects parameter 1 to be resource, boolean given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_num_rows() e...', 'D:\\xampp1\\htdoc...', 153, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Result.php(153): pg_num_rows(false)
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(138): CodeIgniter\Database\Postgre\Result->getNumRows()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-01-18 07:10:44 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;request1&quot; does not exist
+LINE 2: FROM &quot;request1&quot;
+             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #152, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-18 07:10:44 --> Call to undefined method CodeIgniter\Database\Postgre\Result::countAll()
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include()
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-01-18 07:11:05 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;request1&quot; does not exist
+LINE 2: FROM &quot;request1&quot;
+             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #152, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-18 07:11:05 --> Call to undefined method CodeIgniter\Database\Postgre\Result::countAll()
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include()
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-01-18 07:11:42 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;request1&quot; does not exist
+LINE 2: FROM &quot;request1&quot;
+             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #152, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-18 07:11:42 --> Call to undefined method CodeIgniter\Database\Postgre\Result::getLastQuery()
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include()
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-01-18 07:11:52 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;request1&quot; does not exist
+LINE 2: FROM &quot;request1&quot;
+             ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #152, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-18 07:11:52 --> Call to undefined method CodeIgniter\Database\Postgre\Result::getLastQuery()
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include()
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-01-18 07:12:15 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request1_date&quot; does not exist
+LINE 1: SELECT &quot;cost_id&quot;, &quot;request1_date&quot;, SUM(request1_proposed_nom...
+                          ^
+HINT:  Perhaps you meant to reference the column &quot;request0.request0_date&quot;. in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #140, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-18 07:12:15 --> Undefined variable: request
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp1\\htdoc...', 138, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-18 07:12:28 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request1_date&quot; does not exist
+LINE 1: SELECT &quot;cost_id&quot;, &quot;request1_date&quot;, SUM(request1_proposed_nom...
+                          ^
+HINT:  Perhaps you meant to reference the column &quot;request0.request0_date&quot;. in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-18 07:12:28 --> pg_num_rows() expects parameter 1 to be resource, boolean given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_num_rows() e...', 'D:\\xampp1\\htdoc...', 153, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Result.php(153): pg_num_rows(false)
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(138): CodeIgniter\Database\Postgre\Result->getNumRows()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-01-18 07:13:09 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request1_date&quot; does not exist
+LINE 1: SELECT &quot;cost_id&quot;, &quot;request1_date&quot;, SUM(request1_proposed_nom...
+                          ^
+HINT:  Perhaps you meant to reference the column &quot;request0.request0_date&quot;. in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-18 07:13:09 --> pg_num_rows() expects parameter 1 to be resource, boolean given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_num_rows() e...', 'D:\\xampp1\\htdoc...', 153, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Result.php(153): pg_num_rows(false)
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(138): CodeIgniter\Database\Postgre\Result->getNumRows()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-01-18 07:13:23 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request1_date&quot; does not exist
+LINE 1: SELECT &quot;cost_id&quot;, &quot;request1_date&quot;, SUM(request1_proposed_nom...
+                          ^
+HINT:  Perhaps you meant to reference the column &quot;request0.request0_date&quot;. in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-18 07:13:23 --> Call to undefined method CodeIgniter\Database\Postgre\Result::countAll()
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include()
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-01-18 07:14:01 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request1_date&quot; does not exist
+LINE 1: SELECT &quot;cost_id&quot;, &quot;request1_date&quot;, SUM(request1_proposed_nom...
+                          ^
+HINT:  Perhaps you meant to reference the column &quot;request0.request0_date&quot;. in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-18 07:14:01 --> Undefined property: stdClass::$lpjnom
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(150): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp1\\htdoc...', 150, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-18 07:14:21 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request1_date&quot; does not exist
+LINE 1: SELECT &quot;cost_id&quot;, &quot;request1_date&quot;, SUM(request1_proposed_nom...
+                          ^
+HINT:  Perhaps you meant to reference the column &quot;request0.request0_date&quot;. in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 07:14:21 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request1_date&quot; does not exist
+LINE 1: SELECT &quot;cost_id&quot;, &quot;request1_date&quot;, SUM(request1_proposed_nom...
+                          ^
+HINT:  Perhaps you meant to reference the column &quot;request0.request0_date&quot;. in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 07:14:21 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request1_date&quot; does not exist
+LINE 1: SELECT &quot;cost_id&quot;, &quot;request1_date&quot;, SUM(request1_proposed_nom...
+                          ^
+HINT:  Perhaps you meant to reference the column &quot;request0.request0_date&quot;. in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 07:14:21 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request1_date&quot; does not exist
+LINE 1: SELECT &quot;cost_id&quot;, &quot;request1_date&quot;, SUM(request1_proposed_nom...
+                          ^
+HINT:  Perhaps you meant to reference the column &quot;request0.request0_date&quot;. in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 07:15:22 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request1.cost_id&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT &quot;cost_id&quot;, &quot;request0_date&quot;, SUM(request1_proposed_nom...
+               ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 07:15:22 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request1.cost_id&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT &quot;cost_id&quot;, &quot;request0_date&quot;, SUM(request1_proposed_nom...
+               ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 07:15:22 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request1.cost_id&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT &quot;cost_id&quot;, &quot;request0_date&quot;, SUM(request1_proposed_nom...
+               ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 07:15:22 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request1.cost_id&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT &quot;cost_id&quot;, &quot;request0_date&quot;, SUM(request1_proposed_nom...
+               ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(135): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 07:17:14 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request0.request0_date&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT &quot;cost_id&quot;, &quot;request0_date&quot;, SUM(request1_proposed_nom...
+                          ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(136): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 07:17:14 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request0.request0_date&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT &quot;cost_id&quot;, &quot;request0_date&quot;, SUM(request1_proposed_nom...
+                          ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(136): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 07:17:14 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request0.request0_date&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT &quot;cost_id&quot;, &quot;request0_date&quot;, SUM(request1_proposed_nom...
+                          ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(136): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-01-18 07:17:14 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;request0.request0_date&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT &quot;cost_id&quot;, &quot;request0_date&quot;, SUM(request1_proposed_nom...
+                          ^ in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #139, 'SELECT "cost_id...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT "cost_id...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "cost_id...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT "cost_id...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(136): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#10 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#11 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#12 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-01-18 07:40:10 --> Undefined property: stdClass::$request0_date
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(145): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp1\\htdoc...', 145, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-18 07:40:29 --> Undefined property: stdClass::$request0_date
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Views\transaction\repdetil_v.php(144): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp1\\htdoc...', 144, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp1\\htdoc...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('transaction/rep...', Array, true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(34): view('transaction/rep...', Array)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->index()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-18 07:58:42 --> ErrorException: pg_query(): Query failed: ERROR:  date/time field value out of range: &quot;18/12/2021&quot;
+LINE 4: AND &quot;approved&quot; &gt;= '18/12/2021'
+                          ^
+HINT:  Perhaps you need a different &quot;datestyle&quot; setting. in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #185, 'SELECT SUM(requ...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT SUM(requ...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(requ...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT SUM(requ...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(122): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-18 07:58:42 --> ErrorException: pg_query(): Query failed: ERROR:  date/time field value out of range: &quot;18/12/2021&quot;
+LINE 4: AND &quot;created&quot; &gt;= '18/12/2021'
+                         ^
+HINT:  Perhaps you need a different &quot;datestyle&quot; setting. in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #185, 'SELECT SUM(lpj1...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT SUM(lpj1...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(lpj1...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT SUM(lpj1...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(129): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-18 07:58:42 --> pg_num_rows() expects parameter 1 to be resource, boolean given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_num_rows() e...', 'D:\\xampp1\\htdoc...', 153, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Result.php(153): pg_num_rows(false)
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(134): CodeIgniter\Database\Postgre\Result->getNumRows()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->excel()
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-01-18 08:00:33 --> ErrorException: pg_query(): Query failed: ERROR:  date/time field value out of range: &quot;18/12/2021&quot;
+LINE 4: AND &quot;approved&quot; &gt;= '18/12/2021'
+                          ^
+HINT:  Perhaps you need a different &quot;datestyle&quot; setting. in D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp1\\htdoc...', 170, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(170): pg_query(Resource id #184, 'SELECT SUM(requ...')
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\Postgre\Connection->execute('SELECT SUM(requ...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(requ...')
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT SUM(requ...', Array, false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(122): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->excel()
+#7 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#8 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-18 08:05:03 --> Undefined property: stdClass::$proposenom
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repdetil.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp1\\htdoc...', 148, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repdetil->excel()
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repdetil))
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-18 08:15:41 --> date() expects at least 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date() expects ...', 'D:\\xampp1\\htdoc...', 46, Array)
+#1 D:\xampp1\htdocs\ag-accounting-pembiayaan\app\Controllers\transaction\repsummary.php(46): date()
+#2 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\transaction\repsummary->excel()
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\repsummary))
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}

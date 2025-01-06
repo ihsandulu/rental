@@ -1,0 +1,188 @@
+CRITICAL - 2022-12-15 06:13:34 --> Unmatched '}'
+in APPPATH\Views\template\headerside_v.php on line 159.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/headerside_v', null, true)
+ 3 APPPATH\Views\template\header_v.php(143): CodeIgniter\View\View->include('template/headerside_v')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\header_v.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/header_v', null, true)
+ 7 APPPATH\Views\master\mproduct_v.php(1): CodeIgniter\View\View->include('template/header_v')
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mproduct_v.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+11 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+12 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+13 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+14 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-15 06:14:01 --> mysqli_sql_exception: Unknown column 'store_id' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mcategory_m.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mcategory.php(22): App\Models\master\mcategory_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mcategory->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcategory))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-15 06:14:01 --> Unknown column 'store_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `category`
+WHERE `category_id` = -1
+AND `store_id` = \'0\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `category`
+WHERE `category_id` = -1
+AND `store_id` = \'0\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `category`
+WHERE `category_id` = -1
+AND `store_id` = \'0\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `category`
+WHERE `category_id` = :category_id:
+AND `store_id` = :store_id:', [...], false)
+ 5 APPPATH\Models\master\mcategory_m.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Controllers\master\mcategory.php(22): App\Models\master\mcategory_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mcategory->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcategory))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-15 06:16:11 --> mysqli_sql_exception: Not unique table/alias: 'category' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mcategory_v.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mcategor...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mcategory.php(23): view('master/mcategor...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mcategory->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcategory))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-15 06:16:11 --> Not unique table/alias: 'category'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `category`
+LEFT JOIN `category` ON `category`.`category_id`=`category`.`category_id`
+LEFT JOIN `store` ON `store`.`store_id`=`category`.`store_id`
+WHERE `category`.`store_id` = \'0\'
+ORDER BY `category_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `category`
+LEFT JOIN `category` ON `category`.`category_id`=`category`.`category_id`
+LEFT JOIN `store` ON `store`.`store_id`=`category`.`store_id`
+WHERE `category`.`store_id` = \'0\'
+ORDER BY `category_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `category`
+LEFT JOIN `category` ON `category`.`category_id`=`category`.`category_id`
+LEFT JOIN `store` ON `store`.`store_id`=`category`.`store_id`
+WHERE `category`.`store_id` = \'0\'
+ORDER BY `category_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `category`
+LEFT JOIN `category` ON `category`.`category_id`=`category`.`category_id`
+LEFT JOIN `store` ON `store`.`store_id`=`category`.`store_id`
+WHERE `category`.`store_id` = :category.store_id:
+ORDER BY `category_name` ASC', [...], false)
+ 5 APPPATH\Views\master\mcategory_v.php(183): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mcategory_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mcategory_v', [], true)
+ 9 APPPATH\Controllers\master\mcategory.php(23): view('master/mcategory_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mcategory->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcategory))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 06:24:49 --> Undefined variable $unit_id
+in APPPATH\Views\master\mproduct_v.php on line 104.
+ 1 APPPATH\Views\master\mproduct_v.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $unit_id', 'APPPATH\\Views\\master\\mproduct_v.php', 104)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mproduct_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+ 5 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 07:47:23 --> Unmatched '}'
+in APPPATH\Views\template\headerside_v.php on line 218.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/headerside_v', null, true)
+ 3 APPPATH\Views\template\header_v.php(143): CodeIgniter\View\View->include('template/headerside_v')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\header_v.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/header_v', null, true)
+ 7 APPPATH\Views\master\mproduct_v.php(1): CodeIgniter\View\View->include('template/header_v')
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mproduct_v.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+11 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+12 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+13 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+14 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 07:56:07 --> Class "App\Models\master\transaction_m" not found
+in APPPATH\Controllers\transaction\transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 07:56:36 --> Invalid file: master/transaction_v.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('master/transaction_v.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/transaction_v', [], true)
+ 3 APPPATH\Controllers\transaction\transaction.php(23): view('master/transaction_v', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 19:23:41 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getNumRows()
+in APPPATH\Models\master\mcategory_m.php on line 47.
+ 1 APPPATH\Controllers\master\mcategory.php(22): App\Models\master\mcategory_m->data()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mcategory->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mcategory))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-15 21:31:28 --> mysqli_sql_exception: Unknown column 'product_id' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mproduct_m.php(90): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-15 21:31:28 --> Unknown column 'product_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `transaction`
+WHERE `product_id` = \'11\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaction`
+WHERE `product_id` = \'11\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaction`
+WHERE `product_id` = \'11\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaction`
+WHERE `product_id` = :product_id:', [...], false)
+ 5 APPPATH\Models\master\mproduct_m.php(90): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

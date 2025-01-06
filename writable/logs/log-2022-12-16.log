@@ -1,0 +1,660 @@
+CRITICAL - 2022-12-16 09:35:42 --> Undefined variable $tprice
+in APPPATH\Views\transaction\transaction_v.php on line 157.
+ 1 APPPATH\Views\transaction\transaction_v.php(157): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tprice', 'APPPATH\\Views\\transaction\\transaction_v.php', 157)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\transaction_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/transaction_v', [], true)
+ 5 APPPATH\Controllers\transaction\transaction.php(23): view('transaction/transaction_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 08:14:25 --> syntax error, unexpected token "?"
+in APPPATH\Controllers\transaction\transaction.php on line 32.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\transaction\\transaction.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\transaction\\transaction')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\transaction\\transaction')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\transaction\\transaction', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 21:16:09 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::get()
+in APPPATH\Controllers\transaction\transaction.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 21:16:12 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::get()
+in APPPATH\Controllers\transaction\transaction.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 21:16:18 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::get()
+in APPPATH\Controllers\transaction\transaction.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 21:16:20 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::get()
+in APPPATH\Controllers\transaction\transaction.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 21:16:44 --> Attempt to read property "transaction_no" on array
+in APPPATH\Controllers\transaction\transaction.php on line 59.
+ 1 APPPATH\Controllers\transaction\transaction.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "transaction_no" on array', 'APPPATH\\Controllers\\transaction\\transaction.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 21:17:41 --> Call to a member function getResult() on array
+in APPPATH\Controllers\transaction\transaction.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 09:54:11 --> syntax error, unexpected identifier "product_id"
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\transaction\\transaction.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\transaction\\transaction')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\transaction\\transaction')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\transaction\\transaction', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 22:55:01 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getNumRows()
+in APPPATH\Controllers\transaction\transaction.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 22:55:14 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getNumRows()
+in APPPATH\Controllers\transaction\transaction.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 22:55:43 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getNumRows()
+in APPPATH\Controllers\transaction\transaction.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 22:55:45 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getNumRows()
+in APPPATH\Controllers\transaction\transaction.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 22:56:23 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getNumRows()
+in APPPATH\Controllers\transaction\transaction.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 22:56:57 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getNumRows()
+in APPPATH\Controllers\transaction\transaction.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 22:57:02 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getNumRows()
+in APPPATH\Controllers\transaction\transaction.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 22:57:04 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getNumRows()
+in APPPATH\Controllers\transaction\transaction.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 22:58:04 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 22:58:50 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 22:58:54 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:00:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+in APPPATH\Controllers\transaction\transaction.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:01:04 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+in APPPATH\Controllers\transaction\transaction.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:02:33 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+in APPPATH\Controllers\transaction\transaction.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:02:47 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+in APPPATH\Controllers\transaction\transaction.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:03:20 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+in APPPATH\Controllers\transaction\transaction.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:03:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+in APPPATH\Controllers\transaction\transaction.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:04:05 --> Undefined variable $pro
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pro', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:04:31 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+in APPPATH\Controllers\transaction\transaction.php on line 69.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 23:06:22 --> mysqli_sql_exception: Column 'product_id' in group statement is ambiguous in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(t...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(t...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(t...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(t...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(132): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-16 23:06:22 --> Column 'product_id' in group statement is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = \'0\'
+AND `transactiond`.`transaction_id` = \'5\'
+GROUP BY `product_id`
+ORDER BY `product_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = \'0\'
+AND `transactiond`.`transaction_id` = \'5\'
+GROUP BY `product_id`
+ORDER BY `product_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = \'0\'
+AND `transactiond`.`transaction_id` = \'5\'
+GROUP BY `product_id`
+ORDER BY `product_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = :product.store_id:
+AND `transactiond`.`transaction_id` = :transactiond.transaction_id:
+GROUP BY `product_id`
+ORDER BY `product_name` ASC', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(132): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 23:06:24 --> mysqli_sql_exception: Column 'product_id' in group statement is ambiguous in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(t...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(t...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(t...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(t...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(132): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-16 23:06:24 --> Column 'product_id' in group statement is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = \'0\'
+AND `transactiond`.`transaction_id` = \'7\'
+GROUP BY `product_id`
+ORDER BY `product_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = \'0\'
+AND `transactiond`.`transaction_id` = \'7\'
+GROUP BY `product_id`
+ORDER BY `product_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = \'0\'
+AND `transactiond`.`transaction_id` = \'7\'
+GROUP BY `product_id`
+ORDER BY `product_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = :product.store_id:
+AND `transactiond`.`transaction_id` = :transactiond.transaction_id:
+GROUP BY `product_id`
+ORDER BY `product_name` ASC', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(132): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 23:06:25 --> mysqli_sql_exception: Column 'product_id' in group statement is ambiguous in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(t...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(t...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(t...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(t...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(132): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-16 23:06:25 --> Column 'product_id' in group statement is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = \'0\'
+AND `transactiond`.`transaction_id` = \'6\'
+GROUP BY `product_id`
+ORDER BY `product_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = \'0\'
+AND `transactiond`.`transaction_id` = \'6\'
+GROUP BY `product_id`
+ORDER BY `product_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = \'0\'
+AND `transactiond`.`transaction_id` = \'6\'
+GROUP BY `product_id`
+ORDER BY `product_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = :product.store_id:
+AND `transactiond`.`transaction_id` = :transactiond.transaction_id:
+GROUP BY `product_id`
+ORDER BY `product_name` ASC', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(132): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 23:06:25 --> mysqli_sql_exception: Column 'product_id' in group statement is ambiguous in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(t...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(t...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(t...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(t...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(132): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-16 23:06:25 --> Column 'product_id' in group statement is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = \'0\'
+AND `transactiond`.`transaction_id` = \'8\'
+GROUP BY `product_id`
+ORDER BY `product_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = \'0\'
+AND `transactiond`.`transaction_id` = \'8\'
+GROUP BY `product_id`
+ORDER BY `product_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = \'0\'
+AND `transactiond`.`transaction_id` = \'8\'
+GROUP BY `product_id`
+ORDER BY `product_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = :product.store_id:
+AND `transactiond`.`transaction_id` = :transactiond.transaction_id:
+GROUP BY `product_id`
+ORDER BY `product_name` ASC', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(132): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 23:06:26 --> mysqli_sql_exception: Column 'product_id' in group statement is ambiguous in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(t...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(t...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(t...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(t...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(132): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-16 23:06:26 --> Column 'product_id' in group statement is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = \'0\'
+AND `transactiond`.`transaction_id` = \'5\'
+GROUP BY `product_id`
+ORDER BY `product_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = \'0\'
+AND `transactiond`.`transaction_id` = \'5\'
+GROUP BY `product_id`
+ORDER BY `product_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = \'0\'
+AND `transactiond`.`transaction_id` = \'5\'
+GROUP BY `product_id`
+ORDER BY `product_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = :product.store_id:
+AND `transactiond`.`transaction_id` = :transactiond.transaction_id:
+GROUP BY `product_id`
+ORDER BY `product_name` ASC', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(132): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 23:06:29 --> mysqli_sql_exception: Column 'product_id' in group statement is ambiguous in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(t...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(t...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(t...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(t...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(132): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-16 23:06:29 --> Column 'product_id' in group statement is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = \'0\'
+AND `transactiond`.`transaction_id` = \'5\'
+GROUP BY `product_id`
+ORDER BY `product_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = \'0\'
+AND `transactiond`.`transaction_id` = \'5\'
+GROUP BY `product_id`
+ORDER BY `product_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = \'0\'
+AND `transactiond`.`transaction_id` = \'5\'
+GROUP BY `product_id`
+ORDER BY `product_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(transactiond_qty)AS qty, SUM(transactiond_qty)AS price
+FROM `transactiond`
+LEFT JOIN `product` ON `product`.`product_id`=`transactiond`.`product_id`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `product`.`store_id` = :product.store_id:
+AND `transactiond`.`transaction_id` = :transactiond.transaction_id:
+GROUP BY `product_id`
+ORDER BY `product_name` ASC', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(132): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->nota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 23:21:18 --> mysqli_sql_exception: Column 'transaction_id' cannot be null in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(73): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-16 23:21:18 --> Column 'transaction_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `transactiond_qty`, `transactiond_price`, `store_id`) VALUES (NULL, \'10\', 1, \'54000\', \'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `transactiond_qty`, `transactiond_price`, `store_id`) VALUES (NULL, \'10\', 1, \'54000\', \'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `transactiond_qty`, `transactiond_price`, `store_id`) VALUES (NULL, \'10\', 1, \'54000\', \'0\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `transactiond_qty`, `transactiond_price`, `store_id`) VALUES (:transaction_id:, :product_id:, :transactiond_qty:, :transactiond_price:, :store_id:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(73): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 23:33:32 --> mysqli_sql_exception: Column 'transaction_id' cannot be null in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(73): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-16 23:33:32 --> Column 'transaction_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `transactiond_qty`, `transactiond_price`, `store_id`) VALUES (NULL, \'5\', 1, \'8000\', \'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `transactiond_qty`, `transactiond_price`, `store_id`) VALUES (NULL, \'5\', 1, \'8000\', \'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `transactiond_qty`, `transactiond_price`, `store_id`) VALUES (NULL, \'5\', 1, \'8000\', \'0\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `transactiond_qty`, `transactiond_price`, `store_id`) VALUES (:transaction_id:, :product_id:, :transactiond_qty:, :transactiond_price:, :store_id:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(73): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 23:33:49 --> mysqli_sql_exception: Column 'transaction_id' cannot be null in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(73): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-16 23:33:49 --> Column 'transaction_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `transactiond_qty`, `transactiond_price`, `store_id`) VALUES (NULL, \'8\', 1, \'45000\', \'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `transactiond_qty`, `transactiond_price`, `store_id`) VALUES (NULL, \'8\', 1, \'45000\', \'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `transactiond_qty`, `transactiond_price`, `store_id`) VALUES (NULL, \'8\', 1, \'45000\', \'0\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `transactiond_qty`, `transactiond_price`, `store_id`) VALUES (:transaction_id:, :product_id:, :transactiond_qty:, :transactiond_price:, :store_id:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(73): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:34:51 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:44:23 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:45:20 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:45:26 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:46:40 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:48:18 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:49:39 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:49:51 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:50:22 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:50:35 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:55:42 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:46:37 --> syntax error, unexpected token "->"
+in APPPATH\Controllers\transaction\transaction.php on line 138.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\transaction\\transaction.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\transaction\\transaction')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\transaction\\transaction')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\transaction\\transaction', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:46:40 --> syntax error, unexpected token "->"
+in APPPATH\Controllers\transaction\transaction.php on line 138.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\transaction\\transaction.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\transaction\\transaction')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\transaction\\transaction')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\transaction\\transaction', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 23:46:41 --> syntax error, unexpected token "->"
+in APPPATH\Controllers\transaction\transaction.php on line 138.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\transaction\\transaction.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\transaction\\transaction')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\transaction\\transaction')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\transaction\\transaction', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

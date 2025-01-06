@@ -1,0 +1,480 @@
+CRITICAL - 2024-10-31 06:48:20 --> Cannot declare class App\Models\transaction\transaction_m, because the name is already in use
+in APPPATH\Models\transaction\gudang_m.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-10-31 06:48:44 --> Invalid file: gudang/gudang_v.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gudang/gudang_v.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('gudang/gudang_v', [], true)
+ 3 APPPATH\Controllers\transaction\transaction.php(31): view('gudang/gudang_v', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->gudang()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:07:27 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 965.
+ 1 APPPATH\Controllers\transaction\transaction.php(965): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 965)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:07:29 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 965.
+ 1 APPPATH\Controllers\transaction\transaction.php(965): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 965)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:08:09 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 965.
+ 1 APPPATH\Controllers\transaction\transaction.php(965): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 965)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:08:11 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 965.
+ 1 APPPATH\Controllers\transaction\transaction.php(965): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 965)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:08:12 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 965.
+ 1 APPPATH\Controllers\transaction\transaction.php(965): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 965)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:08:39 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in D:\xampp\htdocs\gudang\app\Controllers\transaction\transaction.php on line 933
+in SYSTEMPATH\Database\BaseBuilder.php on line 1577.
+ 1 APPPATH\Controllers\transaction\transaction.php(933): CodeIgniter\Database\BaseBuilder->get('store_id')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:08:42 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in D:\xampp\htdocs\gudang\app\Controllers\transaction\transaction.php on line 933
+in SYSTEMPATH\Database\BaseBuilder.php on line 1577.
+ 1 APPPATH\Controllers\transaction\transaction.php(933): CodeIgniter\Database\BaseBuilder->get('store_id')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:08:42 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in D:\xampp\htdocs\gudang\app\Controllers\transaction\transaction.php on line 933
+in SYSTEMPATH\Database\BaseBuilder.php on line 1577.
+ 1 APPPATH\Controllers\transaction\transaction.php(933): CodeIgniter\Database\BaseBuilder->get('store_id')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:08:42 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in D:\xampp\htdocs\gudang\app\Controllers\transaction\transaction.php on line 933
+in SYSTEMPATH\Database\BaseBuilder.php on line 1577.
+ 1 APPPATH\Controllers\transaction\transaction.php(933): CodeIgniter\Database\BaseBuilder->get('store_id')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:09:57 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 965.
+ 1 APPPATH\Controllers\transaction\transaction.php(965): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 965)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:09:59 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 965.
+ 1 APPPATH\Controllers\transaction\transaction.php(965): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 965)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:09:59 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 965.
+ 1 APPPATH\Controllers\transaction\transaction.php(965): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 965)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:10:27 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 964.
+ 1 APPPATH\Controllers\transaction\transaction.php(964): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 964)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:10:28 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 964.
+ 1 APPPATH\Controllers\transaction\transaction.php(964): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 964)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:10:28 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 964.
+ 1 APPPATH\Controllers\transaction\transaction.php(964): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 964)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:10:29 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 964.
+ 1 APPPATH\Controllers\transaction\transaction.php(964): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 964)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:10:29 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 964.
+ 1 APPPATH\Controllers\transaction\transaction.php(964): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 964)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:10:29 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 964.
+ 1 APPPATH\Controllers\transaction\transaction.php(964): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 964)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:10:29 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 964.
+ 1 APPPATH\Controllers\transaction\transaction.php(964): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 964)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:10:38 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 964.
+ 1 APPPATH\Controllers\transaction\transaction.php(964): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 964)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:10:39 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 964.
+ 1 APPPATH\Controllers\transaction\transaction.php(964): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 964)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:12:00 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 966.
+ 1 APPPATH\Controllers\transaction\transaction.php(966): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 966)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:12:02 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 966.
+ 1 APPPATH\Controllers\transaction\transaction.php(966): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 966)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:12:02 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 966.
+ 1 APPPATH\Controllers\transaction\transaction.php(966): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 966)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:12:50 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 966.
+ 1 APPPATH\Controllers\transaction\transaction.php(966): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 966)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:12:52 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 966.
+ 1 APPPATH\Controllers\transaction\transaction.php(966): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 966)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:13:09 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 965.
+ 1 APPPATH\Controllers\transaction\transaction.php(965): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 965)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:13:11 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 965.
+ 1 APPPATH\Controllers\transaction\transaction.php(965): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 965)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:13:45 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 965.
+ 1 APPPATH\Controllers\transaction\transaction.php(965): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 965)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:13:49 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 965.
+ 1 APPPATH\Controllers\transaction\transaction.php(965): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 965)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:13:59 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 965.
+ 1 APPPATH\Controllers\transaction\transaction.php(965): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 965)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:14:01 --> Undefined variable $disabled
+in APPPATH\Controllers\transaction\transaction.php on line 965.
+ 1 APPPATH\Controllers\transaction\transaction.php(965): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'APPPATH\\Controllers\\transaction\\transaction.php', 965)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlist()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:31:44 --> Undefined property: stdClass::$sell_price
+in APPPATH\Controllers\transaction\transaction.php on line 1115.
+ 1 APPPATH\Controllers\transaction\transaction.php(1115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$sell_price', 'APPPATH\\Controllers\\transaction\\transaction.php', 1115)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlistumum()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-31 12:31:47 --> Undefined property: stdClass::$sell_price
+in APPPATH\Controllers\transaction\transaction.php on line 1115.
+ 1 APPPATH\Controllers\transaction\transaction.php(1115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$sell_price', 'APPPATH\\Controllers\\transaction\\transaction.php', 1115)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listproductlistumum()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-31 14:03:10 --> mysqli_sql_exception: Column 'store_id' cannot be null in D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\gudang\app\Controllers\transaction\transaction.php(421): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\gudang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-31 14:03:10 --> Column 'store_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14627\', \'231\', NULL, \'1\', 60500)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14627\', \'231\', NULL, \'1\', 60500)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14627\', \'231\', NULL, \'1\', 60500)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (:transaction_id:, :product_id:, :store_id:, :transactiond_qty:, :transactiond_price:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(421): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-31 14:03:20 --> mysqli_sql_exception: Column 'store_id' cannot be null in D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\gudang\app\Controllers\transaction\transaction.php(421): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\gudang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-31 14:03:20 --> Column 'store_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14627\', \'8\', NULL, \'1\', 38000)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14627\', \'8\', NULL, \'1\', 38000)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14627\', \'8\', NULL, \'1\', 38000)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (:transaction_id:, :product_id:, :store_id:, :transactiond_qty:, :transactiond_price:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(421): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-31 14:04:06 --> mysqli_sql_exception: Column 'store_id' cannot be null in D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\gudang\app\Controllers\transaction\transaction.php(421): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\gudang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-31 14:04:06 --> Column 'store_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14630\', \'231\', NULL, \'1\', 60500)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14630\', \'231\', NULL, \'1\', 60500)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14630\', \'231\', NULL, \'1\', 60500)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (:transaction_id:, :product_id:, :store_id:, :transactiond_qty:, :transactiond_price:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(421): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-31 14:27:38 --> mysqli_sql_exception: Column 'store_id' cannot be null in D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\gudang\app\Controllers\transaction\transaction.php(421): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\gudang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-31 14:27:38 --> Column 'store_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14633\', \'231\', NULL, \'1\', 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14633\', \'231\', NULL, \'1\', 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14633\', \'231\', NULL, \'1\', 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (:transaction_id:, :product_id:, :store_id:, :transactiond_qty:, :transactiond_price:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(421): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-31 14:28:01 --> mysqli_sql_exception: Column 'store_id' cannot be null in D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\gudang\app\Controllers\transaction\transaction.php(421): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\gudang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-31 14:28:01 --> Column 'store_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14635\', \'10\', NULL, \'1\', 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14635\', \'10\', NULL, \'1\', 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14635\', \'10\', NULL, \'1\', 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (:transaction_id:, :product_id:, :store_id:, :transactiond_qty:, :transactiond_price:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(421): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-31 14:28:36 --> mysqli_sql_exception: Column 'store_id' cannot be null in D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\gudang\app\Controllers\transaction\transaction.php(421): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\gudang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-31 14:28:36 --> Column 'store_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14636\', \'470\', NULL, \'1\', 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14636\', \'470\', NULL, \'1\', 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14636\', \'470\', NULL, \'1\', 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (:transaction_id:, :product_id:, :store_id:, :transactiond_qty:, :transactiond_price:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(421): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-31 14:28:40 --> mysqli_sql_exception: Column 'store_id' cannot be null in D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\gudang\app\Controllers\transaction\transaction.php(421): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\gudang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-31 14:28:40 --> Column 'store_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14636\', \'2\', NULL, \'1\', 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14636\', \'2\', NULL, \'1\', 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14636\', \'2\', NULL, \'1\', 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (:transaction_id:, :product_id:, :store_id:, :transactiond_qty:, :transactiond_price:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(421): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-31 14:28:57 --> mysqli_sql_exception: Column 'store_id' cannot be null in D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\gudang\app\Controllers\transaction\transaction.php(421): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\gudang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-31 14:28:57 --> Column 'store_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14637\', \'231\', NULL, \'1\', 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14637\', \'231\', NULL, \'1\', 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14637\', \'231\', NULL, \'1\', 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (:transaction_id:, :product_id:, :store_id:, :transactiond_qty:, :transactiond_price:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(421): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-31 14:34:32 --> mysqli_sql_exception: Column 'store_id' cannot be null in D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\gudang\app\Controllers\transaction\transaction.php(444): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\gudang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-31 14:34:32 --> Column 'store_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14638\', \'231\', NULL, \'1\', 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14638\', \'231\', NULL, \'1\', 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14638\', \'231\', NULL, \'1\', 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (:transaction_id:, :product_id:, :store_id:, :transactiond_qty:, :transactiond_price:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(444): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-31 14:39:29 --> mysqli_sql_exception: Column 'store_id' cannot be null in D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\gudang\app\Controllers\transaction\transaction.php(444): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\gudang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-31 14:39:29 --> Column 'store_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14638\', \'231\', NULL, \'1\', 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14638\', \'231\', NULL, \'1\', 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'14638\', \'231\', NULL, \'1\', 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (:transaction_id:, :product_id:, :store_id:, :transactiond_qty:, :transactiond_price:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(444): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

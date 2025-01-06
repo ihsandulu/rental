@@ -1,0 +1,119 @@
+ERROR - 2023-05-04 00:28:26 --> mysqli_sql_exception: Column 'store_id' cannot be null in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(411): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-04 00:28:26 --> Column 'store_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'7680\', \'8\', NULL, \'1\', 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'7680\', \'8\', NULL, \'1\', 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (\'7680\', \'8\', NULL, \'1\', 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (:transaction_id:, :product_id:, :store_id:, :transactiond_qty:, :transactiond_price:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(411): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-04 13:07:54 --> mysqli_sql_exception: Column 'store_id' in where clause is ambiguous in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mproduct_m.php(219): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-04 13:07:54 --> Column 'store_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `sell`
+LEFT JOIN `positionm` ON `positionm`.`positionm_id`=`sell`.`positionm_id`
+WHERE `store_id` = \'1\'
+AND `product_id` = \'16\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `sell`
+LEFT JOIN `positionm` ON `positionm`.`positionm_id`=`sell`.`positionm_id`
+WHERE `store_id` = \'1\'
+AND `product_id` = \'16\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `sell`
+LEFT JOIN `positionm` ON `positionm`.`positionm_id`=`sell`.`positionm_id`
+WHERE `store_id` = \'1\'
+AND `product_id` = \'16\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `sell`
+LEFT JOIN `positionm` ON `positionm`.`positionm_id`=`sell`.`positionm_id`
+WHERE `store_id` = :store_id:
+AND `product_id` = :product_id:', [...], false)
+ 5 APPPATH\Models\master\mproduct_m.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-04 13:14:20 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$positionm_id
+in APPPATH\Models\master\mproduct_m.php on line 232.
+ 1 APPPATH\Models\master\mproduct_m.php(232): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$positionm_id', 'APPPATH\\Models\\master\\mproduct_m.php', 232)
+ 2 APPPATH\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-04 14:17:37 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::last_query()
+in APPPATH\Models\master\mproduct_m.php on line 225.
+ 1 APPPATH\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-04 14:17:54 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::lastQuery()
+in APPPATH\Models\master\mproduct_m.php on line 225.
+ 1 APPPATH\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-04 14:25:34 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-04 14:35:52 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-04 14:36:39 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Models\master\mproduct_m.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-04 16:20:42 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\transaction\transaction.php on line 1054.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertmember()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-04 16:20:46 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\transaction\transaction.php on line 1054.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertmember()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-04 16:22:01 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\transaction\transaction.php on line 1054.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertmember()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-04 16:22:02 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\transaction\transaction.php on line 1054.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertmember()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

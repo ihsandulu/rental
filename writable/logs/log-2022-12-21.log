@@ -1,0 +1,163 @@
+CRITICAL - 2022-12-21 00:01:24 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-21 00:17:07 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-12-21 00:19:11 --> mysqli_sql_exception: MySQL server has gone away in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `store` ...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `store` ...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `store` ...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `store` ...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(95): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->kas()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-21 00:19:11 --> MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `store` SET `store_kas` = \'0100000\', `store_modal` = \'0100000\'
+WHERE `store_id` = \'0\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `store` SET `store_kas` = \'0100000\', `store_modal` = \'0100000\'
+WHERE `store_id` = \'0\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `store` SET `store_kas` = \'0100000\', `store_modal` = \'0100000\'
+WHERE `store_id` = \'0\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `store` SET `store_kas` = :store_kas:, `store_modal` = :store_modal:
+WHERE `store_id` = :store_id:', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(95): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->kas()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-21 00:20:49 --> mysqli_sql_exception: MySQL server has gone away in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `kas` SE...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kas` SE...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kas` SE...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `kas` SE...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(120): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->kas()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-21 00:20:49 --> MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `kas` SET `kas_nominal` = \'0100000\', `kas_type` = \'masuk\', `kas_date` = \'2022-12-21\'
+WHERE `kas_id` = \'152\'
+AND `store_id` = \'0\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kas` SET `kas_nominal` = \'0100000\', `kas_type` = \'masuk\', `kas_date` = \'2022-12-21\'
+WHERE `kas_id` = \'152\'
+AND `store_id` = \'0\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kas` SET `kas_nominal` = \'0100000\', `kas_type` = \'masuk\', `kas_date` = \'2022-12-21\'
+WHERE `kas_id` = \'152\'
+AND `store_id` = \'0\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `kas` SET `kas_nominal` = :kas_nominal:, `kas_type` = :kas_type:, `kas_date` = :kas_date:
+WHERE `kas_id` = :kas_id:
+AND `store_id` = :store_id:', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(120): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->kas()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-21 00:23:19 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-12-21 00:36:16 --> mysqli_sql_exception: MySQL server has gone away in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `store` ...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `store` ...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `store` ...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `store` ...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(79): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->kas()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-21 00:36:16 --> MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `store` SET `store_kas` = 200000, `store_modal` = 200000
+WHERE `store_id` = \'0\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `store` SET `store_kas` = 200000, `store_modal` = 200000
+WHERE `store_id` = \'0\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `store` SET `store_kas` = 200000, `store_modal` = 200000
+WHERE `store_id` = \'0\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `store` SET `store_kas` = :store_kas:, `store_modal` = :store_modal:
+WHERE `store_id` = :store_id:', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(79): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->kas()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-21 00:39:28 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+in APPPATH\Controllers\transaction\transaction.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->kas()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-21 08:18:00 --> Undefined variable $kastype
+in APPPATH\Controllers\transaction\transaction.php on line 92.
+ 1 APPPATH\Controllers\transaction\transaction.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kastype', 'APPPATH\\Controllers\\transaction\\transaction.php', 92)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->kas()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-21 08:18:12 --> Undefined variable $kastype
+in APPPATH\Controllers\transaction\transaction.php on line 92.
+ 1 APPPATH\Controllers\transaction\transaction.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kastype', 'APPPATH\\Controllers\\transaction\\transaction.php', 92)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->kas()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-21 08:23:56 --> Undefined variable $kastype
+in APPPATH\Controllers\transaction\transaction.php on line 92.
+ 1 APPPATH\Controllers\transaction\transaction.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kastype', 'APPPATH\\Controllers\\transaction\\transaction.php', 92)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->kas()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-21 08:24:53 --> Undefined variable $kastype
+in APPPATH\Controllers\transaction\transaction.php on line 92.
+ 1 APPPATH\Controllers\transaction\transaction.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kastype', 'APPPATH\\Controllers\\transaction\\transaction.php', 92)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->kas()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-21 08:27:04 --> Undefined property: stdClass::$kas_shift
+in APPPATH\Controllers\transaction\transaction.php on line 112.
+ 1 APPPATH\Controllers\transaction\transaction.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$kas_shift', 'APPPATH\\Controllers\\transaction\\transaction.php', 112)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->kas()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-21 08:58:02 --> Attempt to read property "product_sell" on null
+in APPPATH\Controllers\transaction\transaction.php on line 322.
+ 1 APPPATH\Controllers\transaction\transaction.php(322): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_sell" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 322)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-21 09:18:50 --> Attempt to read property "product_sell" on null
+in APPPATH\Controllers\transaction\transaction.php on line 330.
+ 1 APPPATH\Controllers\transaction\transaction.php(330): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_sell" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 330)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-21 09:18:52 --> Attempt to read property "product_sell" on null
+in APPPATH\Controllers\transaction\transaction.php on line 330.
+ 1 APPPATH\Controllers\transaction\transaction.php(330): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_sell" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 330)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-21 09:19:04 --> Attempt to read property "product_sell" on null
+in APPPATH\Controllers\transaction\transaction.php on line 330.
+ 1 APPPATH\Controllers\transaction\transaction.php(330): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_sell" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 330)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

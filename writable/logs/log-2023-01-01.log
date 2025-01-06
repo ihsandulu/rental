@@ -1,0 +1,334 @@
+ERROR - 2023-01-01 06:53:37 --> mysqli_sql_exception: Column 'transaction_id' cannot be null in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(386): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 06:53:37 --> Column 'transaction_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'17\', \'1\', 1, \'1000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'17\', \'1\', 1, \'1000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'17\', \'1\', 1, \'1000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (:transaction_id:, :product_id:, :store_id:, :transactiond_qty:, :transactiond_price:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(386): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 07:14:00 --> mysqli_sql_exception: Unknown column 'payment.purchase_id' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\transaction\purchase_v.php(178): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('transaction/pur...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\transaction\purchase.php(23): view('transaction/pur...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\purchase->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\purchase))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-01 07:14:00 --> Unknown column 'payment.purchase_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id AS purchaseid,SUM(purchased_price)AS nominal FROM purchased GROUP BY purchase_id)purchased ON `purchased`.`purchaseid`=`purchase`.`purchase_id`
+LEFT JOIN (SELECT SUM(payment_nominal)AS bayar FROM payment)payment ON `payment`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'1\'
+AND `purchase`.`purchase_date` = \'2023-01-01\'
+AND `purchase`.`purchase_date` = \'2023-01-01\'
+ORDER BY `purchase_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id AS purchaseid,SUM(purchased_price)AS nominal FROM purchased GROUP BY purchase_id)purchased ON `purchased`.`purchaseid`=`purchase`.`purchase_id`
+LEFT JOIN (SELECT SUM(payment_nominal)AS bayar FROM payment)payment ON `payment`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'1\'
+AND `purchase`.`purchase_date` = \'2023-01-01\'
+AND `purchase`.`purchase_date` = \'2023-01-01\'
+ORDER BY `purchase_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id AS purchaseid,SUM(purchased_price)AS nominal FROM purchased GROUP BY purchase_id)purchased ON `purchased`.`purchaseid`=`purchase`.`purchase_id`
+LEFT JOIN (SELECT SUM(payment_nominal)AS bayar FROM payment)payment ON `payment`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'1\'
+AND `purchase`.`purchase_date` = \'2023-01-01\'
+AND `purchase`.`purchase_date` = \'2023-01-01\'
+ORDER BY `purchase_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id AS purchaseid,SUM(purchased_price)AS nominal FROM purchased GROUP BY purchase_id)purchased ON `purchased`.`purchaseid`=`purchase`.`purchase_id`
+LEFT JOIN (SELECT SUM(payment_nominal)AS bayar FROM payment)payment ON `payment`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = :purchase.store_id:
+AND `purchase`.`purchase_date` = :purchase.purchase_date:
+AND `purchase`.`purchase_date` = :purchase.purchase_date.1:
+ORDER BY `purchase_id` DESC', [...], false)
+ 5 APPPATH\Views\transaction\purchase_v.php(178): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\purchase_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/purchase_v', [], true)
+ 9 APPPATH\Controllers\transaction\purchase.php(23): view('transaction/purchase_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\purchase->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\purchase))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 07:16:19 --> mysqli_sql_exception: Unknown column 'payment.pid' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\transaction\purchase_v.php(178): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('transaction/pur...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\transaction\purchase.php(23): view('transaction/pur...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\purchase->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\purchase))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-01 07:16:19 --> Unknown column 'payment.pid' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id AS purchaseid,SUM(purchased_price)AS nominal FROM purchased GROUP BY purchase_id)purchased ON `purchased`.`purchaseid`=`purchase`.`purchase_id`
+LEFT JOIN (SELECT * FROM payment GROUP BY purchase_id)payment ON `payment`.`pid`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'1\'
+AND `purchase`.`purchase_date` >= \'2022-01-01\'
+AND `purchase`.`purchase_date` <= \'2023-01-01\'
+ORDER BY `purchase_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id AS purchaseid,SUM(purchased_price)AS nominal FROM purchased GROUP BY purchase_id)purchased ON `purchased`.`purchaseid`=`purchase`.`purchase_id`
+LEFT JOIN (SELECT * FROM payment GROUP BY purchase_id)payment ON `payment`.`pid`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'1\'
+AND `purchase`.`purchase_date` >= \'2022-01-01\'
+AND `purchase`.`purchase_date` <= \'2023-01-01\'
+ORDER BY `purchase_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id AS purchaseid,SUM(purchased_price)AS nominal FROM purchased GROUP BY purchase_id)purchased ON `purchased`.`purchaseid`=`purchase`.`purchase_id`
+LEFT JOIN (SELECT * FROM payment GROUP BY purchase_id)payment ON `payment`.`pid`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'1\'
+AND `purchase`.`purchase_date` >= \'2022-01-01\'
+AND `purchase`.`purchase_date` <= \'2023-01-01\'
+ORDER BY `purchase_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id AS purchaseid,SUM(purchased_price)AS nominal FROM purchased GROUP BY purchase_id)purchased ON `purchased`.`purchaseid`=`purchase`.`purchase_id`
+LEFT JOIN (SELECT * FROM payment GROUP BY purchase_id)payment ON `payment`.`pid`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = :purchase.store_id:
+AND `purchase`.`purchase_date` >= :purchase.purchase_date:
+AND `purchase`.`purchase_date` <= :purchase.purchase_date.1:
+ORDER BY `purchase_id` DESC', [...], false)
+ 5 APPPATH\Views\transaction\purchase_v.php(178): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\purchase_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/purchase_v', [], true)
+ 9 APPPATH\Controllers\transaction\purchase.php(23): view('transaction/purchase_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\purchase->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\purchase))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 07:17:16 --> mysqli_sql_exception: Unknown column 'payment.pid' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\transaction\purchase_v.php(178): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('transaction/pur...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\transaction\purchase.php(23): view('transaction/pur...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\purchase->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\purchase))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-01 07:17:16 --> Unknown column 'payment.pid' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id AS purchaseid,SUM(purchased_price)AS nominal FROM purchased GROUP BY purchase_id)purchased ON `purchased`.`purchaseid`=`purchase`.`purchase_id`
+LEFT JOIN (SELECT * FROM payment GROUP BY purchase_id)payment ON `payment`.`pid`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'1\'
+AND `purchase`.`purchase_date` >= \'2022-01-01\'
+AND `purchase`.`purchase_date` <= \'2023-01-01\'
+ORDER BY `purchase`.`purchase_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id AS purchaseid,SUM(purchased_price)AS nominal FROM purchased GROUP BY purchase_id)purchased ON `purchased`.`purchaseid`=`purchase`.`purchase_id`
+LEFT JOIN (SELECT * FROM payment GROUP BY purchase_id)payment ON `payment`.`pid`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'1\'
+AND `purchase`.`purchase_date` >= \'2022-01-01\'
+AND `purchase`.`purchase_date` <= \'2023-01-01\'
+ORDER BY `purchase`.`purchase_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id AS purchaseid,SUM(purchased_price)AS nominal FROM purchased GROUP BY purchase_id)purchased ON `purchased`.`purchaseid`=`purchase`.`purchase_id`
+LEFT JOIN (SELECT * FROM payment GROUP BY purchase_id)payment ON `payment`.`pid`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'1\'
+AND `purchase`.`purchase_date` >= \'2022-01-01\'
+AND `purchase`.`purchase_date` <= \'2023-01-01\'
+ORDER BY `purchase`.`purchase_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id AS purchaseid,SUM(purchased_price)AS nominal FROM purchased GROUP BY purchase_id)purchased ON `purchased`.`purchaseid`=`purchase`.`purchase_id`
+LEFT JOIN (SELECT * FROM payment GROUP BY purchase_id)payment ON `payment`.`pid`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = :purchase.store_id:
+AND `purchase`.`purchase_date` >= :purchase.purchase_date:
+AND `purchase`.`purchase_date` <= :purchase.purchase_date.1:
+ORDER BY `purchase`.`purchase_id` DESC', [...], false)
+ 5 APPPATH\Views\transaction\purchase_v.php(178): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\purchase_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/purchase_v', [], true)
+ 9 APPPATH\Controllers\transaction\purchase.php(23): view('transaction/purchase_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\purchase->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\purchase))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 07:18:56 --> mysqli_sql_exception: Column 'purchase_id' in order clause is ambiguous in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\transaction\purchase_v.php(178): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('transaction/pur...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\transaction\purchase.php(23): view('transaction/pur...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\purchase->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\purchase))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-01 07:18:56 --> Column 'purchase_id' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id AS purchaseid,SUM(purchased_price)AS nominal FROM purchased GROUP BY purchase_id)purchased ON `purchased`.`purchaseid`=`purchase`.`purchase_id`
+LEFT JOIN `payment` ON `payment`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'1\'
+AND `purchase`.`purchase_date` >= \'2022-01-01\'
+AND `purchase`.`purchase_date` <= \'2023-01-01\'
+ORDER BY `purchase_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id AS purchaseid,SUM(purchased_price)AS nominal FROM purchased GROUP BY purchase_id)purchased ON `purchased`.`purchaseid`=`purchase`.`purchase_id`
+LEFT JOIN `payment` ON `payment`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'1\'
+AND `purchase`.`purchase_date` >= \'2022-01-01\'
+AND `purchase`.`purchase_date` <= \'2023-01-01\'
+ORDER BY `purchase_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id AS purchaseid,SUM(purchased_price)AS nominal FROM purchased GROUP BY purchase_id)purchased ON `purchased`.`purchaseid`=`purchase`.`purchase_id`
+LEFT JOIN `payment` ON `payment`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'1\'
+AND `purchase`.`purchase_date` >= \'2022-01-01\'
+AND `purchase`.`purchase_date` <= \'2023-01-01\'
+ORDER BY `purchase_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id AS purchaseid,SUM(purchased_price)AS nominal FROM purchased GROUP BY purchase_id)purchased ON `purchased`.`purchaseid`=`purchase`.`purchase_id`
+LEFT JOIN `payment` ON `payment`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = :purchase.store_id:
+AND `purchase`.`purchase_date` >= :purchase.purchase_date:
+AND `purchase`.`purchase_date` <= :purchase.purchase_date.1:
+ORDER BY `purchase_id` DESC', [...], false)
+ 5 APPPATH\Views\transaction\purchase_v.php(178): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\purchase_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/purchase_v', [], true)
+ 9 APPPATH\Controllers\transaction\purchase.php(23): view('transaction/purchase_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\purchase->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\purchase))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 10:12:17 --> Undefined variable $input
+in APPPATH\Models\transaction\purchased_m.php on line 60.
+ 1 APPPATH\Models\transaction\purchased_m.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $input', 'APPPATH\\Models\\transaction\\purchased_m.php', 60)
+ 2 APPPATH\Controllers\transaction\purchased.php(22): App\Models\transaction\purchased_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\purchased->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\purchased))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 10:13:00 --> Attempt to read property "product_stock" on null
+in APPPATH\Models\transaction\purchased_m.php on line 63.
+ 1 APPPATH\Models\transaction\purchased_m.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_stock" on null', 'APPPATH\\Models\\transaction\\purchased_m.php', 63)
+ 2 APPPATH\Controllers\transaction\purchased.php(22): App\Models\transaction\purchased_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\purchased->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\purchased))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 12:14:30 --> Undefined property: stdClass::$transactiond_qty
+in APPPATH\Views\transaction\purchase_v.php on line 293.
+ 1 APPPATH\Views\transaction\purchase_v.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$transactiond_qty', 'APPPATH\\Views\\transaction\\purchase_v.php', 293)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\purchase_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/purchase_v', [], true)
+ 5 APPPATH\Controllers\transaction\purchase.php(23): view('transaction/purchase_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\purchase->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\purchase))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

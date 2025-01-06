@@ -1,0 +1,102 @@
+ERROR - 2023-04-15 12:43:22 --> mysqli_sql_exception: Unknown column 'transactiond_stokawal' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `transac...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `transac...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `transac...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `transac...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(416): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-15 12:43:22 --> Unknown column 'transactiond_stokawal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `transactiond` SET `transactiond_stokawal` = \'15\', `transactiond_stokakhir` = 14
+WHERE `transactiond_id` = 16211', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `transactiond` SET `transactiond_stokawal` = \'15\', `transactiond_stokakhir` = 14
+WHERE `transactiond_id` = 16211')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `transactiond` SET `transactiond_stokawal` = \'15\', `transactiond_stokakhir` = 14
+WHERE `transactiond_id` = 16211')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `transactiond` SET `transactiond_stokawal` = :transactiond_stokawal:, `transactiond_stokakhir` = :transactiond_stokakhir:
+WHERE `transactiond_id` = :transactiond_id:', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(416): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 14:48:37 --> Undefined variable $stockopname_id
+in APPPATH\Models\transaction\stockopname_m.php on line 160.
+ 1 APPPATH\Models\transaction\stockopname_m.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stockopname_id', 'APPPATH\\Models\\transaction\\stockopname_m.php', 160)
+ 2 APPPATH\Controllers\transaction\stockopname.php(22): App\Models\transaction\stockopname_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\stockopname->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\stockopname))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-15 15:13:26 --> mysqli_sql_exception: Unknown column 'transactiond.cashier_id' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\report\rhistorystock_v.php(124): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('report/rhistory...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\report\rhistorystock.php(22): view('report/rhistory...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-04-15 15:13:26 --> Unknown column 'transactiond.cashier_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `transactiond`
+LEFT JOIN `user` ON `user`.`user_id`=`transactiond`.`cashier_id`
+LEFT JOIN `transaction` ON `transaction`.`transaction_id`=`transactiond`.`transaction_id`
+LEFT JOIN `store` ON `store`.`store_id`=`transactiond`.`store_id`
+WHERE `transactiond`.`store_id` = \'1\'
+AND `transactiond`.`product_id` = 0
+AND `transaction`.`transaction_date` = \'2023-04-15\'
+AND `transaction`.`transaction_date` = \'2023-04-15\'
+ORDER BY `transaction_date` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transactiond`
+LEFT JOIN `user` ON `user`.`user_id`=`transactiond`.`cashier_id`
+LEFT JOIN `transaction` ON `transaction`.`transaction_id`=`transactiond`.`transaction_id`
+LEFT JOIN `store` ON `store`.`store_id`=`transactiond`.`store_id`
+WHERE `transactiond`.`store_id` = \'1\'
+AND `transactiond`.`product_id` = 0
+AND `transaction`.`transaction_date` = \'2023-04-15\'
+AND `transaction`.`transaction_date` = \'2023-04-15\'
+ORDER BY `transaction_date` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transactiond`
+LEFT JOIN `user` ON `user`.`user_id`=`transactiond`.`cashier_id`
+LEFT JOIN `transaction` ON `transaction`.`transaction_id`=`transactiond`.`transaction_id`
+LEFT JOIN `store` ON `store`.`store_id`=`transactiond`.`store_id`
+WHERE `transactiond`.`store_id` = \'1\'
+AND `transactiond`.`product_id` = 0
+AND `transaction`.`transaction_date` = \'2023-04-15\'
+AND `transaction`.`transaction_date` = \'2023-04-15\'
+ORDER BY `transaction_date` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transactiond`
+LEFT JOIN `user` ON `user`.`user_id`=`transactiond`.`cashier_id`
+LEFT JOIN `transaction` ON `transaction`.`transaction_id`=`transactiond`.`transaction_id`
+LEFT JOIN `store` ON `store`.`store_id`=`transactiond`.`store_id`
+WHERE `transactiond`.`store_id` = :transactiond.store_id:
+AND `transactiond`.`product_id` = :transactiond.product_id:
+AND `transaction`.`transaction_date` = :transaction.transaction_date:
+AND `transaction`.`transaction_date` = :transaction.transaction_date.1:
+ORDER BY `transaction_date` ASC', [...], false)
+ 5 APPPATH\Views\report\rhistorystock_v.php(124): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 9 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,21 @@
+CRITICAL - 2022-12-28 11:49:37 --> Attempt to read property "store_name" on array
+in APPPATH\Views\transaction\transactionprint_v.php on line 57.
+ 1 APPPATH\Views\transaction\transactionprint_v.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "store_name" on array', 'APPPATH\\Views\\transaction\\transactionprint_v.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\transactionprint_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/transactionprint_v', [], true)
+ 5 APPPATH\Controllers\transaction\transaction.php(29): view('transaction/transactionprint_v')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->print()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 11:50:36 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getRows()
+in APPPATH\Views\transaction\transactionprint_v.php on line 47.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/transactionprint_v', [], true)
+ 4 APPPATH\Controllers\transaction\transaction.php(29): view('transaction/transactionprint_v')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->print()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

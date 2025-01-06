@@ -1,0 +1,10 @@
+CRITICAL - 2023-05-07 13:49:55 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::row()
+in APPPATH\Models\master\mproduct_m.php on line 185.
+ 1 APPPATH\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-07 14:10:54 --> Maximum execution time of 120 seconds exceeded
+in VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php on line 634.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

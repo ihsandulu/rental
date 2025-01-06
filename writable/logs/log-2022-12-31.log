@@ -1,0 +1,379 @@
+ERROR - 2022-12-31 05:34:49 --> mysqli_sql_exception: Unknown column 'store_id' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mmember_m.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mmember.php(22): App\Models\master\mmember_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mmember->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mmember))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-31 05:34:49 --> Unknown column 'store_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `member`
+WHERE `member_id` = -1
+AND `store_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `member`
+WHERE `member_id` = -1
+AND `store_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `member`
+WHERE `member_id` = -1
+AND `store_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `member`
+WHERE `member_id` = :member_id:
+AND `store_id` = :store_id:', [...], false)
+ 5 APPPATH\Models\master\mmember_m.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Controllers\master\mmember.php(22): App\Models\master\mmember_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mmember->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mmember))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-31 05:35:17 --> mysqli_sql_exception: Unknown column 'member.position_id' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mmember_v.php(178): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mmember_...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mmember.php(23): view('master/mmember_...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mmember->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mmember))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-31 05:35:17 --> Unknown column 'member.position_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `member`
+LEFT JOIN `position` ON `position`.`position_id`=`member`.`position_id`
+LEFT JOIN `store` ON `store`.`store_id`=`member`.`store_id`
+WHERE `position`.`position_administrator` != \'1\'
+AND `member`.`store_id` = \'1\'
+ORDER BY `member_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `member`
+LEFT JOIN `position` ON `position`.`position_id`=`member`.`position_id`
+LEFT JOIN `store` ON `store`.`store_id`=`member`.`store_id`
+WHERE `position`.`position_administrator` != \'1\'
+AND `member`.`store_id` = \'1\'
+ORDER BY `member_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `member`
+LEFT JOIN `position` ON `position`.`position_id`=`member`.`position_id`
+LEFT JOIN `store` ON `store`.`store_id`=`member`.`store_id`
+WHERE `position`.`position_administrator` != \'1\'
+AND `member`.`store_id` = \'1\'
+ORDER BY `member_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `member`
+LEFT JOIN `position` ON `position`.`position_id`=`member`.`position_id`
+LEFT JOIN `store` ON `store`.`store_id`=`member`.`store_id`
+WHERE `position`.`position_administrator` != :position.position_administrator:
+AND `member`.`store_id` = :member.store_id:
+ORDER BY `member_id` DESC', [...], false)
+ 5 APPPATH\Views\master\mmember_v.php(178): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mmember_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mmember_v', [], true)
+ 9 APPPATH\Controllers\master\mmember.php(23): view('master/mmember_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mmember->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mmember))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-31 06:00:30 --> mysqli_sql_exception: Unknown column 'positionm.positionm_administrator' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mpositionm_v.php(120): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mpositio...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mpositionm.php(23): view('master/mpositio...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mpositionm->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mpositionm))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-31 06:00:30 --> Unknown column 'positionm.positionm_administrator' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `positionm`
+LEFT JOIN `store` ON `store`.`store_id`=`positionm`.`store_id`
+WHERE `positionm`.`store_id` = \'1\'
+AND `positionm`.`positionm_administrator` != \'1\'
+ORDER BY `positionm_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `positionm`
+LEFT JOIN `store` ON `store`.`store_id`=`positionm`.`store_id`
+WHERE `positionm`.`store_id` = \'1\'
+AND `positionm`.`positionm_administrator` != \'1\'
+ORDER BY `positionm_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `positionm`
+LEFT JOIN `store` ON `store`.`store_id`=`positionm`.`store_id`
+WHERE `positionm`.`store_id` = \'1\'
+AND `positionm`.`positionm_administrator` != \'1\'
+ORDER BY `positionm_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `positionm`
+LEFT JOIN `store` ON `store`.`store_id`=`positionm`.`store_id`
+WHERE `positionm`.`store_id` = :positionm.store_id:
+AND `positionm`.`positionm_administrator` != :positionm.positionm_administrator:
+ORDER BY `positionm_name` ASC', [...], false)
+ 5 APPPATH\Views\master\mpositionm_v.php(120): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mpositionm_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mpositionm_v', [], true)
+ 9 APPPATH\Controllers\master\mpositionm.php(23): view('master/mpositionm_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mpositionm->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mpositionm))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-31 06:03:25 --> mysqli_sql_exception: Unknown column 'positionm.positionm_administrator' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mpositionm_v.php(120): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mpositio...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mpositionm.php(23): view('master/mpositio...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mpositionm->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mpositionm))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-31 06:03:25 --> Unknown column 'positionm.positionm_administrator' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `positionm`
+LEFT JOIN `store` ON `store`.`store_id`=`positionm`.`store_id`
+WHERE `positionm`.`store_id` = \'1\'
+AND `positionm`.`positionm_administrator` != \'1\'
+ORDER BY `positionm_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `positionm`
+LEFT JOIN `store` ON `store`.`store_id`=`positionm`.`store_id`
+WHERE `positionm`.`store_id` = \'1\'
+AND `positionm`.`positionm_administrator` != \'1\'
+ORDER BY `positionm_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `positionm`
+LEFT JOIN `store` ON `store`.`store_id`=`positionm`.`store_id`
+WHERE `positionm`.`store_id` = \'1\'
+AND `positionm`.`positionm_administrator` != \'1\'
+ORDER BY `positionm_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `positionm`
+LEFT JOIN `store` ON `store`.`store_id`=`positionm`.`store_id`
+WHERE `positionm`.`store_id` = :positionm.store_id:
+AND `positionm`.`positionm_administrator` != :positionm.positionm_administrator:
+ORDER BY `positionm_name` ASC', [...], false)
+ 5 APPPATH\Views\master\mpositionm_v.php(120): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mpositionm_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mpositionm_v', [], true)
+ 9 APPPATH\Controllers\master\mpositionm.php(23): view('master/mpositionm_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mpositionm->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mpositionm))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-31 06:06:39 --> mysqli_sql_exception: Unknown column 'member.position_id' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mmember_v.php(178): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mmember_...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mmember.php(23): view('master/mmember_...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mmember->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mmember))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-31 06:06:39 --> Unknown column 'member.position_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `member`
+LEFT JOIN `position` ON `position`.`position_id`=`member`.`position_id`
+LEFT JOIN `store` ON `store`.`store_id`=`member`.`store_id`
+WHERE `position`.`position_administrator` != \'1\'
+AND `member`.`store_id` = \'1\'
+ORDER BY `member_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `member`
+LEFT JOIN `position` ON `position`.`position_id`=`member`.`position_id`
+LEFT JOIN `store` ON `store`.`store_id`=`member`.`store_id`
+WHERE `position`.`position_administrator` != \'1\'
+AND `member`.`store_id` = \'1\'
+ORDER BY `member_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `member`
+LEFT JOIN `position` ON `position`.`position_id`=`member`.`position_id`
+LEFT JOIN `store` ON `store`.`store_id`=`member`.`store_id`
+WHERE `position`.`position_administrator` != \'1\'
+AND `member`.`store_id` = \'1\'
+ORDER BY `member_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `member`
+LEFT JOIN `position` ON `position`.`position_id`=`member`.`position_id`
+LEFT JOIN `store` ON `store`.`store_id`=`member`.`store_id`
+WHERE `position`.`position_administrator` != :position.position_administrator:
+AND `member`.`store_id` = :member.store_id:
+ORDER BY `member_id` DESC', [...], false)
+ 5 APPPATH\Views\master\mmember_v.php(178): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mmember_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mmember_v', [], true)
+ 9 APPPATH\Controllers\master\mmember.php(23): view('master/mmember_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mmember->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mmember))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-31 06:07:23 --> mysqli_sql_exception: Unknown column 'member.positionm_id' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mmember_v.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mmember_...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mmember.php(23): view('master/mmember_...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mmember->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mmember))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-31 06:07:23 --> Unknown column 'member.positionm_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `member`
+LEFT JOIN `positionm` ON `positionm`.`positionm_id`=`member`.`positionm_id`
+LEFT JOIN `store` ON `store`.`store_id`=`member`.`store_id`
+WHERE `member`.`store_id` = \'1\'
+ORDER BY `member_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `member`
+LEFT JOIN `positionm` ON `positionm`.`positionm_id`=`member`.`positionm_id`
+LEFT JOIN `store` ON `store`.`store_id`=`member`.`store_id`
+WHERE `member`.`store_id` = \'1\'
+ORDER BY `member_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `member`
+LEFT JOIN `positionm` ON `positionm`.`positionm_id`=`member`.`positionm_id`
+LEFT JOIN `store` ON `store`.`store_id`=`member`.`store_id`
+WHERE `member`.`store_id` = \'1\'
+ORDER BY `member_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `member`
+LEFT JOIN `positionm` ON `positionm`.`positionm_id`=`member`.`positionm_id`
+LEFT JOIN `store` ON `store`.`store_id`=`member`.`store_id`
+WHERE `member`.`store_id` = :member.store_id:
+ORDER BY `member_id` DESC', [...], false)
+ 5 APPPATH\Views\master\mmember_v.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mmember_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mmember_v', [], true)
+ 9 APPPATH\Controllers\master\mmember.php(23): view('master/mmember_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mmember->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mmember))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-31 07:11:39 --> mysqli_sql_exception: Column 'transaction_id' cannot be null in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(374): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-31 07:11:39 --> Column 'transaction_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'17\', \'1\', 1, \'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'17\', \'1\', 1, \'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (NULL, \'17\', \'1\', 1, \'0\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactiond` (`transaction_id`, `product_id`, `store_id`, `transactiond_qty`, `transactiond_price`) VALUES (:transaction_id:, :product_id:, :store_id:, :transactiond_qty:, :transactiond_price:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(374): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-31 09:23:16 --> Undefined array key "transaction_id"
+in APPPATH\Controllers\transaction\transaction.php on line 864.
+ 1 APPPATH\Controllers\transaction\transaction.php(864): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "transaction_id"', 'APPPATH\\Controllers\\transaction\\transaction.php', 864)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listmember()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-31 09:23:21 --> Undefined array key "transaction_id"
+in APPPATH\Controllers\transaction\transaction.php on line 864.
+ 1 APPPATH\Controllers\transaction\transaction.php(864): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "transaction_id"', 'APPPATH\\Controllers\\transaction\\transaction.php', 864)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->listmember()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-31 10:11:23 --> Undefined variable $transaction_id
+in APPPATH\Controllers\transaction\transaction.php on line 936.
+ 1 APPPATH\Controllers\transaction\transaction.php(936): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transaction_id', 'APPPATH\\Controllers\\transaction\\transaction.php', 936)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertmember()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-31 10:11:57 --> Undefined variable $transaction_id
+in APPPATH\Controllers\transaction\transaction.php on line 936.
+ 1 APPPATH\Controllers\transaction\transaction.php(936): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transaction_id', 'APPPATH\\Controllers\\transaction\\transaction.php', 936)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertmember()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-31 10:12:22 --> Undefined variable $transaction_id
+in APPPATH\Controllers\transaction\transaction.php on line 936.
+ 1 APPPATH\Controllers\transaction\transaction.php(936): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transaction_id', 'APPPATH\\Controllers\\transaction\\transaction.php', 936)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertmember()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-31 10:54:02 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Views\report\rtransaction_v.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Views\\report\\rtransaction_v.php', 80)
+ 2 APPPATH\Views\report\rtransaction_v.php(80): number_format(null, 0, ',', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rtransaction_v.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rtransaction_v', [], true)
+ 6 APPPATH\Controllers\report\rtransaction.php(23): view('report/rtransaction_v', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rtransaction->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rtransaction))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-31 17:52:29 --> syntax error, unexpected token "if"
+in APPPATH\Controllers\transaction\transaction.php on line 306.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\transaction\\transaction.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\transaction\\transaction')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\transaction\\transaction')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\transaction\\transaction', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

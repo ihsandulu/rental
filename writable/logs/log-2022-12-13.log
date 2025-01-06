@@ -1,0 +1,332 @@
+ERROR - 2022-12-13 06:31:32 --> mysqli_sql_exception: Not unique table/alias: 'store' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mstore_v.php(120): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mstore_v', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mstore.php(23): view('master/mstore_v', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mstore->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mstore))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-13 06:31:32 --> Not unique table/alias: 'store'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `store`
+LEFT JOIN `store` ON `store`.`store_id`=`store`.`store_id`
+WHERE `store`.`store_id` = \'0\'
+AND `store`.`store_administrator` != \'1\'
+ORDER BY `store_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `store`
+LEFT JOIN `store` ON `store`.`store_id`=`store`.`store_id`
+WHERE `store`.`store_id` = \'0\'
+AND `store`.`store_administrator` != \'1\'
+ORDER BY `store_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `store`
+LEFT JOIN `store` ON `store`.`store_id`=`store`.`store_id`
+WHERE `store`.`store_id` = \'0\'
+AND `store`.`store_administrator` != \'1\'
+ORDER BY `store_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `store`
+LEFT JOIN `store` ON `store`.`store_id`=`store`.`store_id`
+WHERE `store`.`store_id` = :store.store_id:
+AND `store`.`store_administrator` != :store.store_administrator:
+ORDER BY `store_name` ASC', [...], false)
+ 5 APPPATH\Views\master\mstore_v.php(120): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mstore_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mstore_v', [], true)
+ 9 APPPATH\Controllers\master\mstore.php(23): view('master/mstore_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mstore->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mstore))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 07:34:56 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(735): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\master\mstore_m.php(55): CodeIgniter\Model->__get('load')
+ 4 APPPATH\Controllers\master\mstore.php(22): App\Models\master\mstore_m->data()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mstore->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mstore))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 08:23:57 --> Undefined variable $store_picture
+in APPPATH\Views\template\headertop_v.php on line 8.
+ 1 APPPATH\Views\template\headertop_v.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $store_picture', 'APPPATH\\Views\\template\\headertop_v.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\headertop_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/headertop_v', null, true)
+ 5 APPPATH\Views\template\header_v.php(139): CodeIgniter\View\View->include('template/headertop_v')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\header_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/header_v', null, true)
+ 9 APPPATH\Views\master\mppn_v.php(1): CodeIgniter\View\View->include('template/header_v')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mppn_v.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mppn_v', [], true)
+13 APPPATH\Controllers\master\mppn.php(23): view('master/mppn_v', [...])
+14 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mppn->index()
+15 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mppn))
+16 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 08:27:27 --> Undefined variable $store_picture
+in APPPATH\Views\template\headertop_v.php on line 8.
+ 1 APPPATH\Views\template\headertop_v.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $store_picture', 'APPPATH\\Views\\template\\headertop_v.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\headertop_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/headertop_v', null, true)
+ 5 APPPATH\Views\template\header_v.php(139): CodeIgniter\View\View->include('template/headertop_v')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\header_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/header_v', null, true)
+ 9 APPPATH\Views\utama_v.php(1): CodeIgniter\View\View->include('template/header_v')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\utama_v.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+13 APPPATH\Controllers\utama.php(19): view('utama_v')
+14 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+15 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+16 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 08:38:33 --> syntax error, unexpected token "if"
+in APPPATH\Views\template\headertop_v.php on line 10.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/headertop_v', null, true)
+ 3 APPPATH\Views\template\header_v.php(139): CodeIgniter\View\View->include('template/headertop_v')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\header_v.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/header_v', null, true)
+ 7 APPPATH\Views\utama_v.php(1): CodeIgniter\View\View->include('template/header_v')
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\utama_v.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+11 APPPATH\Controllers\utama.php(19): view('utama_v')
+12 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+13 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+14 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-13 08:38:48 --> mysqli_sql_exception: Unknown column 'ppn_name' in 'order clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mppn_v.php(122): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mppn_v', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mppn.php(23): view('master/mppn_v', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mppn->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mppn))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-13 08:38:48 --> Unknown column 'ppn_name' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `ppn`
+LEFT JOIN `store` ON `store`.`store_id`=`ppn`.`store_id`
+WHERE `ppn`.`store_id` = \'0\'
+ORDER BY `ppn_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ppn`
+LEFT JOIN `store` ON `store`.`store_id`=`ppn`.`store_id`
+WHERE `ppn`.`store_id` = \'0\'
+ORDER BY `ppn_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ppn`
+LEFT JOIN `store` ON `store`.`store_id`=`ppn`.`store_id`
+WHERE `ppn`.`store_id` = \'0\'
+ORDER BY `ppn_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ppn`
+LEFT JOIN `store` ON `store`.`store_id`=`ppn`.`store_id`
+WHERE `ppn`.`store_id` = :ppn.store_id:
+ORDER BY `ppn_name` ASC', [...], false)
+ 5 APPPATH\Views\master\mppn_v.php(122): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mppn_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mppn_v', [], true)
+ 9 APPPATH\Controllers\master\mppn.php(23): view('master/mppn_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mppn->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mppn))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-13 08:41:57 --> mysqli_sql_exception: Unknown column 'ppn_name' in 'order clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mppn_v.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mppn_v', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mppn.php(23): view('master/mppn_v', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mppn->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mppn))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-13 08:41:57 --> Unknown column 'ppn_name' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `ppn`
+LEFT JOIN `store` ON `store`.`store_id`=`ppn`.`store_id`
+WHERE `ppn`.`store_id` = \'0\'
+ORDER BY `ppn_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ppn`
+LEFT JOIN `store` ON `store`.`store_id`=`ppn`.`store_id`
+WHERE `ppn`.`store_id` = \'0\'
+ORDER BY `ppn_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ppn`
+LEFT JOIN `store` ON `store`.`store_id`=`ppn`.`store_id`
+WHERE `ppn`.`store_id` = \'0\'
+ORDER BY `ppn_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ppn`
+LEFT JOIN `store` ON `store`.`store_id`=`ppn`.`store_id`
+WHERE `ppn`.`store_id` = :ppn.store_id:
+ORDER BY `ppn_name` ASC', [...], false)
+ 5 APPPATH\Views\master\mppn_v.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mppn_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mppn_v', [], true)
+ 9 APPPATH\Controllers\master\mppn.php(23): view('master/mppn_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mppn->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mppn))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-13 08:42:25 --> mysqli_sql_exception: Unknown column 'ppn_date' in 'order clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mppn_v.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mppn_v', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mppn.php(23): view('master/mppn_v', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mppn->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mppn))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-13 08:42:25 --> Unknown column 'ppn_date' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `ppn`
+LEFT JOIN `store` ON `store`.`store_id`=`ppn`.`store_id`
+WHERE `ppn`.`store_id` = \'0\'
+ORDER BY `ppn_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ppn`
+LEFT JOIN `store` ON `store`.`store_id`=`ppn`.`store_id`
+WHERE `ppn`.`store_id` = \'0\'
+ORDER BY `ppn_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ppn`
+LEFT JOIN `store` ON `store`.`store_id`=`ppn`.`store_id`
+WHERE `ppn`.`store_id` = \'0\'
+ORDER BY `ppn_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ppn`
+LEFT JOIN `store` ON `store`.`store_id`=`ppn`.`store_id`
+WHERE `ppn`.`store_id` = :ppn.store_id:
+ORDER BY `ppn_date` DESC', [...], false)
+ 5 APPPATH\Views\master\mppn_v.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mppn_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mppn_v', [], true)
+ 9 APPPATH\Controllers\master\mppn.php(23): view('master/mppn_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mppn->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mppn))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 08:44:28 --> Undefined variable $uploadppn_picture
+in APPPATH\Views\master\mppn_v.php on line 110.
+ 1 APPPATH\Views\master\mppn_v.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uploadppn_picture', 'APPPATH\\Views\\master\\mppn_v.php', 110)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mppn_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mppn_v', [], true)
+ 5 APPPATH\Controllers\master\mppn.php(23): view('master/mppn_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mppn->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mppn))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 08:54:51 --> Unmatched '}'
+in APPPATH\Views\template\headerside_v.php on line 139.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/headerside_v', null, true)
+ 3 APPPATH\Views\template\header_v.php(143): CodeIgniter\View\View->include('template/headerside_v')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\header_v.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/header_v', null, true)
+ 7 APPPATH\Views\master\mppn_v.php(1): CodeIgniter\View\View->include('template/header_v')
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mppn_v.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mppn_v', [], true)
+11 APPPATH\Controllers\master\mppn.php(23): view('master/mppn_v', [...])
+12 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mppn->index()
+13 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mppn))
+14 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-13 08:56:38 --> mysqli_sql_exception: Unknown column 'product_activedate' in 'order clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mproduct_v.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mproduct...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(23): view('master/mproduct...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-13 08:56:38 --> Unknown column 'product_activedate' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `product`
+LEFT JOIN `store` ON `store`.`store_id`=`product`.`store_id`
+WHERE `product`.`store_id` = \'0\'
+ORDER BY `product_activedate` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product`
+LEFT JOIN `store` ON `store`.`store_id`=`product`.`store_id`
+WHERE `product`.`store_id` = \'0\'
+ORDER BY `product_activedate` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product`
+LEFT JOIN `store` ON `store`.`store_id`=`product`.`store_id`
+WHERE `product`.`store_id` = \'0\'
+ORDER BY `product_activedate` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product`
+LEFT JOIN `store` ON `store`.`store_id`=`product`.`store_id`
+WHERE `product`.`store_id` = :product.store_id:
+ORDER BY `product_activedate` DESC', [...], false)
+ 5 APPPATH\Views\master\mproduct_v.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mproduct_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mproduct_v', [], true)
+ 9 APPPATH\Controllers\master\mproduct.php(23): view('master/mproduct_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

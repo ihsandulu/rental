@@ -1,0 +1,83 @@
+ERROR - 2023-10-21 01:56:43 --> mysqli_sql_exception: Unknown column 'sell_price|5|8' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `product...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mproduct_m.php(173): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-21 01:56:43 --> Unknown column 'sell_price|5|8' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `product` SET `category_id` = \'1\', `unit_id` = \'2\', `product_name` = \'ALPARA KAPLET\', `product_description` = \'Merupakan obat untuk meringankan gejala flu yang disertai batuk\', `product_countlimit` = \'2\', `product_stock` = \'18\', `product_buy` = \'34000\', `sell_price|5|8` = \'37600\', `product_ube` = \'UB00022\', `product_id` = \'8\', `store_id` = \'0\'
+WHERE `product_id` = \'8\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product` SET `category_id` = \'1\', `unit_id` = \'2\', `product_name` = \'ALPARA KAPLET\', `product_description` = \'Merupakan obat untuk meringankan gejala flu yang disertai batuk\', `product_countlimit` = \'2\', `product_stock` = \'18\', `product_buy` = \'34000\', `sell_price|5|8` = \'37600\', `product_ube` = \'UB00022\', `product_id` = \'8\', `store_id` = \'0\'
+WHERE `product_id` = \'8\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product` SET `category_id` = \'1\', `unit_id` = \'2\', `product_name` = \'ALPARA KAPLET\', `product_description` = \'Merupakan obat untuk meringankan gejala flu yang disertai batuk\', `product_countlimit` = \'2\', `product_stock` = \'18\', `product_buy` = \'34000\', `sell_price|5|8` = \'37600\', `product_ube` = \'UB00022\', `product_id` = \'8\', `store_id` = \'0\'
+WHERE `product_id` = \'8\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `product` SET `category_id` = :category_id:, `unit_id` = :unit_id:, `product_name` = :product_name:, `product_description` = :product_description:, `product_countlimit` = :product_countlimit:, `product_stock` = :product_stock:, `product_buy` = :product_buy:, `sell_price|5|8` = :sell_price|5|8:, `product_ube` = :product_ube:, `product_id` = :product_id:, `store_id` = :store_id:
+WHERE `product_id` = :product_id.1:', [...], false)
+ 5 APPPATH\Models\master\mproduct_m.php(173): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 6 APPPATH\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-21 02:11:44 --> mysqli_sql_exception: Unknown column 'sell_price|5|8' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `product...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mproduct_m.php(173): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-21 02:11:44 --> Unknown column 'sell_price|5|8' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `product` SET `category_id` = \'1\', `unit_id` = \'2\', `product_name` = \'ALPARA KAPLET\', `product_description` = \'Merupakan obat untuk meringankan gejala flu yang disertai batuk\', `product_countlimit` = \'2\', `product_stock` = \'18\', `product_buy` = \'34000\', `sell_price|5|8` = \'37600\', `product_ube` = \'UB00022\', `product_id` = \'8\', `store_id` = \'0\'
+WHERE `product_id` = \'8\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product` SET `category_id` = \'1\', `unit_id` = \'2\', `product_name` = \'ALPARA KAPLET\', `product_description` = \'Merupakan obat untuk meringankan gejala flu yang disertai batuk\', `product_countlimit` = \'2\', `product_stock` = \'18\', `product_buy` = \'34000\', `sell_price|5|8` = \'37600\', `product_ube` = \'UB00022\', `product_id` = \'8\', `store_id` = \'0\'
+WHERE `product_id` = \'8\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product` SET `category_id` = \'1\', `unit_id` = \'2\', `product_name` = \'ALPARA KAPLET\', `product_description` = \'Merupakan obat untuk meringankan gejala flu yang disertai batuk\', `product_countlimit` = \'2\', `product_stock` = \'18\', `product_buy` = \'34000\', `sell_price|5|8` = \'37600\', `product_ube` = \'UB00022\', `product_id` = \'8\', `store_id` = \'0\'
+WHERE `product_id` = \'8\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `product` SET `category_id` = :category_id:, `unit_id` = :unit_id:, `product_name` = :product_name:, `product_description` = :product_description:, `product_countlimit` = :product_countlimit:, `product_stock` = :product_stock:, `product_buy` = :product_buy:, `sell_price|5|8` = :sell_price|5|8:, `product_ube` = :product_ube:, `product_id` = :product_id:, `store_id` = :store_id:
+WHERE `product_id` = :product_id.1:', [...], false)
+ 5 APPPATH\Models\master\mproduct_m.php(173): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 6 APPPATH\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-21 02:12:52 --> mysqli_sql_exception: Unknown column 'sell_price|5|0' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mproduct_m.php(131): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-21 02:12:52 --> Unknown column 'sell_price|5|0' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`category_id`, `unit_id`, `product_name`, `product_description`, `product_countlimit`, `product_stock`, `product_buy`, `sell_price|5|0`, `product_ube`, `store_id`) VALUES (\'6\', \'6\', \'aaaaa\', \'aaaaa\', \'1\', \'2\', \'9999\', \'10998.9\', \'UBE231021021237\', \'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`category_id`, `unit_id`, `product_name`, `product_description`, `product_countlimit`, `product_stock`, `product_buy`, `sell_price|5|0`, `product_ube`, `store_id`) VALUES (\'6\', \'6\', \'aaaaa\', \'aaaaa\', \'1\', \'2\', \'9999\', \'10998.9\', \'UBE231021021237\', \'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`category_id`, `unit_id`, `product_name`, `product_description`, `product_countlimit`, `product_stock`, `product_buy`, `sell_price|5|0`, `product_ube`, `store_id`) VALUES (\'6\', \'6\', \'aaaaa\', \'aaaaa\', \'1\', \'2\', \'9999\', \'10998.9\', \'UBE231021021237\', \'0\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`category_id`, `unit_id`, `product_name`, `product_description`, `product_countlimit`, `product_stock`, `product_buy`, `sell_price|5|0`, `product_ube`, `store_id`) VALUES (:category_id:, :unit_id:, :product_name:, :product_description:, :product_countlimit:, :product_stock:, :product_buy:, :sell_price|5|0:, :product_ube:, :store_id:)', [...], false)
+ 5 APPPATH\Models\master\mproduct_m.php(131): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\master\mproduct.php(22): App\Models\master\mproduct_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mproduct->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mproduct))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

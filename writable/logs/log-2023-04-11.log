@@ -1,0 +1,402 @@
+ERROR - 2023-04-11 07:18:38 --> mysqli_sql_exception: Unknown column 'purchased.purchase_date' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\report\rhistorystock_v.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('report/rhistory...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\report\rhistorystock.php(22): view('report/rhistory...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-04-11 07:18:38 --> Unknown column 'purchased.purchase_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`transactiond`.`store_id`
+WHERE `purchased`.`store_id` = \'0\'
+AND `purchased`.`product_id` = 0
+AND `purchased`.`purchase_date` = \'2023-04-11\'
+AND `purchased`.`purchase_date` = \'2023-04-11\'
+ORDER BY `purchase_date` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`transactiond`.`store_id`
+WHERE `purchased`.`store_id` = \'0\'
+AND `purchased`.`product_id` = 0
+AND `purchased`.`purchase_date` = \'2023-04-11\'
+AND `purchased`.`purchase_date` = \'2023-04-11\'
+ORDER BY `purchase_date` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`transactiond`.`store_id`
+WHERE `purchased`.`store_id` = \'0\'
+AND `purchased`.`product_id` = 0
+AND `purchased`.`purchase_date` = \'2023-04-11\'
+AND `purchased`.`purchase_date` = \'2023-04-11\'
+ORDER BY `purchase_date` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`transactiond`.`store_id`
+WHERE `purchased`.`store_id` = :purchased.store_id:
+AND `purchased`.`product_id` = :purchased.product_id:
+AND `purchased`.`purchase_date` = :purchased.purchase_date:
+AND `purchased`.`purchase_date` = :purchased.purchase_date.1:
+ORDER BY `purchase_date` ASC', [...], false)
+ 5 APPPATH\Views\report\rhistorystock_v.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 9 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-11 07:19:11 --> mysqli_sql_exception: Unknown column 'transactiond.store_id' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\report\rhistorystock_v.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('report/rhistory...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\report\rhistorystock.php(22): view('report/rhistory...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-04-11 07:19:11 --> Unknown column 'transactiond.store_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`transactiond`.`store_id`
+WHERE `purchased`.`store_id` = \'0\'
+AND `purchased`.`product_id` = 0
+AND `purchase`.`purchase_date` = \'2023-04-11\'
+AND `purchase`.`purchase_date` = \'2023-04-11\'
+ORDER BY `purchase_date` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`transactiond`.`store_id`
+WHERE `purchased`.`store_id` = \'0\'
+AND `purchased`.`product_id` = 0
+AND `purchase`.`purchase_date` = \'2023-04-11\'
+AND `purchase`.`purchase_date` = \'2023-04-11\'
+ORDER BY `purchase_date` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`transactiond`.`store_id`
+WHERE `purchased`.`store_id` = \'0\'
+AND `purchased`.`product_id` = 0
+AND `purchase`.`purchase_date` = \'2023-04-11\'
+AND `purchase`.`purchase_date` = \'2023-04-11\'
+ORDER BY `purchase_date` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`transactiond`.`store_id`
+WHERE `purchased`.`store_id` = :purchased.store_id:
+AND `purchased`.`product_id` = :purchased.product_id:
+AND `purchase`.`purchase_date` = :purchase.purchase_date:
+AND `purchase`.`purchase_date` = :purchase.purchase_date.1:
+ORDER BY `purchase_date` ASC', [...], false)
+ 5 APPPATH\Views\report\rhistorystock_v.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 9 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-11 07:19:33 --> mysqli_sql_exception: Unknown column 'transaction.store_id' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\report\rhistorystock_v.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('report/rhistory...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\report\rhistorystock.php(22): view('report/rhistory...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-04-11 07:19:33 --> Unknown column 'transaction.store_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`transaction`.`store_id`
+WHERE `purchased`.`store_id` = \'0\'
+AND `purchased`.`product_id` = 0
+AND `purchase`.`purchase_date` = \'2023-04-11\'
+AND `purchase`.`purchase_date` = \'2023-04-11\'
+ORDER BY `purchase_date` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`transaction`.`store_id`
+WHERE `purchased`.`store_id` = \'0\'
+AND `purchased`.`product_id` = 0
+AND `purchase`.`purchase_date` = \'2023-04-11\'
+AND `purchase`.`purchase_date` = \'2023-04-11\'
+ORDER BY `purchase_date` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`transaction`.`store_id`
+WHERE `purchased`.`store_id` = \'0\'
+AND `purchased`.`product_id` = 0
+AND `purchase`.`purchase_date` = \'2023-04-11\'
+AND `purchase`.`purchase_date` = \'2023-04-11\'
+ORDER BY `purchase_date` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`transaction`.`store_id`
+WHERE `purchased`.`store_id` = :purchased.store_id:
+AND `purchased`.`product_id` = :purchased.product_id:
+AND `purchase`.`purchase_date` = :purchase.purchase_date:
+AND `purchase`.`purchase_date` = :purchase.purchase_date.1:
+ORDER BY `purchase_date` ASC', [...], false)
+ 5 APPPATH\Views\report\rhistorystock_v.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 9 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-11 07:21:30 --> foreach() argument must be of type array|object, bool given
+in APPPATH\Views\report\rhistorystock_v.php on line 178.
+ 1 APPPATH\Views\report\rhistorystock_v.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, bool given', 'APPPATH\\Views\\report\\rhistorystock_v.php', 178)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 5 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-11 07:26:45 --> Attempt to read property "salary" on string
+in APPPATH\Views\report\rhistorystock_v.php on line 171.
+ 1 APPPATH\Views\report\rhistorystock_v.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "salary" on string', 'APPPATH\\Views\\report\\rhistorystock_v.php', 171)
+ 2 [internal function]: CodeIgniter\View\View->{closure}('2023-01-03', 'POS202301032009051')
+ 3 APPPATH\Views\report\rhistorystock_v.php(172): usort([...], Object(Closure))
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 7 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-11 07:27:21 --> Attempt to read property "tgl" on string
+in APPPATH\Views\report\rhistorystock_v.php on line 171.
+ 1 APPPATH\Views\report\rhistorystock_v.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "tgl" on string', 'APPPATH\\Views\\report\\rhistorystock_v.php', 171)
+ 2 [internal function]: CodeIgniter\View\View->{closure}('2023-01-03', 'POS202301032009051')
+ 3 APPPATH\Views\report\rhistorystock_v.php(172): usort([...], Object(Closure))
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 7 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-11 07:30:09 --> Attempt to read property "tgl" on string
+in APPPATH\Views\report\rhistorystock_v.php on line 172.
+ 1 APPPATH\Views\report\rhistorystock_v.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "tgl" on string', 'APPPATH\\Views\\report\\rhistorystock_v.php', 172)
+ 2 [internal function]: CodeIgniter\View\View->{closure}('2023-01-03', 'POS202301032009051')
+ 3 APPPATH\Views\report\rhistorystock_v.php(173): usort([...], Object(Closure))
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 7 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-11 07:36:22 --> array_merge(): Argument #1 must be of type array, stdClass given
+in APPPATH\Views\report\rhistorystock_v.php on line 170.
+ 1 APPPATH\Views\report\rhistorystock_v.php(170): array_merge(Object(stdClass), Object(stdClass))
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 5 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-11 07:43:16 --> Attempt to read property "tgl" on array
+in APPPATH\Views\report\rhistorystock_v.php on line 169.
+ 1 APPPATH\Views\report\rhistorystock_v.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "tgl" on array', 'APPPATH\\Views\\report\\rhistorystock_v.php', 169)
+ 2 [internal function]: CodeIgniter\View\View->{closure}([...], [...])
+ 3 APPPATH\Views\report\rhistorystock_v.php(170): usort([...], Object(Closure))
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 7 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-11 07:52:08 --> Attempt to read property "tgl" on array
+in APPPATH\Views\report\rhistorystock_v.php on line 174.
+ 1 APPPATH\Views\report\rhistorystock_v.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "tgl" on array', 'APPPATH\\Views\\report\\rhistorystock_v.php', 174)
+ 2 [internal function]: CodeIgniter\View\View->{closure}([...], [...])
+ 3 APPPATH\Views\report\rhistorystock_v.php(175): usort([...], Object(Closure))
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 7 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-11 08:02:45 --> usort(): Returning bool from comparison function is deprecated, return an integer less than, equal to, or greater than zero
+in APPPATH\Views\report\rhistorystock_v.php on line 201.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'usort(): Returning bool from comparison function is deprecated, return an integer less than, equal to, or greater than zero', 'APPPATH\\Views\\report\\rhistorystock_v.php', 201)
+ 2 APPPATH\Views\report\rhistorystock_v.php(201): usort([...], 'comparator')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 6 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-11 08:07:02 --> usort(): Argument #2 ($callback) must be a valid callback, function "0" not found or invalid function name
+in APPPATH\Views\report\rhistorystock_v.php on line 201.
+ 1 APPPATH\Views\report\rhistorystock_v.php(201): usort([...], '0')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 5 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-11 08:08:06 --> usort(): Returning bool from comparison function is deprecated, return an integer less than, equal to, or greater than zero
+in APPPATH\Views\report\rhistorystock_v.php on line 205.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'usort(): Returning bool from comparison function is deprecated, return an integer less than, equal to, or greater than zero', 'APPPATH\\Views\\report\\rhistorystock_v.php', 205)
+ 2 APPPATH\Views\report\rhistorystock_v.php(205): usort([...], 'comparator')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 6 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-11 08:09:23 --> usort(): Returning bool from comparison function is deprecated, return an integer less than, equal to, or greater than zero
+in APPPATH\Views\report\rhistorystock_v.php on line 205.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'usort(): Returning bool from comparison function is deprecated, return an integer less than, equal to, or greater than zero', 'APPPATH\\Views\\report\\rhistorystock_v.php', 205)
+ 2 APPPATH\Views\report\rhistorystock_v.php(205): usort([...], Object(Closure))
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 6 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-11 08:12:07 --> Undefined variable $a3
+in APPPATH\Views\report\rhistorystock_v.php on line 217.
+ 1 APPPATH\Views\report\rhistorystock_v.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $a3', 'APPPATH\\Views\\report\\rhistorystock_v.php', 217)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 5 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-11 08:12:47 --> Cannot use object of type geek as array
+in APPPATH\Views\report\rhistorystock_v.php on line 218.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 4 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-11 08:13:10 --> Cannot use object of type geek as array
+in APPPATH\Views\report\rhistorystock_v.php on line 219.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 4 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-11 08:24:20 --> Cannot use [] for reading
+in APPPATH\Views\report\rhistorystock_v.php on line 218.
+ 1 [internal function]: data2Object([...])
+ 2 APPPATH\Views\report\rhistorystock_v.php(224): array_map('data2Object', [...])
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 6 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-11 08:28:11 --> Unsupported operand types: geek - geek
+in APPPATH\Views\report\rhistorystock_v.php on line 232.
+ 1 [internal function]: CodeIgniter\View\View->{closure}(Object(geek), Object(geek))
+ 2 APPPATH\Views\report\rhistorystock_v.php(232): usort([...], Object(Closure))
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 6 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-11 08:30:48 --> A non-numeric value encountered
+in APPPATH\Views\report\rhistorystock_v.php on line 228.
+ 1 APPPATH\Views\report\rhistorystock_v.php(228): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Views\\report\\rhistorystock_v.php', 228)
+ 2 [internal function]: CodeIgniter\View\View->{closure}([...], [...])
+ 3 APPPATH\Views\report\rhistorystock_v.php(228): usort([...], Object(Closure))
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 7 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-11 08:36:20 --> Attempt to read property "masuk" on array
+in APPPATH\Views\report\rhistorystock_v.php on line 240.
+ 1 APPPATH\Views\report\rhistorystock_v.php(240): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "masuk" on array', 'APPPATH\\Views\\report\\rhistorystock_v.php', 240)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rhistorystock_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rhistorystock_v', [], true)
+ 5 APPPATH\Controllers\report\rhistorystock.php(22): view('report/rhistorystock_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rhistorystock->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rhistorystock))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

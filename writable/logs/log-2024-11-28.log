@@ -1,0 +1,83 @@
+CRITICAL - 2024-11-28 06:51:39 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::last_query()
+in APPPATH\Controllers\api.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->sewaddelete()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-28 07:16:49 --> Undefined array key "sewad_id"
+in APPPATH\Controllers\api.php on line 40.
+ 1 APPPATH\Controllers\api.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sewad_id"', 'APPPATH\\Controllers\\api.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->masuksewad()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-28 07:16:52 --> Undefined array key "sewad_id"
+in APPPATH\Controllers\api.php on line 40.
+ 1 APPPATH\Controllers\api.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sewad_id"', 'APPPATH\\Controllers\\api.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->masuksewad()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-28 07:18:36 --> Undefined array key "sewad_id"
+in APPPATH\Controllers\api.php on line 50.
+ 1 APPPATH\Controllers\api.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sewad_id"', 'APPPATH\\Controllers\\api.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->masuksewad()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-28 07:19:01 --> Undefined array key "sewad_id"
+in APPPATH\Controllers\api.php on line 50.
+ 1 APPPATH\Controllers\api.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sewad_id"', 'APPPATH\\Controllers\\api.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->masuksewad()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-28 07:20:16 --> Undefined array key "sewad_id"
+in APPPATH\Controllers\api.php on line 50.
+ 1 APPPATH\Controllers\api.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sewad_id"', 'APPPATH\\Controllers\\api.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->masuksewad()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-28 07:21:37 --> Undefined array key "sewad_id"
+in APPPATH\Controllers\api.php on line 50.
+ 1 APPPATH\Controllers\api.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sewad_id"', 'APPPATH\\Controllers\\api.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->masuksewad()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-28 07:23:37 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert_id()
+in APPPATH\Controllers\api.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->masuksewad()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-28 07:39:37 --> mysqli_sql_exception: Unknown column 'product_id' in 'field list' in D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `sewa` S...', 0)
+#1 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `sewa` S...')
+#2 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `sewa` S...')
+#3 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `sewa` S...', Array, false)
+#4 D:\xampp\htdocs\rental\app\Models\transaction\sewa_m.php(106): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 D:\xampp\htdocs\rental\app\Controllers\transaction\sewa.php(22): App\Models\transaction\sewa_m->data()
+#6 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+#7 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+#8 D:\xampp\htdocs\rental\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\rental\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-28 07:39:37 --> Unknown column 'product_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `sewa` SET `customer_id` = \'1\', `sewa_tglambil` = \'2024-11-26\', `sewa_tglkembali` = \'2024-11-30\', `sewa_driver` = \'Didin\', `product_id` = \'\', `sewa_id` = \'2\'
+WHERE `sewa_id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `sewa` SET `customer_id` = \'1\', `sewa_tglambil` = \'2024-11-26\', `sewa_tglkembali` = \'2024-11-30\', `sewa_driver` = \'Didin\', `product_id` = \'\', `sewa_id` = \'2\'
+WHERE `sewa_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `sewa` SET `customer_id` = \'1\', `sewa_tglambil` = \'2024-11-26\', `sewa_tglkembali` = \'2024-11-30\', `sewa_driver` = \'Didin\', `product_id` = \'\', `sewa_id` = \'2\'
+WHERE `sewa_id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `sewa` SET `customer_id` = :customer_id:, `sewa_tglambil` = :sewa_tglambil:, `sewa_tglkembali` = :sewa_tglkembali:, `sewa_driver` = :sewa_driver:, `product_id` = :product_id:, `sewa_id` = :sewa_id:
+WHERE `sewa_id` = :sewa_id.1:', [...], false)
+ 5 APPPATH\Models\transaction\sewa_m.php(106): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 6 APPPATH\Controllers\transaction\sewa.php(22): App\Models\transaction\sewa_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\sewa->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\sewa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

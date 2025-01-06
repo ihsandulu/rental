@@ -1,0 +1,1156 @@
+CRITICAL - 2022-12-23 02:43:18 --> Cannot declare class App\Models\transaction\rtransaction_m, because the name is already in use
+in APPPATH\Models\transaction\pembelian_m.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-23 02:43:54 --> Cannot declare class App\Models\transaction\rpembelian_m, because the name is already in use
+in APPPATH\Models\transaction\pembelian_m.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-12-23 02:44:05 --> mysqli_sql_exception: Table 'pos.pembelian' doesn't exist in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\transaction\pembelian_m.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\transaction\pembelian.php(22): App\Models\transaction\pembelian_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-23 02:44:05 --> Table 'pos.pembelian' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `pembelian`
+WHERE `pembelian_id` = -1
+AND `store_id` = \'0\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pembelian`
+WHERE `pembelian_id` = -1
+AND `store_id` = \'0\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pembelian`
+WHERE `pembelian_id` = -1
+AND `store_id` = \'0\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pembelian`
+WHERE `pembelian_id` = :pembelian_id:
+AND `store_id` = :store_id:', [...], false)
+ 5 APPPATH\Models\transaction\pembelian_m.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Controllers\transaction\pembelian.php(22): App\Models\transaction\pembelian_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 02:45:39 --> Cannot declare class App\Models\transaction\purchase_m, because the name is already in use
+in APPPATH\Models\transaction\pembelian_m.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-12-23 02:46:02 --> mysqli_sql_exception: Unknown column 'store_id' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\transaction\pembelian_m.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\transaction\pembelian.php(22): App\Models\transaction\pembelian_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-23 02:46:02 --> Unknown column 'store_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchase`
+WHERE `purchase_id` = -1
+AND `store_id` = \'0\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchase`
+WHERE `purchase_id` = -1
+AND `store_id` = \'0\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchase`
+WHERE `purchase_id` = -1
+AND `store_id` = \'0\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchase`
+WHERE `purchase_id` = :purchase_id:
+AND `store_id` = :store_id:', [...], false)
+ 5 APPPATH\Models\transaction\pembelian_m.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Controllers\transaction\pembelian.php(22): App\Models\transaction\pembelian_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 02:46:58 --> mysqli_sql_exception: Unknown column 'purchase.cashier_id' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\transaction\pembelian_v.php(69): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('transaction/pem...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\transaction\pembelian.php(23): view('transaction/pem...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-23 02:46:58 --> Unknown column 'purchase.cashier_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchase`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchase`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchase`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchase`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = :purchase.store_id:
+ORDER BY `purchase_id` DESC', [...], false)
+ 5 APPPATH\Views\transaction\pembelian_v.php(69): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\pembelian_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/pembelian_v', [], true)
+ 9 APPPATH\Controllers\transaction\pembelian.php(23): view('transaction/pembelian_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 02:53:28 --> mysqli_sql_exception: Unknown column 'supplier_activedate' in 'order clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\msupplier_v.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/msupplie...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\msupplier.php(23): view('master/msupplie...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\msupplier->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\msupplier))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-23 02:53:28 --> Unknown column 'supplier_activedate' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `supplier`
+LEFT JOIN `store` ON `store`.`store_id`=`supplier`.`store_id`
+WHERE `supplier`.`store_id` = \'0\'
+ORDER BY `supplier_activedate` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `supplier`
+LEFT JOIN `store` ON `store`.`store_id`=`supplier`.`store_id`
+WHERE `supplier`.`store_id` = \'0\'
+ORDER BY `supplier_activedate` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `supplier`
+LEFT JOIN `store` ON `store`.`store_id`=`supplier`.`store_id`
+WHERE `supplier`.`store_id` = \'0\'
+ORDER BY `supplier_activedate` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `supplier`
+LEFT JOIN `store` ON `store`.`store_id`=`supplier`.`store_id`
+WHERE `supplier`.`store_id` = :supplier.store_id:
+ORDER BY `supplier_activedate` DESC', [...], false)
+ 5 APPPATH\Views\master\msupplier_v.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\msupplier_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/msupplier_v', [], true)
+ 9 APPPATH\Controllers\master\msupplier.php(23): view('master/msupplier_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\msupplier->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\msupplier))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 02:57:21 --> mysqli_sql_exception: Unknown column 'purchase.cashier_id' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\transaction\pembelian_v.php(69): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('transaction/pem...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\transaction\pembelian.php(23): view('transaction/pem...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-23 02:57:21 --> Unknown column 'purchase.cashier_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchase`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchase`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchase`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchase`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = :purchase.store_id:
+ORDER BY `purchase_id` DESC', [...], false)
+ 5 APPPATH\Views\transaction\pembelian_v.php(69): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\pembelian_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/pembelian_v', [], true)
+ 9 APPPATH\Controllers\transaction\pembelian.php(23): view('transaction/pembelian_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 03:00:45 --> mysqli_sql_exception: Unknown column 'purchase.cashier_id' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\transaction\pembelian_v.php(69): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('transaction/pem...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\transaction\pembelian.php(23): view('transaction/pem...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-23 03:00:45 --> Unknown column 'purchase.cashier_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchase`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchase`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchase`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchase`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = :purchase.store_id:
+ORDER BY `purchase_id` DESC', [...], false)
+ 5 APPPATH\Views\transaction\pembelian_v.php(69): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\pembelian_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/pembelian_v', [], true)
+ 9 APPPATH\Controllers\transaction\pembelian.php(23): view('transaction/pembelian_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 03:55:31 --> Undefined variable $product_id
+in APPPATH\Views\transaction\pembelian_v.php on line 94.
+ 1 APPPATH\Views\transaction\pembelian_v.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_id', 'APPPATH\\Views\\transaction\\pembelian_v.php', 94)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\pembelian_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/pembelian_v', [], true)
+ 5 APPPATH\Controllers\transaction\pembelian.php(23): view('transaction/pembelian_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 04:03:28 --> Undefined property: stdClass::$unit_id
+in APPPATH\Views\transaction\pembelian_v.php on line 172.
+ 1 APPPATH\Views\transaction\pembelian_v.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$unit_id', 'APPPATH\\Views\\transaction\\pembelian_v.php', 172)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\pembelian_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/pembelian_v', [], true)
+ 5 APPPATH\Controllers\transaction\pembelian.php(23): view('transaction/pembelian_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 04:05:08 --> mysqli_sql_exception: Unknown column 'purchase_id' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\transaction\pembelian_m.php(47): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\app\Controllers\transaction\pembelian.php(22): App\Models\transaction\pembelian_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-23 04:05:08 --> Unknown column 'purchase_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `product`
+WHERE `purchase_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product`
+WHERE `purchase_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product`
+WHERE `purchase_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product`
+WHERE `purchase_id` = :purchase_id:', [...], false)
+ 5 APPPATH\Models\transaction\pembelian_m.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\transaction\pembelian.php(22): App\Models\transaction\pembelian_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 04:11:13 --> Undefined variable $supplier_id
+in APPPATH\Views\transaction\pembeliand_v.php on line 72.
+ 1 APPPATH\Views\transaction\pembeliand_v.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $supplier_id', 'APPPATH\\Views\\transaction\\pembeliand_v.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\pembeliand_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/pembeliand_v', [], true)
+ 5 APPPATH\Controllers\transaction\pembeliand.php(23): view('transaction/pembeliand_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\pembeliand->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembeliand))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 04:13:03 --> Undefined variable $purchase_qty
+in APPPATH\Views\transaction\pembeliand_v.php on line 84.
+ 1 APPPATH\Views\transaction\pembeliand_v.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $purchase_qty', 'APPPATH\\Views\\transaction\\pembeliand_v.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\pembeliand_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/pembeliand_v', [], true)
+ 5 APPPATH\Controllers\transaction\pembeliand.php(23): view('transaction/pembeliand_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\pembeliand->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembeliand))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 04:15:26 --> Undefined variable $unit_name
+in APPPATH\Views\transaction\pembeliand_v.php on line 82.
+ 1 APPPATH\Views\transaction\pembeliand_v.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $unit_name', 'APPPATH\\Views\\transaction\\pembeliand_v.php', 82)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\pembeliand_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/pembeliand_v', [], true)
+ 5 APPPATH\Controllers\transaction\pembeliand.php(23): view('transaction/pembeliand_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\pembeliand->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembeliand))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 04:27:16 --> mysqli_sql_exception: Column 'store_id' in where clause is ambiguous in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\transaction\pembeliand_v.php(69): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('transaction/pem...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\transaction\pembeliand.php(23): view('transaction/pem...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\pembeliand->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembeliand))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-23 04:27:16 --> Column 'store_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `product`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `store_id` = \'0\'
+ORDER BY `product_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `store_id` = \'0\'
+ORDER BY `product_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `store_id` = \'0\'
+ORDER BY `product_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product`
+LEFT JOIN `unit` ON `unit`.`unit_id`=`product`.`unit_id`
+WHERE `store_id` = :store_id:
+ORDER BY `product_name` ASC', [...], false)
+ 5 APPPATH\Views\transaction\pembeliand_v.php(69): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\pembeliand_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/pembeliand_v', [], true)
+ 9 APPPATH\Controllers\transaction\pembeliand.php(23): view('transaction/pembeliand_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\pembeliand->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembeliand))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 05:38:51 --> mysqli_sql_exception: Unknown column 'purchased_id' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\transaction\pembeliand_m.php(47): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\app\Controllers\transaction\pembeliand.php(22): App\Models\transaction\pembeliand_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\pembeliand->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembeliand))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-23 05:38:51 --> Unknown column 'purchased_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `product`
+WHERE `purchased_id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product`
+WHERE `purchased_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product`
+WHERE `purchased_id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product`
+WHERE `purchased_id` = :purchased_id:', [...], false)
+ 5 APPPATH\Models\transaction\pembeliand_m.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\transaction\pembeliand.php(22): App\Models\transaction\pembeliand_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\pembeliand->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembeliand))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 05:47:09 --> Undefined property: stdClass::$purchase_ppn
+in APPPATH\Views\transaction\pembeliand_v.php on line 232.
+ 1 APPPATH\Views\transaction\pembeliand_v.php(232): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$purchase_ppn', 'APPPATH\\Views\\transaction\\pembeliand_v.php', 232)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\pembeliand_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/pembeliand_v', [], true)
+ 5 APPPATH\Controllers\transaction\pembeliand.php(23): view('transaction/pembeliand_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\pembeliand->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembeliand))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 05:59:37 --> mysqli_sql_exception: Unknown column 'purchased.purchase_id' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\transaction\pembelian_v.php(150): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('transaction/pem...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\transaction\pembelian.php(23): view('transaction/pem...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-23 05:59:37 --> Unknown column 'purchased.purchase_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT SUM(purchased_bill)AS nominal FROM purchased)purchased ON `purchased`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT SUM(purchased_bill)AS nominal FROM purchased)purchased ON `purchased`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT SUM(purchased_bill)AS nominal FROM purchased)purchased ON `purchased`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT SUM(purchased_bill)AS nominal FROM purchased)purchased ON `purchased`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = :purchase.store_id:
+ORDER BY `purchase_id` DESC', [...], false)
+ 5 APPPATH\Views\transaction\pembelian_v.php(150): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\pembelian_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/pembelian_v', [], true)
+ 9 APPPATH\Controllers\transaction\pembelian.php(23): view('transaction/pembelian_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 06:00:10 --> mysqli_sql_exception: Unknown column 'purchased.purchase_id' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\transaction\pembelian_v.php(150): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('transaction/pem...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\transaction\pembelian.php(23): view('transaction/pem...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-23 06:00:10 --> Unknown column 'purchased.purchase_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT SUM(purchased_bill)AS nominal FROM purchased)purchased ON `purchased`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT SUM(purchased_bill)AS nominal FROM purchased)purchased ON `purchased`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT SUM(purchased_bill)AS nominal FROM purchased)purchased ON `purchased`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT SUM(purchased_bill)AS nominal FROM purchased)purchased ON `purchased`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = :purchase.store_id:
+ORDER BY `purchase_id` DESC', [...], false)
+ 5 APPPATH\Views\transaction\pembelian_v.php(150): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\pembelian_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/pembelian_v', [], true)
+ 9 APPPATH\Controllers\transaction\pembelian.php(23): view('transaction/pembelian_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 06:00:23 --> mysqli_sql_exception: Unknown column 'purchased.purchase_id' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\transaction\pembelian_v.php(150): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('transaction/pem...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\transaction\pembelian.php(23): view('transaction/pem...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-23 06:00:23 --> Unknown column 'purchased.purchase_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT SUM(purchased_bill)AS nominal FROM purchased)purchased ON `purchased`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT SUM(purchased_bill)AS nominal FROM purchased)purchased ON `purchased`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT SUM(purchased_bill)AS nominal FROM purchased)purchased ON `purchased`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT SUM(purchased_bill)AS nominal FROM purchased)purchased ON `purchased`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = :purchase.store_id:
+ORDER BY `purchase_id` DESC', [...], false)
+ 5 APPPATH\Views\transaction\pembelian_v.php(150): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\pembelian_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/pembelian_v', [], true)
+ 9 APPPATH\Controllers\transaction\pembelian.php(23): view('transaction/pembelian_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 06:01:00 --> mysqli_sql_exception: Column 'purchase_id' in order clause is ambiguous in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\transaction\pembelian_v.php(150): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('transaction/pem...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\transaction\pembelian.php(23): view('transaction/pem...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-23 06:01:00 --> Column 'purchase_id' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id,SUM(purchased_bill)AS nominal FROM purchased)purchased ON `purchased`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id,SUM(purchased_bill)AS nominal FROM purchased)purchased ON `purchased`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id,SUM(purchased_bill)AS nominal FROM purchased)purchased ON `purchased`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = \'0\'
+ORDER BY `purchase_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchase`
+LEFT JOIN (SELECT purchase_id,SUM(purchased_bill)AS nominal FROM purchased)purchased ON `purchased`.`purchase_id`=`purchase`.`purchase_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`purchase`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchase`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`purchase`.`cashier_id`
+WHERE `purchase`.`store_id` = :purchase.store_id:
+ORDER BY `purchase_id` DESC', [...], false)
+ 5 APPPATH\Views\transaction\pembelian_v.php(150): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\pembelian_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/pembelian_v', [], true)
+ 9 APPPATH\Controllers\transaction\pembelian.php(23): view('transaction/pembelian_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\pembelian->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\pembelian))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 06:24:08 --> mysqli_sql_exception: Unknown column 'store_id' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\transaction\payment_m.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-23 06:24:08 --> Unknown column 'store_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `payment`
+WHERE `payment_id` = -1
+AND `store_id` = \'0\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payment`
+WHERE `payment_id` = -1
+AND `store_id` = \'0\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payment`
+WHERE `payment_id` = -1
+AND `store_id` = \'0\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payment`
+WHERE `payment_id` = :payment_id:
+AND `store_id` = :store_id:', [...], false)
+ 5 APPPATH\Models\transaction\payment_m.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 06:24:28 --> mysqli_sql_exception: Table 'pos.paymentd' doesn't exist in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\transaction\payment_v.php(150): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('transaction/pay...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\transaction\payment.php(23): view('transaction/pay...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-23 06:24:28 --> Table 'pos.paymentd' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `payment`
+LEFT JOIN (SELECT payment_id AS paymentid,SUM(paymentd_bill)AS nominal FROM paymentd GROUP BY payment_id)paymentd ON `paymentd`.`paymentid`=`payment`.`payment_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`payment`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`payment`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`payment`.`cashier_id`
+WHERE `payment`.`store_id` = \'0\'
+ORDER BY `payment_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payment`
+LEFT JOIN (SELECT payment_id AS paymentid,SUM(paymentd_bill)AS nominal FROM paymentd GROUP BY payment_id)paymentd ON `paymentd`.`paymentid`=`payment`.`payment_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`payment`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`payment`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`payment`.`cashier_id`
+WHERE `payment`.`store_id` = \'0\'
+ORDER BY `payment_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payment`
+LEFT JOIN (SELECT payment_id AS paymentid,SUM(paymentd_bill)AS nominal FROM paymentd GROUP BY payment_id)paymentd ON `paymentd`.`paymentid`=`payment`.`payment_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`payment`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`payment`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`payment`.`cashier_id`
+WHERE `payment`.`store_id` = \'0\'
+ORDER BY `payment_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payment`
+LEFT JOIN (SELECT payment_id AS paymentid,SUM(paymentd_bill)AS nominal FROM paymentd GROUP BY payment_id)paymentd ON `paymentd`.`paymentid`=`payment`.`payment_id`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`payment`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`payment`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`payment`.`cashier_id`
+WHERE `payment`.`store_id` = :payment.store_id:
+ORDER BY `payment_id` DESC', [...], false)
+ 5 APPPATH\Views\transaction\payment_v.php(150): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\payment_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/payment_v', [], true)
+ 9 APPPATH\Controllers\transaction\payment.php(23): view('transaction/payment_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 06:39:06 --> mysqli_sql_exception: Unknown column 'payment.supplier_id' in 'on clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\transaction\payment_v.php(149): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('transaction/pay...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\transaction\payment.php(23): view('transaction/pay...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-23 06:39:06 --> Unknown column 'payment.supplier_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `payment`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`payment`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`payment`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`payment`.`cashier_id`
+WHERE `payment`.`store_id` = \'0\'
+ORDER BY `payment_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payment`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`payment`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`payment`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`payment`.`cashier_id`
+WHERE `payment`.`store_id` = \'0\'
+ORDER BY `payment_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payment`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`payment`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`payment`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`payment`.`cashier_id`
+WHERE `payment`.`store_id` = \'0\'
+ORDER BY `payment_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payment`
+LEFT JOIN `supplier` ON `supplier`.`supplier_id`=`payment`.`supplier_id`
+LEFT JOIN `store` ON `store`.`store_id`=`payment`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`payment`.`cashier_id`
+WHERE `payment`.`store_id` = :payment.store_id:
+ORDER BY `payment_id` DESC', [...], false)
+ 5 APPPATH\Views\transaction\payment_v.php(149): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\payment_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/payment_v', [], true)
+ 9 APPPATH\Controllers\transaction\payment.php(23): view('transaction/payment_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 06:45:47 --> mysqli_sql_exception: Unknown column 'payment_no' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pa...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\transaction\payment_m.php(76): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-23 06:45:47 --> Unknown column 'payment_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `payment` (`supplier_id`, `payment_nominal`, `store_id`, `payment_date`, `cashier_id`, `payment_no`) VALUES (\'2\', \'200000\', \'0\', \'2022-12-23\', \'1\', \'PAY202212230645470\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `payment` (`supplier_id`, `payment_nominal`, `store_id`, `payment_date`, `cashier_id`, `payment_no`) VALUES (\'2\', \'200000\', \'0\', \'2022-12-23\', \'1\', \'PAY202212230645470\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `payment` (`supplier_id`, `payment_nominal`, `store_id`, `payment_date`, `cashier_id`, `payment_no`) VALUES (\'2\', \'200000\', \'0\', \'2022-12-23\', \'1\', \'PAY202212230645470\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `payment` (`supplier_id`, `payment_nominal`, `store_id`, `payment_date`, `cashier_id`, `payment_no`) VALUES (:supplier_id:, :payment_nominal:, :store_id:, :payment_date:, :cashier_id:, :payment_no:)', [...], false)
+ 5 APPPATH\Models\transaction\payment_m.php(76): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 06:46:12 --> Undefined property: stdClass::$nominal
+in APPPATH\Views\transaction\payment_v.php on line 192.
+ 1 APPPATH\Views\transaction\payment_v.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nominal', 'APPPATH\\Views\\transaction\\payment_v.php', 192)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\payment_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/payment_v', [], true)
+ 5 APPPATH\Controllers\transaction\payment.php(23): view('transaction/payment_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 06:46:47 --> Undefined property: stdClass::$nominal
+in APPPATH\Views\transaction\payment_v.php on line 192.
+ 1 APPPATH\Views\transaction\payment_v.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nominal', 'APPPATH\\Views\\transaction\\payment_v.php', 192)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\payment_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/payment_v', [], true)
+ 5 APPPATH\Controllers\transaction\payment.php(23): view('transaction/payment_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 07:06:25 --> mysqli_sql_exception: Unknown column 'product_id' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `supplie...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `supplie...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `supplie...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `supplie...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\transaction\purchased_m.php(73): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\transaction\purchased.php(22): App\Models\transaction\purchased_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\purchased->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\purchased))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-23 07:06:25 --> Unknown column 'product_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `supplier` SET `product_id` = \'5\', `purchased_qty` = \'200\', `purchased_price` = \'500000\', `purchased_ppn` = \'11\', `purchased_bill` = \'555000\', `store_id` = \'0\', `purchase_id` = \'2\'
+WHERE `supplier_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `supplier` SET `product_id` = \'5\', `purchased_qty` = \'200\', `purchased_price` = \'500000\', `purchased_ppn` = \'11\', `purchased_bill` = \'555000\', `store_id` = \'0\', `purchase_id` = \'2\'
+WHERE `supplier_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `supplier` SET `product_id` = \'5\', `purchased_qty` = \'200\', `purchased_price` = \'500000\', `purchased_ppn` = \'11\', `purchased_bill` = \'555000\', `store_id` = \'0\', `purchase_id` = \'2\'
+WHERE `supplier_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `supplier` SET `product_id` = :product_id:, `purchased_qty` = :purchased_qty:, `purchased_price` = :purchased_price:, `purchased_ppn` = :purchased_ppn:, `purchased_bill` = :purchased_bill:, `store_id` = :store_id:, `purchase_id` = :purchase_id:
+WHERE `supplier_id` = :supplier_id:', [...], false)
+ 5 APPPATH\Models\transaction\purchased_m.php(73): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 6 APPPATH\Controllers\transaction\purchased.php(22): App\Models\transaction\purchased_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\purchased->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\purchased))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 07:46:35 --> mysqli_sql_exception: Unknown column 'payment_nominal_before' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pa...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\transaction\payment_m.php(75): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-23 07:46:35 --> Unknown column 'payment_nominal_before' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `payment` (`supplier_id`, `payment_nominal`, `payment_nominal_before`, `store_id`, `payment_date`, `cashier_id`, `payment_no`) VALUES (\'2\', \'100000\', \'\', \'0\', \'2022-12-23\', \'1\', \'PAY202212230746350\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `payment` (`supplier_id`, `payment_nominal`, `payment_nominal_before`, `store_id`, `payment_date`, `cashier_id`, `payment_no`) VALUES (\'2\', \'100000\', \'\', \'0\', \'2022-12-23\', \'1\', \'PAY202212230746350\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `payment` (`supplier_id`, `payment_nominal`, `payment_nominal_before`, `store_id`, `payment_date`, `cashier_id`, `payment_no`) VALUES (\'2\', \'100000\', \'\', \'0\', \'2022-12-23\', \'1\', \'PAY202212230746350\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `payment` (`supplier_id`, `payment_nominal`, `payment_nominal_before`, `store_id`, `payment_date`, `cashier_id`, `payment_no`) VALUES (:supplier_id:, :payment_nominal:, :payment_nominal_before:, :store_id:, :payment_date:, :cashier_id:, :payment_no:)', [...], false)
+ 5 APPPATH\Models\transaction\payment_m.php(75): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 07:48:17 --> Attempt to read property "supplier_bill" on null
+in APPPATH\Models\transaction\payment_m.php on line 85.
+ 1 APPPATH\Models\transaction\payment_m.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "supplier_bill" on null', 'APPPATH\\Models\\transaction\\payment_m.php', 85)
+ 2 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 07:49:27 --> Attempt to read property "supplier_bill" on null
+in APPPATH\Models\transaction\payment_m.php on line 52.
+ 1 APPPATH\Models\transaction\payment_m.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "supplier_bill" on null', 'APPPATH\\Models\\transaction\\payment_m.php', 52)
+ 2 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:06:31 --> Attempt to read property "supplier_bill" on null
+in APPPATH\Models\transaction\payment_m.php on line 107.
+ 1 APPPATH\Models\transaction\payment_m.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "supplier_bill" on null', 'APPPATH\\Models\\transaction\\payment_m.php', 107)
+ 2 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:27:19 --> Undefined variable $supplier_name
+in APPPATH\Models\transaction\payment_m.php on line 103.
+ 1 APPPATH\Models\transaction\payment_m.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $supplier_name', 'APPPATH\\Models\\transaction\\payment_m.php', 103)
+ 2 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:27:39 --> Attempt to read property "supplier_name" on bool
+in APPPATH\Models\transaction\payment_m.php on line 103.
+ 1 APPPATH\Models\transaction\payment_m.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "supplier_name" on bool', 'APPPATH\\Models\\transaction\\payment_m.php', 103)
+ 2 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 08:28:02 --> mysqli_sql_exception: Unknown column 'supplier_id' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\transaction\payment_m.php(106): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-23 08:28:02 --> Unknown column 'supplier_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `kas`
+WHERE `supplier_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kas`
+WHERE `supplier_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kas`
+WHERE `supplier_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kas`
+WHERE `supplier_id` = :supplier_id:', [...], false)
+ 5 APPPATH\Models\transaction\payment_m.php(106): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:34:59 --> Attempt to read property "supplier_bill" on null
+in APPPATH\Models\transaction\payment_m.php on line 125.
+ 1 APPPATH\Models\transaction\payment_m.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "supplier_bill" on null', 'APPPATH\\Models\\transaction\\payment_m.php', 125)
+ 2 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:35:33 --> Attempt to read property "supplier_bill" on null
+in APPPATH\Models\transaction\payment_m.php on line 125.
+ 1 APPPATH\Models\transaction\payment_m.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "supplier_bill" on null', 'APPPATH\\Models\\transaction\\payment_m.php', 125)
+ 2 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:37:19 --> Attempt to read property "supplier_bill" on null
+in APPPATH\Models\transaction\payment_m.php on line 125.
+ 1 APPPATH\Models\transaction\payment_m.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "supplier_bill" on null', 'APPPATH\\Models\\transaction\\payment_m.php', 125)
+ 2 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:39:55 --> Attempt to read property "supplier_bill" on null
+in APPPATH\Models\transaction\payment_m.php on line 52.
+ 1 APPPATH\Models\transaction\payment_m.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "supplier_bill" on null', 'APPPATH\\Models\\transaction\\payment_m.php', 52)
+ 2 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:41:13 --> Attempt to read property "supplier_bill" on null
+in APPPATH\Models\transaction\payment_m.php on line 52.
+ 1 APPPATH\Models\transaction\payment_m.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "supplier_bill" on null', 'APPPATH\\Models\\transaction\\payment_m.php', 52)
+ 2 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:41:33 --> Attempt to read property "supplier_bill" on null
+in APPPATH\Models\transaction\payment_m.php on line 52.
+ 1 APPPATH\Models\transaction\payment_m.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "supplier_bill" on null', 'APPPATH\\Models\\transaction\\payment_m.php', 52)
+ 2 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:43:09 --> Attempt to read property "supplier_bill" on null
+in APPPATH\Models\transaction\payment_m.php on line 52.
+ 1 APPPATH\Models\transaction\payment_m.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "supplier_bill" on null', 'APPPATH\\Models\\transaction\\payment_m.php', 52)
+ 2 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:43:45 --> Attempt to read property "supplier_bill" on null
+in APPPATH\Models\transaction\payment_m.php on line 52.
+ 1 APPPATH\Models\transaction\payment_m.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "supplier_bill" on null', 'APPPATH\\Models\\transaction\\payment_m.php', 52)
+ 2 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:44:31 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+in APPPATH\Models\transaction\payment_m.php on line 52.
+ 1 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:44:46 --> Attempt to read property "supplier_bill" on null
+in APPPATH\Models\transaction\payment_m.php on line 52.
+ 1 APPPATH\Models\transaction\payment_m.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "supplier_bill" on null', 'APPPATH\\Models\\transaction\\payment_m.php', 52)
+ 2 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:45:25 --> Attempt to read property "supplier_bill" on null
+in APPPATH\Models\transaction\payment_m.php on line 52.
+ 1 APPPATH\Models\transaction\payment_m.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "supplier_bill" on null', 'APPPATH\\Models\\transaction\\payment_m.php', 52)
+ 2 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:45:28 --> Attempt to read property "supplier_bill" on null
+in APPPATH\Models\transaction\payment_m.php on line 127.
+ 1 APPPATH\Models\transaction\payment_m.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "supplier_bill" on null', 'APPPATH\\Models\\transaction\\payment_m.php', 127)
+ 2 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:46:30 --> Attempt to read property "supplier_bill" on null
+in APPPATH\Models\transaction\payment_m.php on line 132.
+ 1 APPPATH\Models\transaction\payment_m.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "supplier_bill" on null', 'APPPATH\\Models\\transaction\\payment_m.php', 132)
+ 2 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:46:34 --> Attempt to read property "supplier_bill" on null
+in APPPATH\Models\transaction\payment_m.php on line 54.
+ 1 APPPATH\Models\transaction\payment_m.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "supplier_bill" on null', 'APPPATH\\Models\\transaction\\payment_m.php', 54)
+ 2 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:47:54 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::update()
+in APPPATH\Models\transaction\payment_m.php on line 57.
+ 1 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:48:01 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::update()
+in APPPATH\Models\transaction\payment_m.php on line 57.
+ 1 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 08:49:31 --> Undefined variable $builder
+in APPPATH\Models\transaction\payment_m.php on line 54.
+ 1 APPPATH\Models\transaction\payment_m.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $builder', 'APPPATH\\Models\\transaction\\payment_m.php', 54)
+ 2 APPPATH\Controllers\transaction\payment.php(22): App\Models\transaction\payment_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\payment->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\payment))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

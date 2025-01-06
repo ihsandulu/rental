@@ -1,0 +1,227 @@
+ERROR - 2023-01-11 13:58:30 --> mysqli_sql_exception: Column 'account_id' in group statement is ambiguous in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(kas_...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(kas_...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(kas_...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(kas_...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\report\rneraca_v.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('report/rneraca_...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\report\rneraca.php(21): view('report/rneraca_...')
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\report\rneraca->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rneraca))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-11 13:58:30 --> Column 'account_id' in group statement is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(kas_nominal)AS tnom
+FROM `kas`
+LEFT JOIN `store` ON `store`.`store_id`=`kas`.`store_id`
+LEFT JOIN `account` ON `account`.`account_id`=`kas`.`account_id`
+WHERE `kas`.`store_id` = \'1\'
+AND `kas`.`kas_type` = \'masuk\'
+AND `kas`.`kas_date` = \'2023-01-11\'
+AND `kas`.`kas_date` = \'2023-01-11\'
+GROUP BY `account_id`
+ORDER BY `kas_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(kas_nominal)AS tnom
+FROM `kas`
+LEFT JOIN `store` ON `store`.`store_id`=`kas`.`store_id`
+LEFT JOIN `account` ON `account`.`account_id`=`kas`.`account_id`
+WHERE `kas`.`store_id` = \'1\'
+AND `kas`.`kas_type` = \'masuk\'
+AND `kas`.`kas_date` = \'2023-01-11\'
+AND `kas`.`kas_date` = \'2023-01-11\'
+GROUP BY `account_id`
+ORDER BY `kas_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(kas_nominal)AS tnom
+FROM `kas`
+LEFT JOIN `store` ON `store`.`store_id`=`kas`.`store_id`
+LEFT JOIN `account` ON `account`.`account_id`=`kas`.`account_id`
+WHERE `kas`.`store_id` = \'1\'
+AND `kas`.`kas_type` = \'masuk\'
+AND `kas`.`kas_date` = \'2023-01-11\'
+AND `kas`.`kas_date` = \'2023-01-11\'
+GROUP BY `account_id`
+ORDER BY `kas_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(kas_nominal)AS tnom
+FROM `kas`
+LEFT JOIN `store` ON `store`.`store_id`=`kas`.`store_id`
+LEFT JOIN `account` ON `account`.`account_id`=`kas`.`account_id`
+WHERE `kas`.`store_id` = :kas.store_id:
+AND `kas`.`kas_type` = :kas.kas_type:
+AND `kas`.`kas_date` = :kas.kas_date:
+AND `kas`.`kas_date` = :kas.kas_date.1:
+GROUP BY `account_id`
+ORDER BY `kas_id` DESC', [...], false)
+ 5 APPPATH\Views\report\rneraca_v.php(92): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rneraca_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rneraca_v', [], true)
+ 9 APPPATH\Controllers\report\rneraca.php(21): view('report/rneraca_v')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rneraca->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rneraca))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 14:04:37 --> Undefined property: stdClass::$account_name
+in APPPATH\Views\report\rneraca_v.php on line 98.
+ 1 APPPATH\Views\report\rneraca_v.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$account_name', 'APPPATH\\Views\\report\\rneraca_v.php', 98)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rneraca_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rneraca_v', [], true)
+ 5 APPPATH\Controllers\report\rneraca.php(21): view('report/rneraca_v')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rneraca->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rneraca))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 14:14:33 --> syntax error, unexpected variable "$no"
+in APPPATH\Views\report\rneraca_v.php on line 73.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rneraca_v', [], true)
+ 3 APPPATH\Controllers\report\rneraca.php(21): view('report/rneraca_v')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rneraca->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rneraca))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 14:15:03 --> syntax error, unexpected variable "$pemasukan"
+in APPPATH\Views\report\rneraca_v.php on line 73.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rneraca_v', [], true)
+ 3 APPPATH\Controllers\report\rneraca.php(21): view('report/rneraca_v')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rneraca->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rneraca))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 14:15:12 --> Undefined variable $usr
+in APPPATH\Views\report\rneraca_v.php on line 74.
+ 1 APPPATH\Views\report\rneraca_v.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usr', 'APPPATH\\Views\\report\\rneraca_v.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rneraca_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rneraca_v', [], true)
+ 5 APPPATH\Controllers\report\rneraca.php(21): view('report/rneraca_v')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rneraca->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rneraca))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-11 14:16:03 --> mysqli_sql_exception: Unknown column 'account_sort' in 'order clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(kas_...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(kas_...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(kas_...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(kas_...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\report\rneraca_v.php(95): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('report/rneraca_...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\report\rneraca.php(21): view('report/rneraca_...')
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\report\rneraca->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rneraca))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-11 14:16:03 --> Unknown column 'account_sort' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(kas_nominal)AS tnom
+FROM `kas`
+LEFT JOIN `store` ON `store`.`store_id`=`kas`.`store_id`
+WHERE `kas`.`account_id` = \'1\'
+AND `kas`.`store_id` = \'1\'
+AND `kas`.`kas_type` = \'masuk\'
+AND `kas`.`kas_date` >= \'2022-01-11\'
+AND `kas`.`kas_date` <= \'2023-01-11\'
+GROUP BY `account`.`account_id`
+ORDER BY `account_sort` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(kas_nominal)AS tnom
+FROM `kas`
+LEFT JOIN `store` ON `store`.`store_id`=`kas`.`store_id`
+WHERE `kas`.`account_id` = \'1\'
+AND `kas`.`store_id` = \'1\'
+AND `kas`.`kas_type` = \'masuk\'
+AND `kas`.`kas_date` >= \'2022-01-11\'
+AND `kas`.`kas_date` <= \'2023-01-11\'
+GROUP BY `account`.`account_id`
+ORDER BY `account_sort` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(kas_nominal)AS tnom
+FROM `kas`
+LEFT JOIN `store` ON `store`.`store_id`=`kas`.`store_id`
+WHERE `kas`.`account_id` = \'1\'
+AND `kas`.`store_id` = \'1\'
+AND `kas`.`kas_type` = \'masuk\'
+AND `kas`.`kas_date` >= \'2022-01-11\'
+AND `kas`.`kas_date` <= \'2023-01-11\'
+GROUP BY `account`.`account_id`
+ORDER BY `account_sort` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(kas_nominal)AS tnom
+FROM `kas`
+LEFT JOIN `store` ON `store`.`store_id`=`kas`.`store_id`
+WHERE `kas`.`account_id` = :kas.account_id:
+AND `kas`.`store_id` = :kas.store_id:
+AND `kas`.`kas_type` = :kas.kas_type:
+AND `kas`.`kas_date` >= :kas.kas_date:
+AND `kas`.`kas_date` <= :kas.kas_date.1:
+GROUP BY `account`.`account_id`
+ORDER BY `account_sort` ASC', [...], false)
+ 5 APPPATH\Views\report\rneraca_v.php(95): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rneraca_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rneraca_v', [], true)
+ 9 APPPATH\Controllers\report\rneraca.php(21): view('report/rneraca_v')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rneraca->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rneraca))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 14:17:06 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getRows()
+in APPPATH\Views\report\rneraca_v.php on line 96.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rneraca_v', [], true)
+ 4 APPPATH\Controllers\report\rneraca.php(21): view('report/rneraca_v')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rneraca->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rneraca))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 14:17:19 --> Attempt to read property "tnom" on null
+in APPPATH\Views\report\rneraca_v.php on line 97.
+ 1 APPPATH\Views\report\rneraca_v.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "tnom" on null', 'APPPATH\\Views\\report\\rneraca_v.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rneraca_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rneraca_v', [], true)
+ 5 APPPATH\Controllers\report\rneraca.php(21): view('report/rneraca_v')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rneraca->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rneraca))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 14:17:55 --> Attempt to read property "tnom" on null
+in APPPATH\Views\report\rneraca_v.php on line 98.
+ 1 APPPATH\Views\report\rneraca_v.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "tnom" on null', 'APPPATH\\Views\\report\\rneraca_v.php', 98)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rneraca_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rneraca_v', [], true)
+ 5 APPPATH\Controllers\report\rneraca.php(21): view('report/rneraca_v')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rneraca->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rneraca))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 14:18:01 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+in APPPATH\Views\report\rneraca_v.php on line 96.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rneraca_v', [], true)
+ 4 APPPATH\Controllers\report\rneraca.php(21): view('report/rneraca_v')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rneraca->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rneraca))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 14:26:44 --> Undefined variable $pengeluaran
+in APPPATH\Views\report\rneraca_v.php on line 167.
+ 1 APPPATH\Views\report\rneraca_v.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengeluaran', 'APPPATH\\Views\\report\\rneraca_v.php', 167)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rneraca_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rneraca_v', [], true)
+ 5 APPPATH\Controllers\report\rneraca.php(21): view('report/rneraca_v')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rneraca->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rneraca))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

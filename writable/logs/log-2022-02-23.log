@@ -1,0 +1,9 @@
+CRITICAL - 2022-02-23 03:00:00 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\xampp1\\htdoc...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers...')
+#2 [internal function]: spl_autoload_call('App\\Controllers...')
+#3 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(892): class_exists('\\App\\Controller...', true)
+#4 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(416): CodeIgniter\CodeIgniter->startController()
+#5 D:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}

@@ -1,0 +1,1063 @@
+CRITICAL - 2022-12-12 00:09:05 --> Unmatched '}'
+in APPPATH\Views\utama_v.php on line 178.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+ 3 APPPATH\Controllers\utama.php(19): view('utama_v')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 00:11:34 --> mysqli_sql_exception: Column 'store_id' in where clause is ambiguous in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\login_m.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\app\Controllers\utama.php(32): App\Models\login_m->index()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\utama->login()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-12 00:11:34 --> Column 'store_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `user`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `store` ON `store`.`store_id`=`user`.`store_id`
+WHERE `user_email` = \'ihsan.dulu@gmail.com\'
+AND `store_id` = \'0\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `store` ON `store`.`store_id`=`user`.`store_id`
+WHERE `user_email` = \'ihsan.dulu@gmail.com\'
+AND `store_id` = \'0\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `store` ON `store`.`store_id`=`user`.`store_id`
+WHERE `user_email` = \'ihsan.dulu@gmail.com\'
+AND `store_id` = \'0\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+LEFT JOIN `position` ON `position`.`position_id`=`user`.`position_id`
+LEFT JOIN `store` ON `store`.`store_id`=`user`.`store_id`
+WHERE `user_email` = :user_email:
+AND `store_id` = :store_id:', [...], false)
+ 5 APPPATH\Models\login_m.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\utama.php(32): App\Models\login_m->index()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 00:12:20 --> mysqli_sql_exception: Unknown column 'transaction.transaction_date' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\utama_v.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('utama_v', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\utama.php(19): view('utama_v')
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\utama->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-12 00:12:20 --> Unknown column 'transaction.transaction_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `transaction`
+WHERE `transaction`.`transaction_date` >= \'2022-12-01\'
+AND `transaction`.`transaction_date` <= \'2022-12-31\'
+AND `transaction`.`transaction_status` = \'2\'
+AND `transaction`.`store_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaction`
+WHERE `transaction`.`transaction_date` >= \'2022-12-01\'
+AND `transaction`.`transaction_date` <= \'2022-12-31\'
+AND `transaction`.`transaction_status` = \'2\'
+AND `transaction`.`store_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaction`
+WHERE `transaction`.`transaction_date` >= \'2022-12-01\'
+AND `transaction`.`transaction_date` <= \'2022-12-31\'
+AND `transaction`.`transaction_status` = \'2\'
+AND `transaction`.`store_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaction`
+WHERE `transaction`.`transaction_date` >= :transaction.transaction_date:
+AND `transaction`.`transaction_date` <= :transaction.transaction_date.1:
+AND `transaction`.`transaction_status` = :transaction.transaction_status:
+AND `transaction`.`store_id` IS NULL', [...], false)
+ 5 APPPATH\Views\utama_v.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\utama_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+ 9 APPPATH\Controllers\utama.php(19): view('utama_v')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 00:14:15 --> Unmatched '}'
+in APPPATH\Views\utama_v.php on line 178.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+ 3 APPPATH\Controllers\utama.php(19): view('utama_v')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 00:14:25 --> CodeIgniter\View\View::{closure}(): Argument #1 ($subqueryBuilder) must be of type BaseBuilder, CodeIgniter\Database\MySQLi\Builder given, called in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php on line 2945
+in APPPATH\Views\utama_v.php on line 164.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2945): CodeIgniter\View\View->{closure}(Object(CodeIgniter\Database\MySQLi\Builder))
+ 2 SYSTEMPATH\Database\BaseBuilder.php(926): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\MySQLi\Builder), true)
+ 3 SYSTEMPATH\Database\BaseBuilder.php(789): CodeIgniter\Database\BaseBuilder->_whereIn('`product_stock<=`', Object(Closure), 'ROOTPATH\\public', 'AND ', true)
+ 4 APPPATH\Views\utama_v.php(166): CodeIgniter\Database\BaseBuilder->whereIn('product_stock<=', Object(Closure))
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\utama_v.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+ 8 APPPATH\Controllers\utama.php(19): view('utama_v')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 00:15:25 --> CodeIgniter\View\View::{closure}(): Argument #1 ($subqueryBuilder) must be of type BaseBuilder, CodeIgniter\Database\MySQLi\Builder given, called in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php on line 2945
+in APPPATH\Views\utama_v.php on line 164.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2945): CodeIgniter\View\View->{closure}(Object(CodeIgniter\Database\MySQLi\Builder))
+ 2 SYSTEMPATH\Database\BaseBuilder.php(926): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\MySQLi\Builder), true)
+ 3 SYSTEMPATH\Database\BaseBuilder.php(789): CodeIgniter\Database\BaseBuilder->_whereIn('`product_stock<=`', Object(Closure), 'ROOTPATH\\public', 'AND ', true)
+ 4 APPPATH\Views\utama_v.php(166): CodeIgniter\Database\BaseBuilder->whereIn('product_stock<=', Object(Closure))
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\utama_v.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+ 8 APPPATH\Controllers\utama.php(19): view('utama_v')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 00:16:39 --> CodeIgniter\View\View::{closure}(): Argument #1 ($subqueryBuilder) must be of type BaseBuilder, CodeIgniter\Database\MySQLi\Builder given, called in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php on line 2945
+in APPPATH\Views\utama_v.php on line 164.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2945): CodeIgniter\View\View->{closure}(Object(CodeIgniter\Database\MySQLi\Builder))
+ 2 SYSTEMPATH\Database\BaseBuilder.php(748): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\MySQLi\Builder), true)
+ 3 SYSTEMPATH\Database\BaseBuilder.php(674): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', 'product_stock<=', Object(Closure), 'AND ', true)
+ 4 APPPATH\Views\utama_v.php(166): CodeIgniter\Database\BaseBuilder->where('product_stock<=', Object(Closure))
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\utama_v.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+ 8 APPPATH\Controllers\utama.php(19): view('utama_v')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 01:01:50 --> mysqli_sql_exception: Table 'pos.permission_group' doesn't exist in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mposition_m.php(21): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mposition.php(22): App\Models\master\mposition_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mposition->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mposition))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-12 01:01:50 --> Table 'pos.permission_group' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = -1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = -1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = -1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = :permission_group_id:', [...], false)
+ 5 APPPATH\Models\master\mposition_m.php(21): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Controllers\master\mposition.php(22): App\Models\master\mposition_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mposition->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mposition))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 01:54:00 --> mysqli_sql_exception: Table 'pos.permission_group' doesn't exist in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mposition_m.php(21): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mposition.php(22): App\Models\master\mposition_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mposition->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mposition))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-12 01:54:00 --> Table 'pos.permission_group' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = -1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = -1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = -1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = :permission_group_id:', [...], false)
+ 5 APPPATH\Models\master\mposition_m.php(21): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Controllers\master\mposition.php(22): App\Models\master\mposition_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mposition->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mposition))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 02:06:21 --> mysqli_sql_exception: Table 'pos.permission_group' doesn't exist in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mposition_m.php(21): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mposition.php(22): App\Models\master\mposition_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mposition->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mposition))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-12 02:06:21 --> Table 'pos.permission_group' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = -1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = -1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = -1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = :permission_group_id:', [...], false)
+ 5 APPPATH\Models\master\mposition_m.php(21): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Controllers\master\mposition.php(22): App\Models\master\mposition_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mposition->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mposition))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 02:11:28 --> mysqli_sql_exception: Table 'pos.permission_group' doesn't exist in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mposition_m.php(21): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mposition.php(22): App\Models\master\mposition_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mposition->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mposition))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-12 02:11:28 --> Table 'pos.permission_group' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = -1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = -1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = -1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = :permission_group_id:', [...], false)
+ 5 APPPATH\Models\master\mposition_m.php(21): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Controllers\master\mposition.php(22): App\Models\master\mposition_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mposition->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mposition))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:15:32 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\template\headerside_v.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:17:10 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\template\headerside_v.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:17:36 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\template\headerside_v.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:18:13 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\template\headerside_v.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:19:25 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\template\headerside_v.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:19:51 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\template\headerside_v.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:20:20 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\template\headerside_v.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:21:15 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\template\headerside_v.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:22:00 --> Unclosed '{' on line 16
+in APPPATH\Views\template\headerside_v.php on line 127.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/headerside_v', null, true)
+ 3 APPPATH\Views\template\header_v.php(176): CodeIgniter\View\View->include('template/headerside_v')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\header_v.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/header_v', null, true)
+ 7 APPPATH\Views\utama_v.php(1): CodeIgniter\View\View->include('template/header_v')
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\utama_v.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+11 APPPATH\Controllers\utama.php(19): view('utama_v')
+12 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+13 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+14 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:22:49 --> Unclosed '{' on line 16
+in APPPATH\Views\template\headerside_v.php on line 127.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/headerside_v', null, true)
+ 3 APPPATH\Views\template\header_v.php(176): CodeIgniter\View\View->include('template/headerside_v')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\header_v.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/header_v', null, true)
+ 7 APPPATH\Views\utama_v.php(1): CodeIgniter\View\View->include('template/header_v')
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\utama_v.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+11 APPPATH\Controllers\utama.php(19): view('utama_v')
+12 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+13 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+14 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:23:20 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\template\headerside_v.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:23:35 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\template\headerside_v.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:23:57 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\template\headerside_v.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:24:08 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\template\headerside_v.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:24:50 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\template\headerside_v.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:27:56 --> syntax error, unexpected token "if"
+in APPPATH\Views\utama_v.php on line 29.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+ 3 APPPATH\Controllers\utama.php(19): view('utama_v')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:28:10 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\utama_v.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:28:31 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\utama_v.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:29:25 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\utama_v.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:29:38 --> Cannot use [] for reading
+in APPPATH\Views\utama_v.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:29:43 --> Cannot use [] for reading
+in APPPATH\Views\utama_v.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:31:52 --> syntax error, unexpected token "}"
+in APPPATH\Views\utama_v.php on line 29.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+ 3 APPPATH\Controllers\utama.php(19): view('utama_v')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:33:52 --> Cannot use [] for reading
+in APPPATH\Views\utama_v.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:37:29 --> Cannot use [] for reading
+in APPPATH\Views\utama_v.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:37:53 --> Trying to access array offset on value of type null
+in APPPATH\Views\utama_v.php on line 29.
+ 1 APPPATH\Views\utama_v.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\utama_v.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\utama_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+ 5 APPPATH\Controllers\utama.php(19): view('utama_v')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:39:18 --> Trying to access array offset on value of type null
+in APPPATH\Views\utama_v.php on line 29.
+ 1 APPPATH\Views\utama_v.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\utama_v.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\utama_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+ 5 APPPATH\Controllers\utama.php(19): view('utama_v')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:40:18 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\utama_v.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-12 03:43:55 --> Undefined array key "Master"
+in APPPATH\Views\template\headerside_v.php on line 20.
+ 1 APPPATH\Views\template\headerside_v.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Master"', 'APPPATH\\Views\\template\\headerside_v.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\headerside_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/headerside_v', null, true)
+ 5 APPPATH\Views\template\header_v.php(176): CodeIgniter\View\View->include('template/headerside_v')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\header_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/header_v', null, true)
+ 9 APPPATH\Views\utama_v.php(1): CodeIgniter\View\View->include('template/header_v')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\utama_v.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+13 APPPATH\Controllers\utama.php(19): view('utama_v')
+14 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+15 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+16 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:44:08 --> Undefined array key "Master"
+in APPPATH\Views\template\headerside_v.php on line 18.
+ 1 APPPATH\Views\template\headerside_v.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Master"', 'APPPATH\\Views\\template\\headerside_v.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\headerside_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/headerside_v', null, true)
+ 5 APPPATH\Views\template\header_v.php(176): CodeIgniter\View\View->include('template/headerside_v')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\header_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/header_v', null, true)
+ 9 APPPATH\Views\utama_v.php(1): CodeIgniter\View\View->include('template/header_v')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\utama_v.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+13 APPPATH\Controllers\utama.php(19): view('utama_v')
+14 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+15 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+16 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:45:02 --> Cannot use [] for reading
+in APPPATH\Views\template\headerside_v.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-12-12 03:50:34 --> mysqli_sql_exception: Table 'pos.permission_group' doesn't exist in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mposition_m.php(21): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mposition.php(22): App\Models\master\mposition_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mposition->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mposition))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-12 03:50:34 --> Table 'pos.permission_group' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = -1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = -1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = -1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `permission_group`
+WHERE `permission_group_id` = :permission_group_id:', [...], false)
+ 5 APPPATH\Models\master\mposition_m.php(21): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Controllers\master\mposition.php(22): App\Models\master\mposition_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mposition->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mposition))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 03:57:22 --> mysqli_sql_exception: Unknown column 'updated' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `positio...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `positio...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `positio...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `positio...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mposition_m.php(101): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mposition.php(22): App\Models\master\mposition_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mposition->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mposition))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-12 03:57:22 --> Unknown column 'updated' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `position` SET `position_name` = \'Pemilikasdf\', `position_id` = \'2\', `updated` = \'2022-12-12 03:57:22\'
+WHERE `position_id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `position` SET `position_name` = \'Pemilikasdf\', `position_id` = \'2\', `updated` = \'2022-12-12 03:57:22\'
+WHERE `position_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `position` SET `position_name` = \'Pemilikasdf\', `position_id` = \'2\', `updated` = \'2022-12-12 03:57:22\'
+WHERE `position_id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `position` SET `position_name` = :position_name:, `position_id` = :position_id:, `updated` = :updated:
+WHERE `position_id` = :position_id.1:', [...], false)
+ 5 APPPATH\Models\master\mposition_m.php(101): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 6 APPPATH\Controllers\master\mposition.php(22): App\Models\master\mposition_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mposition->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mposition))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 03:58:47 --> mysqli_sql_exception: Table 'pos.permission' doesn't exist in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `pe...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mposition_m.php(68): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mposition.php(22): App\Models\master\mposition_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mposition->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mposition))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-12 03:58:47 --> Table 'pos.permission' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `permission`
+WHERE `position_id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `permission`
+WHERE `position_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `permission`
+WHERE `position_id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `permission`
+WHERE `position_id` = :position_id:', [...], false)
+ 5 APPPATH\Models\master\mposition_m.php(68): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\master\mposition.php(22): App\Models\master\mposition_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mposition->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mposition))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:10:56 --> Undefined variable $position_name
+in APPPATH\Views\master\mpositionpages_v.php on line 43.
+ 1 APPPATH\Views\master\mpositionpages_v.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $position_name', 'APPPATH\\Views\\master\\mpositionpages_v.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mpositionpages_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mpositionpages_v', [], true)
+ 5 APPPATH\Controllers\master\mpositionpages.php(23): view('master/mpositionpages_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mpositionpages->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mpositionpages))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 04:12:43 --> mysqli_sql_exception: Column 'position_id' in where clause is ambiguous in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mpositionpages_m.php(21): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mpositionpages.php(22): App\Models\master\mpositionpages_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mpositionpages->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mpositionpages))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-12 04:12:43 --> Column 'position_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `positionpages`
+LEFT JOIN `position` ON `position`.`position_id`=`positionpages`.`position_id`
+WHERE `position_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `positionpages`
+LEFT JOIN `position` ON `position`.`position_id`=`positionpages`.`position_id`
+WHERE `position_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `positionpages`
+LEFT JOIN `position` ON `position`.`position_id`=`positionpages`.`position_id`
+WHERE `position_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `positionpages`
+LEFT JOIN `position` ON `position`.`position_id`=`positionpages`.`position_id`
+WHERE `position_id` = :position_id:', [...], false)
+ 5 APPPATH\Models\master\mpositionpages_m.php(21): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Controllers\master\mpositionpages.php(22): App\Models\master\mpositionpages_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mpositionpages->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mpositionpages))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:12:55 --> Undefined variable $position_name
+in APPPATH\Views\master\mpositionpages_v.php on line 43.
+ 1 APPPATH\Views\master\mpositionpages_v.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $position_name', 'APPPATH\\Views\\master\\mpositionpages_v.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mpositionpages_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mpositionpages_v', [], true)
+ 5 APPPATH\Controllers\master\mpositionpages.php(23): view('master/mpositionpages_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mpositionpages->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mpositionpages))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:38:03 --> Undefined variable $larang
+in APPPATH\Models\master\mpositionpages_m.php on line 21.
+ 1 APPPATH\Models\master\mpositionpages_m.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $larang', 'APPPATH\\Models\\master\\mpositionpages_m.php', 21)
+ 2 APPPATH\Controllers\master\mpositionpages.php(22): App\Models\master\mpositionpages_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mpositionpages->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mpositionpages))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:38:21 --> Undefined variable $positionpagesd
+in APPPATH\Models\master\mpositionpages_m.php on line 37.
+ 1 APPPATH\Models\master\mpositionpages_m.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $positionpagesd', 'APPPATH\\Models\\master\\mpositionpages_m.php', 37)
+ 2 APPPATH\Controllers\master\mpositionpages.php(22): App\Models\master\mpositionpages_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mpositionpages->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mpositionpages))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:38:49 --> Undefined variable $positionpagesd
+in APPPATH\Models\master\mpositionpages_m.php on line 37.
+ 1 APPPATH\Models\master\mpositionpages_m.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $positionpagesd', 'APPPATH\\Models\\master\\mpositionpages_m.php', 37)
+ 2 APPPATH\Controllers\master\mpositionpages.php(22): App\Models\master\mpositionpages_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mpositionpages->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mpositionpages))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:41:32 --> Undefined property: stdClass::$act_view
+in APPPATH\Views\master\mpositionpages_v.php on line 73.
+ 1 APPPATH\Views\master\mpositionpages_v.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$act_view', 'APPPATH\\Views\\master\\mpositionpages_v.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mpositionpages_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mpositionpages_v', [], true)
+ 5 APPPATH\Controllers\master\mpositionpages.php(23): view('master/mpositionpages_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mpositionpages->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mpositionpages))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 04:44:57 --> mysqli_sql_exception: Unknown column 'position' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\mpositionpages_v.php(65): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/mpositio...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\mpositionpages.php(23): view('master/mpositio...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mpositionpages->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mpositionpages))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-12 04:44:57 --> Unknown column 'position' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `pages`
+LEFT JOIN (SELECT * FROM positionpages WHERE position = \'1\')positionpages ON `positionpages`.`pages_id`=`pages`.`pages_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pages`
+LEFT JOIN (SELECT * FROM positionpages WHERE position = \'1\')positionpages ON `positionpages`.`pages_id`=`pages`.`pages_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pages`
+LEFT JOIN (SELECT * FROM positionpages WHERE position = \'1\')positionpages ON `positionpages`.`pages_id`=`pages`.`pages_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pages`
+LEFT JOIN (SELECT * FROM positionpages WHERE position = \'1\')positionpages ON `positionpages`.`pages_id`=`pages`.`pages_id`', [], false)
+ 5 APPPATH\Views\master\mpositionpages_v.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mpositionpages_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mpositionpages_v', [], true)
+ 9 APPPATH\Controllers\master\mpositionpages.php(23): view('master/mpositionpages_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mpositionpages->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mpositionpages))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:45:13 --> Undefined property: stdClass::$act_view
+in APPPATH\Views\master\mpositionpages_v.php on line 72.
+ 1 APPPATH\Views\master\mpositionpages_v.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$act_view', 'APPPATH\\Views\\master\\mpositionpages_v.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mpositionpages_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mpositionpages_v', [], true)
+ 5 APPPATH\Controllers\master\mpositionpages.php(23): view('master/mpositionpages_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mpositionpages->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mpositionpages))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:46:14 --> Undefined property: stdClass::$act_view
+in APPPATH\Views\master\mpositionpages_v.php on line 72.
+ 1 APPPATH\Views\master\mpositionpages_v.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$act_view', 'APPPATH\\Views\\master\\mpositionpages_v.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mpositionpages_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mpositionpages_v', [], true)
+ 5 APPPATH\Controllers\master\mpositionpages.php(23): view('master/mpositionpages_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mpositionpages->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mpositionpages))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 05:08:13 --> Undefined variable $position_id
+in APPPATH\Controllers\api.php on line 137.
+ 1 APPPATH\Controllers\api.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $position_id', 'APPPATH\\Controllers\\api.php', 137)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->hakakses()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 05:08:56 --> mysqli_sql_exception: Unknown column 'read' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `po...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `po...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `po...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `po...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\api.php(142): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\api->hakakses()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-12 05:08:56 --> Unknown column 'read' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `positionpages` (`position_id`, `pages_id`, `read`) VALUES (\'1\', \'1\', \'true\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `positionpages` (`position_id`, `pages_id`, `read`) VALUES (\'1\', \'1\', \'true\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `positionpages` (`position_id`, `pages_id`, `read`) VALUES (\'1\', \'1\', \'true\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `positionpages` (`position_id`, `pages_id`, `read`) VALUES (:position_id:, :pages_id:, :read:)', [...], false)
+ 5 APPPATH\Controllers\api.php(142): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->hakakses()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 07:58:19 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 907.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(789): CodeIgniter\Database\BaseBuilder->_whereIn('user.branch_id', null, false, 'AND ', true)
+ 2 APPPATH\Views\master\muser_v.php(164): CodeIgniter\Database\BaseBuilder->whereIn('user.branch_id', null, true)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\muser_v.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/muser_v', [], true)
+ 6 APPPATH\Controllers\master\muser.php(23): view('master/muser_v', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\muser->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\muser))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 08:00:30 --> mysqli_sql_exception: Not unique table/alias: 'user' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\muser_v.php(163): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/muser_v', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\muser.php(23): view('master/muser_v', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\muser->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\muser))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-12 08:00:30 --> Not unique table/alias: 'user'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `user`
+LEFT JOIN `store` ON `store`.`store_id`=`user`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`user`.`user_id`
+WHERE `user`.`store_id` = \'0\'
+ORDER BY `user_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+LEFT JOIN `store` ON `store`.`store_id`=`user`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`user`.`user_id`
+WHERE `user`.`store_id` = \'0\'
+ORDER BY `user_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+LEFT JOIN `store` ON `store`.`store_id`=`user`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`user`.`user_id`
+WHERE `user`.`store_id` = \'0\'
+ORDER BY `user_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+LEFT JOIN `store` ON `store`.`store_id`=`user`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`user`.`user_id`
+WHERE `user`.`store_id` = :user.store_id:
+ORDER BY `user_id` DESC', [...], false)
+ 5 APPPATH\Views\master\muser_v.php(163): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\muser_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/muser_v', [], true)
+ 9 APPPATH\Controllers\master\muser.php(23): view('master/muser_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\muser->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\muser))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 08:00:51 --> mysqli_sql_exception: Not unique table/alias: 'user' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\master\muser_v.php(163): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('master/muser_v', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\master\muser.php(23): view('master/muser_v', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\muser->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\muser))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-12 08:00:51 --> Not unique table/alias: 'user'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `user`
+LEFT JOIN `store` ON `store`.`store_id`=`user`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`user`.`user_id`
+WHERE `user`.`store_id` = \'0\'
+ORDER BY `user_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+LEFT JOIN `store` ON `store`.`store_id`=`user`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`user`.`user_id`
+WHERE `user`.`store_id` = \'0\'
+ORDER BY `user_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+LEFT JOIN `store` ON `store`.`store_id`=`user`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`user`.`user_id`
+WHERE `user`.`store_id` = \'0\'
+ORDER BY `user_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+LEFT JOIN `store` ON `store`.`store_id`=`user`.`store_id`
+LEFT JOIN `user` ON `user`.`user_id`=`user`.`user_id`
+WHERE `user`.`store_id` = :user.store_id:
+ORDER BY `user_id` DESC', [...], false)
+ 5 APPPATH\Views\master\muser_v.php(163): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\muser_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/muser_v', [], true)
+ 9 APPPATH\Controllers\master\muser.php(23): view('master/muser_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\muser->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\muser))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 08:01:35 --> Undefined variable $username
+in APPPATH\Views\master\muser_v.php on line 83.
+ 1 APPPATH\Views\master\muser_v.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $username', 'APPPATH\\Views\\master\\muser_v.php', 83)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\muser_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/muser_v', [], true)
+ 5 APPPATH\Controllers\master\muser.php(23): view('master/muser_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\muser->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\muser))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 08:03:23 --> mysqli_sql_exception: Unknown column 'change' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `user` S...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user` S...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user` S...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `user` S...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\muser_m.php(99): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\muser.php(22): App\Models\master\muser_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\muser->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\muser))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-12 08:03:23 --> Unknown column 'change' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `user` SET `position_id` = \'4\', `user_name` = \'Qori Pratiwi\', `user_email` = \'jaswadi.budiyanto@example.net\', `user_wa` = \'08567148813\', `user_npwp` = \'asdfasdf\', `user_address` = \'qwqwerqwrw\', `user_id` = \'11\', `change` = \'OK\'
+WHERE `user_id` = \'11\'
+AND `store_id` = \'0\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user` SET `position_id` = \'4\', `user_name` = \'Qori Pratiwi\', `user_email` = \'jaswadi.budiyanto@example.net\', `user_wa` = \'08567148813\', `user_npwp` = \'asdfasdf\', `user_address` = \'qwqwerqwrw\', `user_id` = \'11\', `change` = \'OK\'
+WHERE `user_id` = \'11\'
+AND `store_id` = \'0\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user` SET `position_id` = \'4\', `user_name` = \'Qori Pratiwi\', `user_email` = \'jaswadi.budiyanto@example.net\', `user_wa` = \'08567148813\', `user_npwp` = \'asdfasdf\', `user_address` = \'qwqwerqwrw\', `user_id` = \'11\', `change` = \'OK\'
+WHERE `user_id` = \'11\'
+AND `store_id` = \'0\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `user` SET `position_id` = :position_id:, `user_name` = :user_name:, `user_email` = :user_email:, `user_wa` = :user_wa:, `user_npwp` = :user_npwp:, `user_address` = :user_address:, `user_id` = :user_id.1:, `change` = :change:
+WHERE `user_id` = :user_id:
+AND `store_id` = :store_id:', [...], false)
+ 5 APPPATH\Models\master\muser_m.php(99): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\master\muser.php(22): App\Models\master\muser_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\muser->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\muser))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 08:04:10 --> mysqli_sql_exception: Unknown column 'change' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `user` S...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user` S...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user` S...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `user` S...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\muser_m.php(99): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\muser.php(22): App\Models\master\muser_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\muser->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\muser))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-12 08:04:10 --> Unknown column 'change' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `user` SET `position_id` = \'4\', `user_name` = \'Qori Pratiwi\', `user_email` = \'jaswadi.budiyanto@example.net\', `user_wa` = \'08567148813\', `user_npwp` = \'asdfasdf\', `user_address` = \'qwqwerqwrw\', `user_id` = \'11\', `change` = \'OK\'
+WHERE `user_id` = \'11\'
+AND `store_id` = \'0\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user` SET `position_id` = \'4\', `user_name` = \'Qori Pratiwi\', `user_email` = \'jaswadi.budiyanto@example.net\', `user_wa` = \'08567148813\', `user_npwp` = \'asdfasdf\', `user_address` = \'qwqwerqwrw\', `user_id` = \'11\', `change` = \'OK\'
+WHERE `user_id` = \'11\'
+AND `store_id` = \'0\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user` SET `position_id` = \'4\', `user_name` = \'Qori Pratiwi\', `user_email` = \'jaswadi.budiyanto@example.net\', `user_wa` = \'08567148813\', `user_npwp` = \'asdfasdf\', `user_address` = \'qwqwerqwrw\', `user_id` = \'11\', `change` = \'OK\'
+WHERE `user_id` = \'11\'
+AND `store_id` = \'0\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `user` SET `position_id` = :position_id:, `user_name` = :user_name:, `user_email` = :user_email:, `user_wa` = :user_wa:, `user_npwp` = :user_npwp:, `user_address` = :user_address:, `user_id` = :user_id.1:, `change` = :change:
+WHERE `user_id` = :user_id:
+AND `store_id` = :store_id:', [...], false)
+ 5 APPPATH\Models\master\muser_m.php(99): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\master\muser.php(22): App\Models\master\muser_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\muser->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\muser))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 08:05:56 --> Undefined array key "user_password"
+in APPPATH\Models\master\muser_m.php on line 84.
+ 1 APPPATH\Models\master\muser_m.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_password"', 'APPPATH\\Models\\master\\muser_m.php', 84)
+ 2 APPPATH\Controllers\master\muser.php(22): App\Models\master\muser_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\muser->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\muser))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 08:06:40 --> Undefined array key "user_password"
+in APPPATH\Models\master\muser_m.php on line 84.
+ 1 APPPATH\Models\master\muser_m.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_password"', 'APPPATH\\Models\\master\\muser_m.php', 84)
+ 2 APPPATH\Controllers\master\muser.php(22): App\Models\master\muser_m->data()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\muser->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\muser))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 08:09:08 --> mysqli_sql_exception: Unknown column 'create' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\muser_m.php(85): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\muser.php(22): App\Models\master\muser_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\muser->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\muser))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-12 08:09:08 --> Unknown column 'create' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `user` (`position_id`, `user_name`, `user_password`, `user_email`, `user_wa`, `user_npwp`, `user_address`, `user_id`, `create`, `store_id`, `password`) VALUES (\'1\', \'Dudung\', \'123456\', \'dudung@mail.com\', \'09776\', \'sdfsdf\', \'sdfsdf\', \'\', \'OK\', \'0\', \'$2y$10$b7lbGuDzyYLDNRYimB6r9uAxHbhFyE5Dulti0HqUuCcmokZO8h5fK\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`position_id`, `user_name`, `user_password`, `user_email`, `user_wa`, `user_npwp`, `user_address`, `user_id`, `create`, `store_id`, `password`) VALUES (\'1\', \'Dudung\', \'123456\', \'dudung@mail.com\', \'09776\', \'sdfsdf\', \'sdfsdf\', \'\', \'OK\', \'0\', \'$2y$10$b7lbGuDzyYLDNRYimB6r9uAxHbhFyE5Dulti0HqUuCcmokZO8h5fK\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`position_id`, `user_name`, `user_password`, `user_email`, `user_wa`, `user_npwp`, `user_address`, `user_id`, `create`, `store_id`, `password`) VALUES (\'1\', \'Dudung\', \'123456\', \'dudung@mail.com\', \'09776\', \'sdfsdf\', \'sdfsdf\', \'\', \'OK\', \'0\', \'$2y$10$b7lbGuDzyYLDNRYimB6r9uAxHbhFyE5Dulti0HqUuCcmokZO8h5fK\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`position_id`, `user_name`, `user_password`, `user_email`, `user_wa`, `user_npwp`, `user_address`, `user_id`, `create`, `store_id`, `password`) VALUES (:position_id:, :user_name:, :user_password:, :user_email:, :user_wa:, :user_npwp:, :user_address:, :user_id:, :create:, :store_id:, :password:)', [...], false)
+ 5 APPPATH\Models\master\muser_m.php(85): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\master\muser.php(22): App\Models\master\muser_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\muser->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\muser))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 08:09:21 --> mysqli_sql_exception: Unknown column 'password' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\muser_m.php(85): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\muser.php(22): App\Models\master\muser_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\muser->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\muser))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-12 08:09:21 --> Unknown column 'password' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `user` (`position_id`, `user_name`, `user_password`, `user_email`, `user_wa`, `user_npwp`, `user_address`, `user_id`, `store_id`, `password`) VALUES (\'1\', \'Dudung\', \'123456\', \'dudung@mail.com\', \'09776\', \'sdfsdf\', \'sdfsdf\', \'\', \'0\', \'$2y$10$Rkn/.igdBatsqXwGKx6.seiKShlP1yquT19TsyZJ.j6itOiXu5Ep6\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`position_id`, `user_name`, `user_password`, `user_email`, `user_wa`, `user_npwp`, `user_address`, `user_id`, `store_id`, `password`) VALUES (\'1\', \'Dudung\', \'123456\', \'dudung@mail.com\', \'09776\', \'sdfsdf\', \'sdfsdf\', \'\', \'0\', \'$2y$10$Rkn/.igdBatsqXwGKx6.seiKShlP1yquT19TsyZJ.j6itOiXu5Ep6\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`position_id`, `user_name`, `user_password`, `user_email`, `user_wa`, `user_npwp`, `user_address`, `user_id`, `store_id`, `password`) VALUES (\'1\', \'Dudung\', \'123456\', \'dudung@mail.com\', \'09776\', \'sdfsdf\', \'sdfsdf\', \'\', \'0\', \'$2y$10$Rkn/.igdBatsqXwGKx6.seiKShlP1yquT19TsyZJ.j6itOiXu5Ep6\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`position_id`, `user_name`, `user_password`, `user_email`, `user_wa`, `user_npwp`, `user_address`, `user_id`, `store_id`, `password`) VALUES (:position_id:, :user_name:, :user_password:, :user_email:, :user_wa:, :user_npwp:, :user_address:, :user_id:, :store_id:, :password:)', [...], false)
+ 5 APPPATH\Models\master\muser_m.php(85): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\master\muser.php(22): App\Models\master\muser_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\muser->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\muser))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 08:17:25 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(735): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\master\mpassword_m.php(19): CodeIgniter\Model->__get('akunting')
+ 4 APPPATH\Controllers\master\mpassword.php(22): App\Models\master\mpassword_m->data()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mpassword->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mpassword))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 08:18:38 --> mysqli_sql_exception: Unknown column 'password' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `user` S...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user` S...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user` S...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `user` S...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Models\master\mpassword_m.php(46): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 D:\xampp\htdocs\pos\app\Controllers\master\mpassword.php(22): App\Models\master\mpassword_m->data()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\master\mpassword->index()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mpassword))
+#8 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-12 08:18:38 --> Unknown column 'password' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `user` SET `user_id` = \'1\', `password` = \'$2y$10$f862e4Bd5w8LB3b/7VvGHO6xKG.8C4LIb8JS6rMPgRjHYn6GXsOUK\'
+WHERE `user_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user` SET `user_id` = \'1\', `password` = \'$2y$10$f862e4Bd5w8LB3b/7VvGHO6xKG.8C4LIb8JS6rMPgRjHYn6GXsOUK\'
+WHERE `user_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user` SET `user_id` = \'1\', `password` = \'$2y$10$f862e4Bd5w8LB3b/7VvGHO6xKG.8C4LIb8JS6rMPgRjHYn6GXsOUK\'
+WHERE `user_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `user` SET `user_id` = :user_id:, `password` = :password:
+WHERE `user_id` = :user_id.1:', [...], false)
+ 5 APPPATH\Models\master\mpassword_m.php(46): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 6 APPPATH\Controllers\master\mpassword.php(22): App\Models\master\mpassword_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mpassword->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mpassword))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 08:21:55 --> Trying to access array offset on value of type null
+in APPPATH\Views\utama_v.php on line 29.
+ 1 APPPATH\Views\utama_v.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\utama_v.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\utama_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+ 5 APPPATH\Controllers\utama.php(19): view('utama_v')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 08:22:07 --> Trying to access array offset on value of type null
+in APPPATH\Views\utama_v.php on line 29.
+ 1 APPPATH\Views\utama_v.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\utama_v.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\utama_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('utama_v', [], true)
+ 5 APPPATH\Controllers\utama.php(19): view('utama_v')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 17:26:26 --> Cannot declare class App\Controllers\master\mposition, because the name is already in use
+in APPPATH\Controllers\master\mstore.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

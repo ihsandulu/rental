@@ -1,0 +1,210 @@
+ERROR - 2024-11-04 07:13:08 --> mysqli_sql_exception: Column 'user_name' cannot be null in D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\xampp\htdocs\gudang\app\Controllers\transaction\transaction.php(719): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->pelunasan()
+#6 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\gudang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-04 07:13:08 --> Column 'user_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `user` (`user_nip`, `user_name`, `division_id`) VALUES (\'19860428 200501 2 009\', NULL, \'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`user_nip`, `user_name`, `division_id`) VALUES (\'19860428 200501 2 009\', NULL, \'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`user_nip`, `user_name`, `division_id`) VALUES (\'19860428 200501 2 009\', NULL, \'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`user_nip`, `user_name`, `division_id`) VALUES (:user_nip:, :user_name:, :division_id:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(719): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->pelunasan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-04 07:13:36 --> mysqli_sql_exception: Column 'user_name' cannot be null in D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\xampp\htdocs\gudang\app\Controllers\transaction\transaction.php(719): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->pelunasan()
+#6 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\gudang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-04 07:13:36 --> Column 'user_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `user` (`user_nip`, `user_name`, `division_id`) VALUES (\'19860428 200501 2 009\', NULL, \'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`user_nip`, `user_name`, `division_id`) VALUES (\'19860428 200501 2 009\', NULL, \'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`user_nip`, `user_name`, `division_id`) VALUES (\'19860428 200501 2 009\', NULL, \'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`user_nip`, `user_name`, `division_id`) VALUES (:user_nip:, :user_name:, :division_id:)', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(719): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->pelunasan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-04 07:35:33 --> Attempt to read property "store_name" on null
+in APPPATH\Views\transaction\transactionprintumum_v.php on line 58.
+ 1 APPPATH\Views\transaction\transactionprintumum_v.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "store_name" on null', 'APPPATH\\Views\\transaction\\transactionprintumum_v.php', 58)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\transactionprintumum_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/transactionprintumum_v', [], true)
+ 5 APPPATH\Controllers\transaction\transaction.php(41): view('transaction/transactionprintumum_v')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->printumum()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-04 07:36:39 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Views\transaction\transactionprintumum_v.php on line 120.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Views\\transaction\\transactionprintumum_v.php', 120)
+ 2 APPPATH\Views\transaction\transactionprintumum_v.php(120): number_format(null, 0, 'ROOTPATH\\public', ',')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\transactionprintumum_v.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/transactionprintumum_v', [], true)
+ 6 APPPATH\Controllers\transaction\transaction.php(41): view('transaction/transactionprintumum_v')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->printumum()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-04 07:38:31 --> Attempt to read property "store_noteinvoice" on null
+in APPPATH\Views\transaction\transactionprintumum_v.php on line 109.
+ 1 APPPATH\Views\transaction\transactionprintumum_v.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "store_noteinvoice" on null', 'APPPATH\\Views\\transaction\\transactionprintumum_v.php', 109)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\transactionprintumum_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/transactionprintumum_v', [], true)
+ 5 APPPATH\Controllers\transaction\transaction.php(41): view('transaction/transactionprintumum_v')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->printumum()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-04 08:27:09 --> Undefined property: stdClass::$user_nipe
+in APPPATH\Views\transaction\transactionprintumum_v.php on line 210.
+ 1 APPPATH\Views\transaction\transactionprintumum_v.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$user_nipe', 'APPPATH\\Views\\transaction\\transactionprintumum_v.php', 210)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\transactionprintumum_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/transactionprintumum_v', [], true)
+ 5 APPPATH\Controllers\transaction\transaction.php(41): view('transaction/transactionprintumum_v')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->printumum()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-04 09:19:31 --> mysqli_sql_exception: Unknown column 'store_id' in 'where clause' in D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\gudang\app\Models\transaction\petugas_m.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\gudang\app\Controllers\transaction\petugas.php(22): App\Models\transaction\petugas_m->data()
+#6 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\petugas->index()
+#7 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\petugas))
+#8 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\gudang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-04 09:19:31 --> Unknown column 'store_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `petugas`
+WHERE `petugas_id` = -1
+AND `store_id` = \'0\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `petugas`
+WHERE `petugas_id` = -1
+AND `store_id` = \'0\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `petugas`
+WHERE `petugas_id` = -1
+AND `store_id` = \'0\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `petugas`
+WHERE `petugas_id` = :petugas_id:
+AND `store_id` = :store_id:', [...], false)
+ 5 APPPATH\Models\transaction\petugas_m.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Controllers\transaction\petugas.php(22): App\Models\transaction\petugas_m->data()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\petugas->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\petugas))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-04 09:26:22 --> mysqli_sql_exception: Unknown column 'petugas.cashier_id' in 'on clause' in D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\gudang\app\Views\transaction\petugas_v.php(172): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('transaction/pet...', Array, true)
+#8 D:\xampp\htdocs\gudang\app\Controllers\transaction\petugas.php(23): view('transaction/pet...', Array)
+#9 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\petugas->index()
+#10 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\petugas))
+#11 D:\xampp\htdocs\gudang\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\gudang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-11-04 09:26:23 --> Unknown column 'petugas.cashier_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `petugas`
+LEFT JOIN `user` ON `user`.`user_id`=`petugas`.`cashier_id`
+ORDER BY `petugas`.`petugas_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `petugas`
+LEFT JOIN `user` ON `user`.`user_id`=`petugas`.`cashier_id`
+ORDER BY `petugas`.`petugas_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `petugas`
+LEFT JOIN `user` ON `user`.`user_id`=`petugas`.`cashier_id`
+ORDER BY `petugas`.`petugas_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `petugas`
+LEFT JOIN `user` ON `user`.`user_id`=`petugas`.`cashier_id`
+ORDER BY `petugas`.`petugas_id` DESC', [], false)
+ 5 APPPATH\Views\transaction\petugas_v.php(172): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\petugas_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/petugas_v', [], true)
+ 9 APPPATH\Controllers\transaction\petugas.php(23): view('transaction/petugas_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\petugas->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\petugas))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-04 09:27:01 --> Undefined variable $petugas_no
+in APPPATH\Views\transaction\petugas_v.php on line 74.
+ 1 APPPATH\Views\transaction\petugas_v.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $petugas_no', 'APPPATH\\Views\\transaction\\petugas_v.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\petugas_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/petugas_v', [], true)
+ 5 APPPATH\Controllers\transaction\petugas.php(23): view('transaction/petugas_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\petugas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\petugas))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-04 09:49:31 --> Undefined property: stdClass::$petugas_name
+in APPPATH\Views\transaction\transactionprintumum_v.php on line 217.
+ 1 APPPATH\Views\transaction\transactionprintumum_v.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$petugas_name', 'APPPATH\\Views\\transaction\\transactionprintumum_v.php', 217)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\transactionprintumum_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/transactionprintumum_v', [], true)
+ 5 APPPATH\Controllers\transaction\transaction.php(86): view('transaction/transactionprintumum_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->printumum()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-04 09:50:45 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::last_query()
+in APPPATH\Controllers\transaction\transaction.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->printumum()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-04 10:31:14 --> Undefined variable $petugas_pangkat
+in APPPATH\Views\transaction\transactionprintumum_v.php on line 159.
+ 1 APPPATH\Views\transaction\transactionprintumum_v.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $petugas_pangkat', 'APPPATH\\Views\\transaction\\transactionprintumum_v.php', 159)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\transaction\\transactionprintumum_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('transaction/transactionprintumum_v', [], true)
+ 5 APPPATH\Controllers\transaction\transaction.php(88): view('transaction/transactionprintumum_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->printumum()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

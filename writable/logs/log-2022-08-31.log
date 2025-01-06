@@ -1,0 +1,4 @@
+CRITICAL - 2022-08-31 10:23:40 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 E:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\bootstrap.php(158): CodeIgniter\CodeIgniter->initialize()
+#1 E:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(35): require('E:\\xampp1\\htdoc...')
+#2 {main}

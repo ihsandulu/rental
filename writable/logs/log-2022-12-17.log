@@ -1,0 +1,180 @@
+CRITICAL - 2022-12-17 00:03:37 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 00:05:10 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 00:05:46 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 00:05:47 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 00:06:37 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 00:07:41 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 00:07:53 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 00:07:54 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 00:08:12 --> Attempt to read property "product_id" on null
+in APPPATH\Controllers\transaction\transaction.php on line 67.
+ 1 APPPATH\Controllers\transaction\transaction.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_id" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 10:51:32 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+in APPPATH\Controllers\transaction\transaction.php on line 120.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->updateqty()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 10:51:40 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+in APPPATH\Controllers\transaction\transaction.php on line 120.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->updateqty()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 10:53:29 --> Attempt to read property "transactiond_qty" on null
+in APPPATH\Controllers\transaction\transaction.php on line 122.
+ 1 APPPATH\Controllers\transaction\transaction.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "transactiond_qty" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 122)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->updateqty()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 10:55:06 --> Attempt to read property "transactiond_qty" on null
+in APPPATH\Controllers\transaction\transaction.php on line 122.
+ 1 APPPATH\Controllers\transaction\transaction.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "transactiond_qty" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 122)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->updateqty()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 10:55:57 --> Attempt to read property "transactiond_qty" on null
+in APPPATH\Controllers\transaction\transaction.php on line 121.
+ 1 APPPATH\Controllers\transaction\transaction.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "transactiond_qty" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 121)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->updateqty()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 10:59:15 --> Attempt to read property "transactiond_qty" on null
+in APPPATH\Controllers\transaction\transaction.php on line 121.
+ 1 APPPATH\Controllers\transaction\transaction.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "transactiond_qty" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 121)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->updateqty()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 11:00:45 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+in APPPATH\Controllers\transaction\transaction.php on line 120.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->updateqty()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 11:00:52 --> Attempt to read property "transactiond_qty" on null
+in APPPATH\Controllers\transaction\transaction.php on line 122.
+ 1 APPPATH\Controllers\transaction\transaction.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "transactiond_qty" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 122)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->updateqty()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 11:47:14 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+in APPPATH\Controllers\transaction\transaction.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 11:47:49 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+in APPPATH\Controllers\transaction\transaction.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 11:47:51 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+in APPPATH\Controllers\transaction\transaction.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 11:48:19 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+in APPPATH\Controllers\transaction\transaction.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 11:49:16 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+in APPPATH\Controllers\transaction\transaction.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 11:49:30 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+in APPPATH\Controllers\transaction\transaction.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 11:50:10 --> Undefined variable $transactiond_id
+in APPPATH\Controllers\transaction\transaction.php on line 89.
+ 1 APPPATH\Controllers\transaction\transaction.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transactiond_id', 'APPPATH\\Controllers\\transaction\\transaction.php', 89)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 11:50:21 --> Undefined variable $transactiond_id
+in APPPATH\Controllers\transaction\transaction.php on line 89.
+ 1 APPPATH\Controllers\transaction\transaction.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transactiond_id', 'APPPATH\\Controllers\\transaction\\transaction.php', 89)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 11:50:25 --> Undefined variable $transactiond_id
+in APPPATH\Controllers\transaction\transaction.php on line 89.
+ 1 APPPATH\Controllers\transaction\transaction.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transactiond_id', 'APPPATH\\Controllers\\transaction\\transaction.php', 89)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 14:18:42 --> Attempt to read property "product_sell" on null
+in APPPATH\Controllers\transaction\transaction.php on line 65.
+ 1 APPPATH\Controllers\transaction\transaction.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_sell" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

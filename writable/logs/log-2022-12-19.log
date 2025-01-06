@@ -1,0 +1,14 @@
+CRITICAL - 2022-12-19 09:25:53 --> Attempt to read property "product_sell" on null
+in APPPATH\Controllers\transaction\transaction.php on line 71.
+ 1 APPPATH\Controllers\transaction\transaction.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_sell" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 09:25:59 --> Attempt to read property "product_sell" on null
+in APPPATH\Controllers\transaction\transaction.php on line 71.
+ 1 APPPATH\Controllers\transaction\transaction.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "product_sell" on null', 'APPPATH\\Controllers\\transaction\\transaction.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->insertnota()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

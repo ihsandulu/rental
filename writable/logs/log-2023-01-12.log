@@ -1,0 +1,419 @@
+CRITICAL - 2023-01-12 16:04:17 --> Unmatched '}'
+in APPPATH\Views\template\headerside_v.php on line 293.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/headerside_v', null, true)
+ 3 APPPATH\Views\template\header_v.php(147): CodeIgniter\View\View->include('template/headerside_v')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\header_v.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('template/header_v', null, true)
+ 7 APPPATH\Views\master\maccount_v.php(1): CodeIgniter\View\View->include('template/header_v')
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\maccount_v.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/maccount_v', [], true)
+11 APPPATH\Controllers\master\maccount.php(23): view('master/maccount_v', [...])
+12 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\maccount->index()
+13 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\maccount))
+14 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 16:09:46 --> Undefined variable $bank_type
+in APPPATH\Views\master\mbank_v.php on line 70.
+ 1 APPPATH\Views\master\mbank_v.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bank_type', 'APPPATH\\Views\\master\\mbank_v.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mbank_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mbank_v', [], true)
+ 5 APPPATH\Controllers\master\mbank.php(23): view('master/mbank_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\master\mbank->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\master\mbank))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 20:18:16 --> syntax error, unexpected token "if"
+in APPPATH\Views\report\rneraca_v.php on line 175.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rneraca_v', [], true)
+ 3 APPPATH\Controllers\report\rneraca.php(21): view('report/rneraca_v')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rneraca->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rneraca))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 20:18:57 --> mysqli_sql_exception: Unknown column 'kas_nominal' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(kas_...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(kas_...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(kas_...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(kas_...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\report\rneraca_v.php(186): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('report/rneraca_...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\report\rneraca.php(21): view('report/rneraca_...')
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\report\rneraca->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rneraca))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 20:18:57 --> Unknown column 'kas_nominal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(kas_nominal)AS tnom
+FROM `transactiond`
+LEFT JOIN `transaction` ON `transaction`.`transaction_id`=`transactiond`.`transaction_id`
+WHERE `transactiond`.`store_id` = \'1\'
+AND `transaction`.`transaction_date` = \'2023-01-12\'
+AND `transaction`.`transaction_date` = \'2023-01-12\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(kas_nominal)AS tnom
+FROM `transactiond`
+LEFT JOIN `transaction` ON `transaction`.`transaction_id`=`transactiond`.`transaction_id`
+WHERE `transactiond`.`store_id` = \'1\'
+AND `transaction`.`transaction_date` = \'2023-01-12\'
+AND `transaction`.`transaction_date` = \'2023-01-12\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(kas_nominal)AS tnom
+FROM `transactiond`
+LEFT JOIN `transaction` ON `transaction`.`transaction_id`=`transactiond`.`transaction_id`
+WHERE `transactiond`.`store_id` = \'1\'
+AND `transaction`.`transaction_date` = \'2023-01-12\'
+AND `transaction`.`transaction_date` = \'2023-01-12\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(kas_nominal)AS tnom
+FROM `transactiond`
+LEFT JOIN `transaction` ON `transaction`.`transaction_id`=`transactiond`.`transaction_id`
+WHERE `transactiond`.`store_id` = :transactiond.store_id:
+AND `transaction`.`transaction_date` = :transaction.transaction_date:
+AND `transaction`.`transaction_date` = :transaction.transaction_date.1:', [...], false)
+ 5 APPPATH\Views\report\rneraca_v.php(186): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rneraca_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rneraca_v', [], true)
+ 9 APPPATH\Controllers\report\rneraca.php(21): view('report/rneraca_v')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rneraca->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rneraca))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 21:09:09 --> mysqli_sql_exception: Unknown column 'account_id' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `transac...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `transac...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `transac...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `transac...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(546): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->pelunasan()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-12 21:09:09 --> Unknown column 'account_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `transaction` SET `transaction_bill` = \'13000\', `transaction_pay` = \'20000\', `transaction_change` = \'7000\', `transaction_status` = 0, `account_id` = \'2\'
+WHERE `transaction_id` = \'412\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `transaction` SET `transaction_bill` = \'13000\', `transaction_pay` = \'20000\', `transaction_change` = \'7000\', `transaction_status` = 0, `account_id` = \'2\'
+WHERE `transaction_id` = \'412\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `transaction` SET `transaction_bill` = \'13000\', `transaction_pay` = \'20000\', `transaction_change` = \'7000\', `transaction_status` = 0, `account_id` = \'2\'
+WHERE `transaction_id` = \'412\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `transaction` SET `transaction_bill` = :transaction_bill:, `transaction_pay` = :transaction_pay:, `transaction_change` = :transaction_change:, `transaction_status` = :transaction_status:, `account_id` = :account_id:
+WHERE `transaction_id` = :transaction_id:', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(546): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->pelunasan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 21:09:12 --> mysqli_sql_exception: Unknown column 'account_id' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `transac...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `transac...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `transac...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `transac...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(546): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->pelunasan()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-12 21:09:12 --> Unknown column 'account_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `transaction` SET `transaction_bill` = \'13000\', `transaction_pay` = \'20000\', `transaction_change` = \'7000\', `transaction_status` = 0, `account_id` = \'2\'
+WHERE `transaction_id` = \'412\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `transaction` SET `transaction_bill` = \'13000\', `transaction_pay` = \'20000\', `transaction_change` = \'7000\', `transaction_status` = 0, `account_id` = \'2\'
+WHERE `transaction_id` = \'412\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `transaction` SET `transaction_bill` = \'13000\', `transaction_pay` = \'20000\', `transaction_change` = \'7000\', `transaction_status` = 0, `account_id` = \'2\'
+WHERE `transaction_id` = \'412\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `transaction` SET `transaction_bill` = :transaction_bill:, `transaction_pay` = :transaction_pay:, `transaction_change` = :transaction_change:, `transaction_status` = :transaction_status:, `account_id` = :account_id:
+WHERE `transaction_id` = :transaction_id:', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(546): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->pelunasan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 21:09:49 --> mysqli_sql_exception: Unknown column 'account_id' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `transac...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `transac...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `transac...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `transac...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(546): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->pelunasan()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-12 21:09:49 --> Unknown column 'account_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `transaction` SET `transaction_bill` = \'13000\', `transaction_pay` = \'20000\', `transaction_change` = \'7000\', `transaction_status` = 0, `account_id` = \'2\'
+WHERE `transaction_id` = \'412\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `transaction` SET `transaction_bill` = \'13000\', `transaction_pay` = \'20000\', `transaction_change` = \'7000\', `transaction_status` = 0, `account_id` = \'2\'
+WHERE `transaction_id` = \'412\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `transaction` SET `transaction_bill` = \'13000\', `transaction_pay` = \'20000\', `transaction_change` = \'7000\', `transaction_status` = 0, `account_id` = \'2\'
+WHERE `transaction_id` = \'412\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `transaction` SET `transaction_bill` = :transaction_bill:, `transaction_pay` = :transaction_pay:, `transaction_change` = :transaction_change:, `transaction_status` = :transaction_status:, `account_id` = :account_id:
+WHERE `transaction_id` = :transaction_id:', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(546): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->pelunasan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 21:11:33 --> mysqli_sql_exception: Unknown column 'account_id' in 'field list' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `transac...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `transac...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `transac...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `transac...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Controllers\transaction\transaction.php(546): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\transaction\transaction->pelunasan()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-12 21:11:33 --> Unknown column 'account_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `transaction` SET `transaction_bill` = \'13000\', `transaction_pay` = \'20000\', `transaction_change` = \'7000\', `transaction_status` = 0, `account_id` = \'2\'
+WHERE `transaction_id` = \'412\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `transaction` SET `transaction_bill` = \'13000\', `transaction_pay` = \'20000\', `transaction_change` = \'7000\', `transaction_status` = 0, `account_id` = \'2\'
+WHERE `transaction_id` = \'412\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `transaction` SET `transaction_bill` = \'13000\', `transaction_pay` = \'20000\', `transaction_change` = \'7000\', `transaction_status` = 0, `account_id` = \'2\'
+WHERE `transaction_id` = \'412\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `transaction` SET `transaction_bill` = :transaction_bill:, `transaction_pay` = :transaction_pay:, `transaction_change` = :transaction_change:, `transaction_status` = :transaction_status:, `account_id` = :account_id:
+WHERE `transaction_id` = :transaction_id:', [...], false)
+ 5 APPPATH\Controllers\transaction\transaction.php(546): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->pelunasan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 21:24:47 --> Undefined property: stdClass::$store_bank
+in APPPATH\Models\login_m.php on line 61.
+ 1 APPPATH\Models\login_m.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$store_bank', 'APPPATH\\Models\\login_m.php', 61)
+ 2 APPPATH\Controllers\utama.php(32): App\Models\login_m->index()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->login()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 21:54:12 --> syntax error, unexpected token "if"
+in APPPATH\Views\report\rprodukkeluar_v.php on line 64.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rprodukkeluar_v', [], true)
+ 3 APPPATH\Controllers\report\rprodukkeluar.php(23): view('report/rprodukkeluar_v', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rprodukkeluar->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rprodukkeluar))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 09:00:14 --> Cannot declare class App\Controllers\transaction\rprodukmasuk, because the name is already in use
+in APPPATH\Controllers\report\rprodukmasuk.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-12 22:00:46 --> Class "App\Models\transaction\rprodukmasuk_m" not found
+in APPPATH\Controllers\report\rprodukmasuk.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rprodukmasuk->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rprodukmasuk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 22:04:14 --> mysqli_sql_exception: Unknown column 'purchased.purchased_date' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\report\rprodukmasuk_v.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('report/rprodukm...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\report\rprodukmasuk.php(23): view('report/rprodukm...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\report\rprodukmasuk->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rprodukmasuk))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 22:04:14 --> Unknown column 'purchased.purchased_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchase_id` IS NULL
+AND `purchased`.`purchased_date` >= \'2022-01-12\'
+AND `purchased`.`purchased_date` <= \'2023-01-12\'
+ORDER BY `purchased_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchase_id` IS NULL
+AND `purchased`.`purchased_date` >= \'2022-01-12\'
+AND `purchased`.`purchased_date` <= \'2023-01-12\'
+ORDER BY `purchased_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchase_id` IS NULL
+AND `purchased`.`purchased_date` >= \'2022-01-12\'
+AND `purchased`.`purchased_date` <= \'2023-01-12\'
+ORDER BY `purchased_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = :purchased.store_id:
+AND `purchased`.`purchase_id` IS NULL
+AND `purchased`.`purchased_date` >= :purchased.purchased_date:
+AND `purchased`.`purchased_date` <= :purchased.purchased_date.1:
+ORDER BY `purchased_id` DESC', [...], false)
+ 5 APPPATH\Views\report\rprodukmasuk_v.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rprodukmasuk_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rprodukmasuk_v', [], true)
+ 9 APPPATH\Controllers\report\rprodukmasuk.php(23): view('report/rprodukmasuk_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rprodukmasuk->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rprodukmasuk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 22:04:36 --> mysqli_sql_exception: Unknown column 'purchased.purchased_date' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\report\rprodukmasuk_v.php(204): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('report/rprodukm...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\report\rprodukmasuk.php(23): view('report/rprodukm...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\report\rprodukmasuk->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rprodukmasuk))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 22:04:36 --> Unknown column 'purchased.purchased_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchase_id` IS NULL
+AND `purchased`.`purchased_date` >= \'2021-01-12\'
+AND `purchased`.`purchased_date` <= \'2023-01-12\'
+ORDER BY `purchased_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchase_id` IS NULL
+AND `purchased`.`purchased_date` >= \'2021-01-12\'
+AND `purchased`.`purchased_date` <= \'2023-01-12\'
+ORDER BY `purchased_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchase_id` IS NULL
+AND `purchased`.`purchased_date` >= \'2021-01-12\'
+AND `purchased`.`purchased_date` <= \'2023-01-12\'
+ORDER BY `purchased_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = :purchased.store_id:
+AND `purchased`.`purchase_id` IS NULL
+AND `purchased`.`purchased_date` >= :purchased.purchased_date:
+AND `purchased`.`purchased_date` <= :purchased.purchased_date.1:
+ORDER BY `purchased_id` DESC', [...], false)
+ 5 APPPATH\Views\report\rprodukmasuk_v.php(204): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rprodukmasuk_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rprodukmasuk_v', [], true)
+ 9 APPPATH\Controllers\report\rprodukmasuk.php(23): view('report/rprodukmasuk_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rprodukmasuk->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rprodukmasuk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 22:05:04 --> mysqli_sql_exception: Unknown column 'purchased.purchased_date' in 'where clause' in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\app\Views\report\rprodukmasuk_v.php(203): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(213): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('report/rprodukm...', Array, true)
+#8 D:\xampp\htdocs\pos\app\Controllers\report\rprodukmasuk.php(23): view('report/rprodukm...', Array)
+#9 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\report\rprodukmasuk->index()
+#10 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rprodukmasuk))
+#11 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 22:05:04 --> Unknown column 'purchased.purchased_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchased_date` >= \'2021-01-12\'
+AND `purchased`.`purchased_date` <= \'2023-01-12\'
+ORDER BY `purchased_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchased_date` >= \'2021-01-12\'
+AND `purchased`.`purchased_date` <= \'2023-01-12\'
+ORDER BY `purchased_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = \'1\'
+AND `purchased`.`purchased_date` >= \'2021-01-12\'
+AND `purchased`.`purchased_date` <= \'2023-01-12\'
+ORDER BY `purchased_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `purchased`
+LEFT JOIN `purchase` ON `purchase`.`purchase_id`=`purchased`.`purchase_id`
+LEFT JOIN `store` ON `store`.`store_id`=`purchased`.`store_id`
+LEFT JOIN `product` ON `product`.`product_id`=`purchased`.`product_id`
+WHERE `purchased`.`store_id` = :purchased.store_id:
+AND `purchased`.`purchased_date` >= :purchased.purchased_date:
+AND `purchased`.`purchased_date` <= :purchased.purchased_date.1:
+ORDER BY `purchased_id` DESC', [...], false)
+ 5 APPPATH\Views\report\rprodukmasuk_v.php(203): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rprodukmasuk_v.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rprodukmasuk_v', [], true)
+ 9 APPPATH\Controllers\report\rprodukmasuk.php(23): view('report/rprodukmasuk_v', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rprodukmasuk->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rprodukmasuk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

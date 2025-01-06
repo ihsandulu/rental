@@ -1,0 +1,116 @@
+CRITICAL - 2024-11-05 15:16:55 --> Undefined variable $usr
+in APPPATH\Views\report\rtransaction_v.php on line 71.
+ 1 APPPATH\Views\report\rtransaction_v.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usr', 'APPPATH\\Views\\report\\rtransaction_v.php', 71)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rtransaction_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rtransaction_v', [], true)
+ 5 APPPATH\Controllers\report\rtransaction.php(23): view('report/rtransaction_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rtransaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rtransaction))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-05 15:46:21 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+in APPPATH\Controllers\transaction\transaction.php on line 432.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->createnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-05 15:46:36 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+in APPPATH\Controllers\transaction\transaction.php on line 432.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->createnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-05 16:29:44 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+in APPPATH\Controllers\transaction\transaction.php on line 432.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\transaction\transaction->createnota()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaction\transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-05 21:26:56 --> Call to undefined method CodeIgniter\Session\Session::userdata()
+in APPPATH\Views\report\rtransaction_v.php on line 121.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rtransaction_v', [], true)
+ 4 APPPATH\Controllers\report\rtransaction.php(23): view('report/rtransaction_v', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rtransaction->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rtransaction))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-05 21:41:28 --> Undefined property: App\Controllers\api::$input
+in APPPATH\Controllers\api.php on line 411.
+ 1 APPPATH\Controllers\api.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\api::$input', 'APPPATH\\Controllers\\api.php', 411)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->acc()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-05 21:41:44 --> Undefined property: App\Controllers\api::$input
+in APPPATH\Controllers\api.php on line 411.
+ 1 APPPATH\Controllers\api.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\api::$input', 'APPPATH\\Controllers\\api.php', 411)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->acc()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-05 21:41:55 --> Undefined property: App\Controllers\api::$input
+in APPPATH\Controllers\api.php on line 411.
+ 1 APPPATH\Controllers\api.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\api::$input', 'APPPATH\\Controllers\\api.php', 411)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->acc()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-05 21:42:31 --> Undefined property: App\Controllers\api::$input
+in APPPATH\Controllers\api.php on line 411.
+ 1 APPPATH\Controllers\api.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\api::$input', 'APPPATH\\Controllers\\api.php', 411)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->acc()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-05 21:42:33 --> Undefined property: App\Controllers\api::$input
+in APPPATH\Controllers\api.php on line 411.
+ 1 APPPATH\Controllers\api.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\api::$input', 'APPPATH\\Controllers\\api.php', 411)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->acc()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-05 21:44:21 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Controllers\api.php on line 415.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->acc()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-05 21:48:08 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::affected_rows()
+in APPPATH\Controllers\api.php on line 418.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->acc()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-05 21:49:50 --> Call to a member function getAffectedRows() on bool
+in APPPATH\Controllers\api.php on line 418.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->acc()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-05 21:52:34 --> Call to a member function getAffectedRows() on bool
+in APPPATH\Controllers\api.php on line 418.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->acc()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-05 21:54:18 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getAffectedRows()
+in APPPATH\Controllers\api.php on line 423.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->acc()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-05 21:55:14 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::affected_rows()
+in APPPATH\Controllers\api.php on line 418.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->acc()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-05 21:55:53 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::count_all()
+in APPPATH\Controllers\api.php on line 418.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\api->acc()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\api))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

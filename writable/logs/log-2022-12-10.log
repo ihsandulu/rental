@@ -1,0 +1,42 @@
+ERROR - 2022-12-10 08:12:10 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 D:\xampp\htdocs\pos\app\Models\login_m.php(53): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\pos\app\Controllers\utama.php(32): App\Models\login_m->index()
+#5 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\utama->login()
+#6 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+#7 D:\xampp\htdocs\pos\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-10 08:12:10 --> Unable to connect to the database.
+Main connection [postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "user"
+LEFT JOIN "contact" ON "contact"."contact_id"="user"."contact_id"
+LEFT JOIN "branch" ON "branch"."branch_id"="user"."branch_id"
+LEFT JOIN "permission_group" ON "permission_group"."permission_group_id"="user"."permission_group_id"
+LEFT JOIN "permission" ON "permission"."permission_group_id"="user"."permission_group_id"
+LEFT JOIN "modul" ON "modul"."modul_id"="permission"."modul_id"
+LEFT JOIN "modul_group" ON "modul_group"."modul_group_id"="modul"."modul_group_id"
+WHERE "username" = :username:
+AND   (
+"modul_group_name" = :modul_group_name:
+OR "modul_group_name" = :modul_group_name.1:
+OR "modul_group_name" = :modul_group_name.2:
+OR "modul_group_name" = :modul_group_name.3:
+OR "modul_group_name" = :modul_group_name.4:
+OR "modul_group_name" = :modul_group_name.5:
+OR "modul_group_name" = :modul_group_name.6:
+OR "modul_group_name" = :modul_group_name.7:
+OR "modul_group_name" = :modul_group_name.8:
+ )', [...], false)
+ 3 APPPATH\Models\login_m.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\utama.php(32): App\Models\login_m->index()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\utama->login()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\utama))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

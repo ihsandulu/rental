@@ -1,0 +1,12 @@
+CRITICAL - 2023-01-15 17:48:32 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+in APPPATH\Views\report\rneraca_v.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format(): Passing null to parameter #1 ($num) of type float is deprecated', 'APPPATH\\Views\\report\\rneraca_v.php', 192)
+ 2 APPPATH\Views\report\rneraca_v.php(192): number_format(null, 0, 'ROOTPATH\\public', ',')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rneraca_v.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rneraca_v', [], true)
+ 6 APPPATH\Controllers\report\rneraca.php(21): view('report/rneraca_v')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rneraca->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rneraca))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

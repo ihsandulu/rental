@@ -1,0 +1,65 @@
+CRITICAL - 2022-09-01 09:16:52 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 E:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\bootstrap.php(158): CodeIgniter\CodeIgniter->initialize()
+#1 E:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(35): require('E:\\xampp1\\htdoc...')
+#2 {main}
+CRITICAL - 2022-09-01 09:16:58 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 E:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\bootstrap.php(158): CodeIgniter\CodeIgniter->initialize()
+#1 E:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(35): require('E:\\xampp1\\htdoc...')
+#2 {main}
+CRITICAL - 2022-09-01 09:17:12 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 E:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\bootstrap.php(158): CodeIgniter\CodeIgniter->initialize()
+#1 E:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(35): require('E:\\xampp1\\htdoc...')
+#2 {main}
+CRITICAL - 2022-09-01 09:17:17 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 E:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\bootstrap.php(158): CodeIgniter\CodeIgniter->initialize()
+#1 E:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(35): require('E:\\xampp1\\htdoc...')
+#2 {main}
+CRITICAL - 2022-09-01 09:17:23 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 E:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\bootstrap.php(158): CodeIgniter\CodeIgniter->initialize()
+#1 E:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(35): require('E:\\xampp1\\htdoc...')
+#2 {main}
+CRITICAL - 2022-09-01 09:17:33 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 E:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\bootstrap.php(158): CodeIgniter\CodeIgniter->initialize()
+#1 E:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(35): require('E:\\xampp1\\htdoc...')
+#2 {main}
+CRITICAL - 2022-09-01 10:07:03 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 E:\xampp1\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\bootstrap.php(158): CodeIgniter\CodeIgniter->initialize()
+#1 E:\xampp1\htdocs\ag-accounting-pembiayaan\public\index.php(35): require('E:\\xampp1\\htdoc...')
+#2 {main}
+CRITICAL - 2022-09-01 10:45:34 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 E:\xampp\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\bootstrap.php(158): CodeIgniter\CodeIgniter->initialize()
+#1 E:\xampp\htdocs\ag-accounting-pembiayaan\public\index.php(35): require('E:\\xampp\\htdocs...')
+#2 {main}
+CRITICAL - 2022-09-01 10:45:34 --> Uncaught ErrorException: filter_var(): Passing null to parameter #3 ($options) of type array|int is deprecated in E:\xampp\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\HTTP\RequestTrait.php:338
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'filter_var(): P...', 'E:\\xampp\\htdocs...', 338)
+#1 E:\xampp\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\HTTP\RequestTrait.php(338): filter_var('::1', 516, NULL)
+#2 E:\xampp\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\HTTP\RequestTrait.php(195): CodeIgniter\HTTP\Request->fetchGlobal('server', 'REMOTE_ADDR', 516, NULL)
+#3 E:\xampp\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\HTTP\RequestTrait.php(69): CodeIgniter\HTTP\Request->getServer('REMOTE_ADDR')
+#4 E:\xampp\htdocs\ag-accounting-pembiayaan\app\Views\errors\html\error_exception.php(210): CodeIgniter\HTTP\Request->getIPAddress()
+#5 E:\xampp\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Debug\Exceptions.php(281): include('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#8 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-09-01 03:49:42 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 E:\xampp\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Router\RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', 'E:\\xampp\\htdocs...', 1359)
+#1 E:\xampp\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Router\RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 E:\xampp\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Config\Routes.php(27): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 E:\xampp\htdocs\ag-accounting-pembiayaan\app\Config\Routes.php(11): require('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(802): require('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 E:\xampp\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\xampp\htdocs\ag-accounting-pembiayaan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-09-01 03:49:42 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\ag-accounting-pembiayaan\app\Config\Events.php:35) in E:\xampp\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'E:\\xampp\\htdocs...', 137)
+#1 E:\xampp\htdocs\ag-accounting-pembiayaan\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

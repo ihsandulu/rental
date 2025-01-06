@@ -1,0 +1,11 @@
+CRITICAL - 2023-02-23 17:46:03 --> Undefined property: stdClass::$purchased_outdate
+in APPPATH\Views\report\rprodukkeluar_v.php on line 98.
+ 1 APPPATH\Views\report\rprodukkeluar_v.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$purchased_outdate', 'APPPATH\\Views\\report\\rprodukkeluar_v.php', 98)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\rprodukkeluar_v.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('report/rprodukkeluar_v', [], true)
+ 5 APPPATH\Controllers\report\rprodukkeluar.php(23): view('report/rprodukkeluar_v', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\report\rprodukkeluar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\report\rprodukkeluar))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
